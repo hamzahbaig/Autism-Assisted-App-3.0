@@ -13,15 +13,11 @@ export default class SearchBox extends React.Component {
   render() {
     return (
       <React.Fragment>
-        {/* <TextInput
-          placeholder={'Search'}
-          style={styles.searchBarContainer}
-        /> */}
         <Input
           placeholder="Search"
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={{borderBottomWidth: 0}}
-          inputStyle={{fontSize:14}}
+          inputStyle={{fontSize:14, fontFamily: "avenirltstd-medium"}}
         />
       </React.Fragment>
     );

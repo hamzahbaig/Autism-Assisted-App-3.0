@@ -71,6 +71,16 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>avenirltstd-black.otf</string>
+		<string>avenirltstd-blackoblique.otf</string>
+		<string>AvenirLTStd-Book.otf</string>
+		<string>AvenirLTStd-BookOblique.otf</string>
+		<string>avenirltstd-heavyoblique.otf</string>
+		<string>avenirltstd-lightoblique.otf</string>
+		<string>avenirltstd-medium.otf</string>
+		<string>avenirltstd-mediumoblique.otf</string>
+		<string>lte50186.ttf</string>
+		<string>Nafees Pakistani Web Naskh BTK.ttf</string>
 	</array>
 </dict>
 </plist>

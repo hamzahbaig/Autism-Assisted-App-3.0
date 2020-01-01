@@ -52,9 +52,9 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   mainHeadingFont: {
-    fontSize: 14,
+    fontSize: 20,
     color: '#707070',
-    fontWeight: 'bold',
+    fontFamily: "avenirltstd-black"
   },
   rowContainer: {
     flexDirection: 'row',

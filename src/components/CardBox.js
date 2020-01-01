@@ -7,7 +7,7 @@ export default class CardBox extends React.Component {
       <TouchableOpacity style={styles.mainContainer}>
         <Image
           style={styles.imageContainer}
-          source={require('../assets/logo.png')}
+          source={require('../assets/images/logo.png')}
         />
         <View style={styles.titleContainer}>
           <Text style={styles.titleFont}>{this.props.title}</Text>
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 8,
   },
   titleFont: {
-    fontSize: 12,
+    fontSize: 14,
     marginLeft: 10,
+    fontFamily: "avenirltstd-medium"
   },
 });
