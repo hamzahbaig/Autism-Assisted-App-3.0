@@ -1,10 +1,19 @@
 import React from 'react'
-import HomeScreen from './screens/HomeScreen'
+import HomeScreen from './screens/HomeScreen';
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <HomeScreen />
-    )
-  }
-}
+const AppNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen,
+    navigationOptions: {
+      title: null,
+      headerStyle: {
+        backgroundColor: '#20266A',
+      },
+      
+    },
+  },
+});
+
+export default createAppContainer(AppNavigator);
