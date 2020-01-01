@@ -1,12 +1,21 @@
 import React from 'react';
-import {View, Text, StyleSheet, StatusBar} from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import {View, Text, StyleSheet, StatusBar, Dimensions} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 import CardBox from '../components/CardBox';
+import SearchBox from '../components/SearchBox';
+
+const phoneWidth = Dimensions.get('window').width;
+const phoneHeight = Dimensions.get('window').height;
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
     headerRight: () => (
-      <View style={{width: 200, height: 50, backgroundColor: 'red'}}>
-        <Icon name="rocket" size={30} />
+      <View style={styles.settingIconContainer}>
+        <Icon name="md-settings" size={30} color="white" />
+      </View>
+    ),
+    headerLeft: () => (
+      <View style={styles.searchBarContainer}>
+        <SearchBox />
       </View>
     ),
   };
@@ -53,5 +62,16 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '27%',
     marginTop: 20,
+  },
+  settingIconContainer: {
+    width: phoneWidth * 0.15,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  searchBarContainer: {
+    width: phoneWidth * 0.9,
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

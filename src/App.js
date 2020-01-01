@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 import HomeScreen from './screens/HomeScreen';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
+import {Text} from 'react-native';
 const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
@@ -11,7 +12,6 @@ const AppNavigator = createStackNavigator({
       headerStyle: {
         backgroundColor: '#20266A',
       },
-      
     },
   },
 });
