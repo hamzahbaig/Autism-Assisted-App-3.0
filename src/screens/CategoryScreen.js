@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Dimensions} from 'react-native';
+import {View, Text, StyleSheet, Dimensions, StatusBar} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SearchBox from '../components/SearchBox';
 import {Fonts} from '../assets/fonts/Fonts';
@@ -24,6 +24,7 @@ export default class CategoryScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
           <Text style={styles.mainHeadingFont}>Autism in Children</Text>
         </View>

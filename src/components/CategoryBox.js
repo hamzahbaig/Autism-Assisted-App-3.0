@@ -38,28 +38,28 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   innerContainer: {
-    height: '90%',
-    width: '95%',
+    height: '80%',
+    width: '96%',
     flexDirection: 'row',
     alignItems: 'center',
   },
   imageContainer: {
-    height: '95%',
+    height: '90%',
     width: '25%',
   },
   categoryContentContainer: {
     height: '100%',
     width: '75%',
-    paddingLeft: 12,
+    paddingLeft: 7,
   },
   categoryHeadingStyle: {
     fontSize: 14,
     fontFamily: Fonts.avenirHeavy,
-    paddingTop:2
+    paddingTop:4
   },
   categoryDescriptionStyle: {
     fontSize: 14,
     fontFamily: Fonts.avenirLight,
-    paddingTop: 5,
+    paddingTop: 7,
   },
 });
