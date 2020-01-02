@@ -1,48 +1,46 @@
 import React from 'react';
-import {View, Text, StyleSheet, StatusBar, Dimensions} from 'react-native';
+import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import CardBox from '../components/CardBox';
 import SearchBox from '../components/SearchBox';
 import {Fonts} from '../assets/fonts/Fonts';
-import eng from '../assets/language/eng.json';
-import urdu from '../assets/language/urdu.json'
+import CategoryBox from '../components/CategoryBox';
+
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
-export default class HomeScreen extends React.Component {
-  state = {
-    currentLanguage: "eng",
-    content: eng
-  }
-
+export default class CategoryScreen extends React.Component {
   static navigationOptions = {
     headerRight: () => (
       <View style={styles.settingIconContainer}>
-        <Icon name="md-settings" size={28} color="white"/>
+        <Icon name="md-settings" size={28} color="white" />
       </View>
     ),
     headerLeft: () => (
       <View style={styles.searchBarContainer}>
-        <SearchBox/>
+        <SearchBox />
       </View>
     ),
   };
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
-          <Text style={styles.mainHeadingFont}>
-            {this.state.content['homeScreen']['title']}
+          <Text style={styles.mainHeadingFont}>Autism in Children</Text>
+        </View>
+        <View style={styles.descriptionContainer}>
+          <Text style={styles.descriptionStyle}>
+            Learn important information about autism spectrum disorder in
+            children and making sure your children get the help and attention
+            they require
           </Text>
         </View>
-        <View style={styles.rowContainer}>
-          <CardBox title={this.state.content['homeScreen']['category'][0]} />
-          <CardBox title={this.state.content['homeScreen']['category'][1]} />
+        <View style={styles.sectionContainer}>
+          <Text style={styles.sectionStyling}>
+            Section 1: Development in Children
+          </Text>
         </View>
-        <View style={styles.rowContainer}>
-          <CardBox title={this.state.content['homeScreen']['category'][2]} />
-          <CardBox title={this.state.content['homeScreen']['category'][3]} />
+        <View style={{height: '100%', width: '100%'}}>
+          <CategoryBox />
         </View>
       </View>
     );
@@ -64,14 +62,7 @@ const styles = StyleSheet.create({
   mainHeadingFont: {
     fontSize: 20,
     color: '#707070',
-    fontFamily: Fonts.avenirBlack
-  },
-  rowContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-    height: phoneHeight * 0.22,
-    marginTop: 20,
+    fontFamily: Fonts.avenirBlack,
   },
   settingIconContainer: {
     width: phoneWidth * 0.15,
@@ -83,5 +74,23 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  descriptionContainer: {
+    width: '100%',
+    marginTop: 20,
+  },
+  descriptionStyle: {
+    fontSize: 14,
+    fontFamily: Fonts.avenirLight,
+    lineHeight: 15,
+  },
+  sectionContainer: {
+    width: '100%',
+    marginTop: 20,
+  },
+  sectionStyling: {
+    fontSize: 20,
+    color: '#04B874',
+    fontFamily: Fonts.avenirBlack,
   },
 });

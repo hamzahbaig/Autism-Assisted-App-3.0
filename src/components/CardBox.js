@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image,TouchableOpacity} from 'react-native';
-import fonts, { Fonts } from "../assets/fonts/Fonts"
+import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import fonts, {Fonts} from '../assets/fonts/Fonts';
 
 export default class CardBox extends React.Component {
   render() {
     return (
-      <TouchableOpacity style={styles.mainContainer} >
+      <TouchableOpacity style={styles.mainContainer}>
         <Image
           style={styles.imageContainer}
           source={require('../assets/images/logo.png')}
@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
     fontSize: 14,
     marginLeft: 10,
     marginRight: 5,
-    // fontFamily: Fonts.avenirMedium,
-    fontFamily: Fonts.nafees,
+    fontFamily: Fonts.avenirMedium,
   },
 });

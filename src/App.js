@@ -1,12 +1,23 @@
 import React from 'react';
-import HomeScreen from './screens/HomeScreen';
 import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
-import {Text} from 'react-native';
+// Import Screens
+import HomeScreen from './screens/HomeScreen';
+import CategoryScreen from './screens/CategoryScreen'
+
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: HomeScreen,
+    screen: CategoryScreen,
+    navigationOptions: {
+      title: null,
+      headerStyle: {
+        backgroundColor: '#20266A',
+      },
+    },
+  },
+  Category: {
+    screen: CategoryScreen,
     navigationOptions: {
       title: null,
       headerStyle: {
