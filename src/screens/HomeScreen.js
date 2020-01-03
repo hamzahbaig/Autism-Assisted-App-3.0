@@ -4,26 +4,36 @@ import Icon from 'react-native-vector-icons/Ionicons';
 import CardBox from '../components/CardBox';
 import SearchBox from '../components/SearchBox';
 import {Fonts} from '../assets/fonts/Fonts';
-import eng from '../assets/language/eng.json';
-import urdu from '../assets/language/urdu.json'
+import eng from '../content/eng.json';
+import Settings from '../settings/Settings.json';
+import {temp} from './Temp'
+
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
 export default class HomeScreen extends React.Component {
   state = {
-    currentLanguage: "eng",
-    content: eng
-  }
+    content: eng,
+  };
 
+  componentDidMount() {
+    console.log(temp.abc)
+    temp.abc = "Ali"
+    console.log(temp.abc)
+
+    console.log(Settings.currentLanguage);
+    Settings.currentLanguage = 'urdu';
+    console.log(Settings.currentLanguage);
+  }
   static navigationOptions = {
     headerRight: () => (
       <View style={styles.settingIconContainer}>
-        <Icon name="md-settings" size={28} color="white"/>
+        <Icon name="md-settings" size={28} color="white" />
       </View>
     ),
     headerLeft: () => (
       <View style={styles.searchBarContainer}>
-        <SearchBox/>
+        <SearchBox />
       </View>
     ),
   };
@@ -64,7 +74,7 @@ const styles = StyleSheet.create({
   mainHeadingFont: {
     fontSize: 20,
     color: '#707070',
-    fontFamily: Fonts.avenirBlack
+    fontFamily: Fonts.avenirBlack,
   },
   rowContainer: {
     flexDirection: 'row',

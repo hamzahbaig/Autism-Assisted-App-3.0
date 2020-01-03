@@ -8,7 +8,7 @@ import CategoryScreen from './screens/CategoryScreen'
 
 const AppNavigator = createStackNavigator({
   Home: {
-    screen: CategoryScreen,
+    screen: HomeScreen,
     navigationOptions: {
       title: null,
       headerStyle: {
