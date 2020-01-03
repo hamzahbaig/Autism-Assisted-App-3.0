@@ -12,6 +12,7 @@ import CardBox from '../components/CardBox';
 import SearchBox from '../components/SearchBox';
 import {Fonts} from '../assets/fonts/Fonts';
 import eng from '../content/eng.json';
+import Settings from '../settings/Settings.json';
 import {engFontSizes} from '../settings/EnglishFontConfig';
 
 const phoneWidth = Dimensions.get('window').width;
@@ -23,11 +24,23 @@ export default class HomeScreen extends React.Component {
     fontSize: engFontSizes.eng_M,
   };
 
-  // componentDidMount() {
-  //   this.props.navigation.setParams({
-  //     fontSize: this.state.fontSize,
-  //   });
-  // }
+  fontSizeHandler = key => {
+    if (key == 's') {
+      Settings.currentFontSettings = 's';
+      this.setState({fontSize: engFontSizes.eng_S});
+    } else if (key == 'm') {
+      Settings.currentFontSettings = 'm';
+      this.setState({fontSize: engFontSizes.eng_M});
+    } else {
+      Settings.currentFontSettings = 'l';
+      this.setState({fontSize: engFontSizes.eng_L});
+    }
+  };
+
+  componentDidMount() {
+    console.log('AM herre');
+    this.fontSizeHandler(Settings.currentFontSettings);
+  }
 
   static navigationOptions = ({navigation}) => {
     const {params = {}} = navigation.state;
@@ -43,16 +56,6 @@ export default class HomeScreen extends React.Component {
         </View>
       ),
     };
-  };
-
-  fontSizeHandler = key => {
-    if (key == 's') {
-      this.setState({fontSize: engFontSizes.eng_S});
-    } else if (key == 'm') {
-      this.setState({fontSize: engFontSizes.eng_M});
-    } else {
-      this.setState({fontSize: engFontSizes.eng_L});
-    }
   };
 
   render() {
@@ -72,6 +75,7 @@ export default class HomeScreen extends React.Component {
           <CardBox
             title={this.state.content['homeScreen']['category'][0]}
             fontSize={this.state.fontSize}
+            onClick={() => this.props.navigation.navigate('AutismBasics')}
           />
           <CardBox
             title={this.state.content['homeScreen']['category'][1]}
@@ -83,6 +87,7 @@ export default class HomeScreen extends React.Component {
           <CardBox
             title={this.state.content['homeScreen']['category'][2]}
             fontSize={this.state.fontSize}
+            onClick={() => this.props.navigation.navigate('AutismInAdults')}
           />
           <CardBox
             title={this.state.content['homeScreen']['category'][3]}

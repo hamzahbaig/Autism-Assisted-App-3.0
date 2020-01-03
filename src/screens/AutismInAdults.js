@@ -18,7 +18,7 @@ import Settings from '../settings/Settings.json';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
-export default class AutismInChildren extends React.Component {
+export default class AutismInAdults extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
   };
@@ -39,7 +39,7 @@ export default class AutismInChildren extends React.Component {
   componentDidMount() {
     this.fontSizeHandler(Settings.currentFontSettings);
   }
-
+  
   static navigationOptions = {
     headerRight: () => (
       <View style={styles.settingIconContainer}>
@@ -63,7 +63,7 @@ export default class AutismInChildren extends React.Component {
               styles.mainHeadingFont,
               {fontSize: this.state.fontSize.heading},
             ]}>
-            Autism in Children
+            Autism in Adults
           </Text>
         </View>
         <View style={styles.descriptionContainer}>
@@ -79,58 +79,7 @@ export default class AutismInChildren extends React.Component {
         </View>
         <ScrollView style={styles.scrollViewContainer}>
           <View style={styles.innerScrollViewContainer}>
-            <View style={styles.sectionContainer}>
-              <Text
-                style={[
-                  styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
-                ]}>
-                Section 1: Development in Children
-              </Text>
-            </View>
             <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
-            <View style={styles.sectionContainer}>
-              <Text
-                style={[
-                  styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
-                ]}>
-                Section 2: Testing For Autism
-              </Text>
-            </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <View style={styles.sectionContainer}>
-              <Text
-                style={[
-                  styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
-                ]}>
-                Section 3: Treating Autism
-              </Text>
-            </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
-            <View style={styles.sectionContainer}>
-              <Text
-                style={[
-                  styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
-                ]}>
-                Section 4: Autism & Society
-              </Text>
-            </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
-            <View style={styles.sectionContainer}>
-              <Text
-                style={[
-                  styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
-                ]}>
-                Section 5: Autism and Nutrition
-              </Text>
-            </View>
             <CategoryBox fontSize={this.state.fontSize} />
             <CategoryBox fontSize={this.state.fontSize} />
             <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />

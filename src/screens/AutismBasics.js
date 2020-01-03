@@ -8,11 +8,37 @@ import {
   Button,
   ScrollView,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import SearchBox from '../components/SearchBox';
+import {Fonts} from '../assets/fonts/Fonts';
+import CategoryBox from '../components/CategoryBox';
+import {engFontSizes} from '../settings/EnglishFontConfig';
+import Settings from '../settings/Settings.json';
+
+const phoneWidth = Dimensions.get('window').width;
+const phoneHeight = Dimensions.get('window').height;
 
 export default class AutismBasics extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
   };
+
+  fontSizeHandler = key => {
+    if (key == 's') {
+      Settings.currentFontSettings = 's';
+      this.setState({fontSize: engFontSizes.eng_S});
+    } else if (key == 'm') {
+      Settings.currentFontSettings = 'm';
+      this.setState({fontSize: engFontSizes.eng_M});
+    } else {
+      Settings.currentFontSettings = 'l';
+      this.setState({fontSize: engFontSizes.eng_L});
+    }
+  };
+
+  componentDidMount() {
+    this.fontSizeHandler(Settings.currentFontSettings);
+  }
 
   static navigationOptions = {
     headerRight: () => (
@@ -25,16 +51,6 @@ export default class AutismBasics extends React.Component {
         <SearchBox />
       </View>
     ),
-  };
-
-  fontSizeHandler = key => {
-    if (key == 's') {
-      this.setState({fontSize: engFontSizes.eng_S});
-    } else if (key == 'm') {
-      this.setState({fontSize: engFontSizes.eng_M});
-    } else {
-      this.setState({fontSize: engFontSizes.eng_L});
-    }
   };
 
   render() {
@@ -50,6 +66,34 @@ export default class AutismBasics extends React.Component {
             Autism Basics
           </Text>
         </View>
+        <View style={styles.descriptionContainer}>
+          <Text
+            style={[
+              styles.descriptionStyle,
+              {fontSize: this.state.fontSize.content},
+            ]}>
+            Learn important information about autism spectrum disorder in
+            children and making sure your children get the help and attention
+            they require
+          </Text>
+        </View>
+        <ScrollView style={styles.scrollViewContainer}>
+          <View style={styles.innerScrollViewContainer}>
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox fontSize={this.state.fontSize} />
+            <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />
+            <Button
+              title={'Medium'}
+              onPress={() => this.fontSizeHandler('m')}
+            />
+            <Button title={'Large'} onPress={() => this.fontSizeHandler('l')} />
+          </View>
+        </ScrollView>
       </View>
     );
   }
