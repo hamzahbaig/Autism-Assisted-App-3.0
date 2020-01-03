@@ -4,8 +4,8 @@ import {createStackNavigator} from 'react-navigation-stack';
 
 // Import Screens
 import HomeScreen from './screens/HomeScreen';
-import CategoryScreen from './screens/CategoryScreen'
-
+import AutismInChildren from './screens/AutismInChildren';
+import AutismBasics from './screens/AutismBasics';
 const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
@@ -16,8 +16,17 @@ const AppNavigator = createStackNavigator({
       },
     },
   },
-  Category: {
-    screen: CategoryScreen,
+  AutismInChildren: {
+    screen: AutismInChildren,
+    navigationOptions: {
+      title: null,
+      headerStyle: {
+        backgroundColor: '#20266A',
+      },
+    },
+  },
+  AutismBasics: {
+    screen: AutismBasics,
     navigationOptions: {
       title: null,
       headerStyle: {

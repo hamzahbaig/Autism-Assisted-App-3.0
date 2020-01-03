@@ -1,14 +1,19 @@
 import React from 'react';
-import {View, Text, StyleSheet, Dimensions, StatusBar} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import SearchBox from '../components/SearchBox';
-import {Fonts} from '../assets/fonts/Fonts';
-import CategoryBox from '../components/CategoryBox';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Dimensions,
+  StatusBar,
+  Button,
+  ScrollView,
+} from 'react-native';
 
-const phoneWidth = Dimensions.get('window').width;
-const phoneHeight = Dimensions.get('window').height;
+export default class AutismBasics extends React.Component {
+  state = {
+    fontSize: engFontSizes.eng_M,
+  };
 
-export default class CategoryScreen extends React.Component {
   static navigationOptions = {
     headerRight: () => (
       <View style={styles.settingIconContainer}>
@@ -21,27 +26,29 @@ export default class CategoryScreen extends React.Component {
       </View>
     ),
   };
+
+  fontSizeHandler = key => {
+    if (key == 's') {
+      this.setState({fontSize: engFontSizes.eng_S});
+    } else if (key == 'm') {
+      this.setState({fontSize: engFontSizes.eng_M});
+    } else {
+      this.setState({fontSize: engFontSizes.eng_L});
+    }
+  };
+
   render() {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
-          <Text style={styles.mainHeadingFont}>Autism in Children</Text>
-        </View>
-        <View style={styles.descriptionContainer}>
-          <Text style={styles.descriptionStyle}>
-            Learn important information about autism spectrum disorder in
-            children and making sure your children get the help and attention
-            they require
+          <Text
+            style={[
+              styles.mainHeadingFont,
+              {fontSize: this.state.fontSize.heading},
+            ]}>
+            Autism Basics
           </Text>
-        </View>
-        <View style={styles.sectionContainer}>
-          <Text style={styles.sectionStyling}>
-            Section 1: Development in Children
-          </Text>
-        </View>
-        <View style={{height: '100%', width: '100%'}}>
-          <CategoryBox />
         </View>
       </View>
     );
@@ -61,7 +68,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   mainHeadingFont: {
-    fontSize: 20,
     color: '#707070',
     fontFamily: Fonts.avenirBlack,
   },
@@ -81,17 +87,24 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   descriptionStyle: {
-    fontSize: 14,
     fontFamily: Fonts.avenirLight,
     lineHeight: 15,
   },
   sectionContainer: {
     width: '100%',
-    marginTop: 20,
+    marginTop: 10,
   },
   sectionStyling: {
-    fontSize: 20,
     color: '#04B874',
     fontFamily: Fonts.avenirBlack,
+  },
+  scrollViewContainer: {
+    height: '100%',
+    width: phoneWidth,
+    marginTop: 20,
+  },
+  innerScrollViewContainer: {
+    width: '90%',
+    alignSelf: 'center',
   },
 });

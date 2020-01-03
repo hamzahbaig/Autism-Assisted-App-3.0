@@ -7,11 +7,14 @@ export default class SearchBox extends React.Component {
     return (
       <React.Fragment>
         <Input
-          placeholder={"Search"}
+          placeholder={'Search'}
           placeholderTextColor={'#707070'}
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={{borderBottomWidth: 0}}
-          inputStyle={styles.inputStyling}
+          inputStyle={[
+            styles.inputStyling,
+            {fontSize: 14},
+          ]}
         />
       </React.Fragment>
     );
@@ -26,7 +29,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
   },
   inputStyling: {
-    fontSize: 14,
     fontFamily: Fonts.avenirMedium,
   },
 });

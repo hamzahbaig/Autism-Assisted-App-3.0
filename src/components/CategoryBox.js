@@ -14,10 +14,18 @@ export default class CategoryBox extends React.Component {
             source={require('../assets/images/logo.png')}
           />
           <View style={styles.categoryContentContainer}>
-            <Text style={styles.categoryHeadingStyle}>
+            <Text
+              style={[
+                styles.categoryHeadingStyle,
+                {fontSize: this.props.fontSize.content},
+              ]}>
               Understanding Your Children
             </Text>
-            <Text style={styles.categoryDescriptionStyle}>
+            <Text
+              style={[
+                styles.categoryDescriptionStyle,
+                {fontSize: this.props.fontSize.content},
+              ]}>
               Learn important milestones about your child and signs of
               developing ASD.
             </Text>
@@ -53,12 +61,10 @@ const styles = StyleSheet.create({
     paddingLeft: 7,
   },
   categoryHeadingStyle: {
-    fontSize: 14,
     fontFamily: Fonts.avenirHeavy,
-    paddingTop:4
+    paddingTop: 4,
   },
   categoryDescriptionStyle: {
-    fontSize: 14,
     fontFamily: Fonts.avenirLight,
     paddingTop: 7,
   },

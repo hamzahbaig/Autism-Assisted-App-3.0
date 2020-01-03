@@ -5,13 +5,16 @@ import fonts, {Fonts} from '../assets/fonts/Fonts';
 export default class CardBox extends React.Component {
   render() {
     return (
-      <TouchableOpacity style={styles.mainContainer}>
+      <TouchableOpacity style={styles.mainContainer} onPress={this.props.onClick}>
         <Image
           style={styles.imageContainer}
           source={require('../assets/images/logo.png')}
         />
         <View style={styles.titleContainer}>
-          <Text style={styles.titleFont}>{this.props.title}</Text>
+          <Text
+            style={[styles.titleFont, {fontSize: this.props.fontSize.content}]}>
+            {this.props.title}
+          </Text>
         </View>
       </TouchableOpacity>
     );
@@ -40,7 +43,6 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 8,
   },
   titleFont: {
-    fontSize: 14,
     marginLeft: 10,
     marginRight: 5,
     fontFamily: Fonts.avenirMedium,
