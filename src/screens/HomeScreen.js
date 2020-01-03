@@ -37,9 +37,13 @@ export default class HomeScreen extends React.Component {
     }
   };
 
+  intialise = () => {
+    this.fontSizeHandler(Settings.currentFontSettings);
+  };
+
   componentDidMount() {
     console.log('AM herre');
-    this.fontSizeHandler(Settings.currentFontSettings);
+    this.intialise();
   }
 
   static navigationOptions = ({navigation}) => {
@@ -75,19 +79,31 @@ export default class HomeScreen extends React.Component {
           <CardBox
             title={this.state.content['homeScreen']['category'][0]}
             fontSize={this.state.fontSize}
-            onClick={() => this.props.navigation.navigate('AutismBasics')}
+            onClick={() =>
+              this.props.navigation.navigate('AutismBasics', {
+                refresh: this.intialise,
+              })
+            }
           />
           <CardBox
             title={this.state.content['homeScreen']['category'][1]}
             fontSize={this.state.fontSize}
-            onClick={() => this.props.navigation.navigate('AutismInChildren')}
+            onClick={() =>
+              this.props.navigation.navigate('AutismInChildren', {
+                refresh: this.intialise,
+              })
+            }
           />
         </View>
         <View style={styles.rowContainer}>
           <CardBox
             title={this.state.content['homeScreen']['category'][2]}
             fontSize={this.state.fontSize}
-            onClick={() => this.props.navigation.navigate('AutismInAdults')}
+            onClick={() =>
+              this.props.navigation.navigate('AutismInAdults', {
+                refresh: this.intialise,
+              })
+            }
           />
           <CardBox
             title={this.state.content['homeScreen']['category'][3]}

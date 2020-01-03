@@ -7,6 +7,7 @@ import {
   StatusBar,
   Button,
   ScrollView,
+  BackHandler
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SearchBox from '../components/SearchBox';
@@ -37,8 +38,20 @@ export default class AutismBasics extends React.Component {
   };
 
   componentDidMount() {
+    this.backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      this.handleBackPress,
+    );
     this.fontSizeHandler(Settings.currentFontSettings);
   }
+
+  componentWillUnmount() {
+    this.backHandler.remove();
+  }
+
+  handleBackPress = () => {
+    this.props.navigation.state.params.refresh();
+  };
 
   static navigationOptions = {
     headerRight: () => (
