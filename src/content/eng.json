@@ -1,7 +1,29 @@
 {
-    "homeScreen": {
-        "search": "Search",
-        "title": "Home",
-        "category": ["Autism Basics","Autism in Children","Autism in Adults","Video Gallery"]
-    }
+  "homeScreen": {
+    "search": "Search",
+    "title": "Home",
+    "category": [
+      "Autism Basics",
+      "Autism in Children",
+      "Autism in Adults",
+      "Video Gallery"
+    ]
+  },
+  "autismInChildren": {
+    "title": "Autism in Children",
+    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
+    "sections": [
+      "Section 1: Development in Children",
+      "Section 2: Testing for Autism",
+      "Section 3: Treating Autism",
+      "Section 4: Autism & Society",
+      "Section 5: Autism and Nutrition"
+    ],
+    "innerSection": [
+      [
+        "Understanding Your Children",
+        "Learn important milestones about your child and signs of developing ASD."
+      ]
+    ]
+  }
 }

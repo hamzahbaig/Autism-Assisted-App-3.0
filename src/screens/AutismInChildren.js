@@ -11,32 +11,85 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SearchBox from '../components/SearchBox';
-import {Fonts} from '../assets/fonts/Fonts';
+import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 import CategoryBox from '../components/CategoryBox';
-import {engFontSizes} from '../settings/EnglishFontConfig';
+import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
 import Settings from '../settings/Settings.json';
-
+import eng from '../content/eng.json';
+import urdu from '../content/urdu.json';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
 export default class AutismInChildren extends React.Component {
   state = {
-    fontSize: engFontSizes.eng_M,
+    content:
+      Settings.currentLanguage == 'english'
+        ? eng.autismInChildren
+        : urdu.autismInChildren,
+    fontSize:
+      Settings.currentLanguage == 'english'
+        ? engFontSizes.eng_M
+        : urduFontSizes.urdu_M,
+    fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
   };
 
   fontSizeHandler = key => {
-    if (key == 's') {
-      Settings.currentFontSettings = 's';
-      this.setState({fontSize: engFontSizes.eng_S});
-    } else if (key == 'm') {
-      Settings.currentFontSettings = 'm';
-      this.setState({fontSize: engFontSizes.eng_M});
-    } else {
-      Settings.currentFontSettings = 'l';
-      this.setState({fontSize: engFontSizes.eng_L});
+    if (Settings.currentLanguage == 'english') {
+      if (key == 's') {
+        Settings.currentFontSettings = 's';
+        this.setState({fontSize: engFontSizes.eng_S});
+      } else if (key == 'm') {
+        Settings.currentFontSettings = 'm';
+        this.setState({fontSize: engFontSizes.eng_M});
+      } else {
+        Settings.currentFontSettings = 'l';
+        this.setState({fontSize: engFontSizes.eng_L});
+      }
+    } else if (Settings.currentLanguage == 'urdu') {
+      if (key == 's') {
+        Settings.currentFontSettings = 's';
+        this.setState({fontSize: urduFontSizes.urdu_S});
+      } else if (key == 'm') {
+        Settings.currentFontSettings = 'm';
+        this.setState({fontSize: urduFontSizes.urdu_M});
+      } else {
+        Settings.currentFontSettings = 'l';
+        this.setState({fontSize: urduFontSizes.urdu_L});
+      }
     }
   };
 
+  calculateFontFamily = key => {
+    if (Settings.currentLanguage == 'urdu') {
+      return urduFonts.nafees;
+    } else if (Settings.currentLanguage == 'english') {
+      if (key == 'black') {
+        return englishFonts.avenirBlack;
+      } else if (key == 'medium') {
+        return englishFonts.avenirMedium;
+      } else if (key == 'light') {
+        return englishFonts.avenirLight;
+      } else if (key == 'heavy') {
+        return englishFonts.avenirHeavy;
+      }
+    }
+  };
+
+  changeLanguage = () => {
+    if (Settings.currentLanguage == 'english') {
+      Settings.currentLanguage = 'urdu';
+      this.setState({
+        content: urdu.autismInChildren,
+        fontSize: urduFontSizes.urdu_M,
+      });
+    } else if (Settings.currentLanguage == 'urdu') {
+      Settings.currentLanguage = 'english';
+      this.setState({
+        content: eng.autismInChildren,
+        fontSize: engFontSizes.eng_M,
+      });
+    }
+  };
   componentDidMount() {
     this.backHandler = BackHandler.addEventListener(
       'hardwareBackPress',
@@ -50,7 +103,6 @@ export default class AutismInChildren extends React.Component {
   }
 
   handleBackPress = () => {
-    console.log("Working")
     this.props.navigation.state.params.refresh();
   };
 
@@ -75,20 +127,24 @@ export default class AutismInChildren extends React.Component {
           <Text
             style={[
               styles.mainHeadingFont,
-              {fontSize: this.state.fontSize.heading},
+              {
+                fontSize: this.state.fontSize.heading,
+                fontFamily: this.calculateFontFamily('black'),
+              },
             ]}>
-            Autism in Children
+            {this.state.content.title}
           </Text>
         </View>
         <View style={styles.descriptionContainer}>
           <Text
             style={[
               styles.descriptionStyle,
-              {fontSize: this.state.fontSize.content},
+              {
+                fontSize: this.state.fontSize.content,
+                fontFamily: this.calculateFontFamily('light'),
+              },
             ]}>
-            Learn important information about autism spectrum disorder in
-            children and making sure your children get the help and attention
-            they require
+            {this.state.content.description}
           </Text>
         </View>
         <ScrollView style={styles.scrollViewContainer}>
@@ -97,62 +153,123 @@ export default class AutismInChildren extends React.Component {
               <Text
                 style={[
                   styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
+                  {
+                    fontSize: this.state.fontSize.heading,
+                    fontFamily: this.calculateFontFamily('black'),
+                  },
                 ]}>
-                Section 1: Development in Children
+                {this.state.content.sections[0]}
               </Text>
             </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
             <View style={styles.sectionContainer}>
               <Text
                 style={[
                   styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
+                  {
+                    fontSize: this.state.fontSize.heading,
+                    fontFamily: this.calculateFontFamily('black'),
+                  },
                 ]}>
-                Section 2: Testing For Autism
+                {this.state.content.sections[1]}
               </Text>
             </View>
-            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
             <View style={styles.sectionContainer}>
               <Text
                 style={[
                   styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
+                  {
+                    fontSize: this.state.fontSize.heading,
+                    fontFamily: this.calculateFontFamily('black'),
+                  },
                 ]}>
-                Section 3: Treating Autism
+                {this.state.content.sections[2]}
               </Text>
             </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
             <View style={styles.sectionContainer}>
               <Text
                 style={[
                   styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
+                  {
+                    fontSize: this.state.fontSize.heading,
+                    fontFamily: this.calculateFontFamily('black'),
+                  },
                 ]}>
-                Section 4: Autism & Society
+                {this.state.content.sections[3]}
               </Text>
             </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
             <View style={styles.sectionContainer}>
               <Text
                 style={[
                   styles.sectionStyling,
-                  {fontSize: this.state.fontSize.heading},
+                  {
+                    fontSize: this.state.fontSize.heading,
+                    fontFamily: this.calculateFontFamily('black'),
+                  },
                 ]}>
-                Section 5: Autism and Nutrition
+                {this.state.content.sections[4]}
               </Text>
             </View>
-            <CategoryBox fontSize={this.state.fontSize} />
-            <CategoryBox fontSize={this.state.fontSize} />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
+            <CategoryBox
+              fontSize={this.state.fontSize}
+              innerSection={this.state.content.innerSection}
+              fontFamilyHeading={this.calculateFontFamily('heavy')}
+              fontFamilyDescription={this.calculateFontFamily('light')}
+            />
             <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />
             <Button
               title={'Medium'}
               onPress={() => this.fontSizeHandler('m')}
             />
             <Button title={'Large'} onPress={() => this.fontSizeHandler('l')} />
+            <Button title={'Change Language'} onPress={this.changeLanguage} />
           </View>
         </ScrollView>
       </View>
@@ -174,7 +291,6 @@ const styles = StyleSheet.create({
   },
   mainHeadingFont: {
     color: '#707070',
-    fontFamily: Fonts.avenirBlack,
   },
   settingIconContainer: {
     width: phoneWidth * 0.15,
@@ -192,8 +308,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   descriptionStyle: {
-    fontFamily: Fonts.avenirLight,
-    lineHeight: 15,
+    lineHeight: 20,
   },
   sectionContainer: {
     width: '100%',
@@ -201,7 +316,6 @@ const styles = StyleSheet.create({
   },
   sectionStyling: {
     color: '#04B874',
-    fontFamily: Fonts.avenirBlack,
   },
   scrollViewContainer: {
     height: '100%',

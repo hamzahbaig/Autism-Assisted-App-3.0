@@ -1,6 +1,6 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
-import {Fonts} from '../assets/fonts/Fonts';
+import {View, Text, Image, StyleSheet, Dimensions, Settings} from 'react-native';
+import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
 const phoneHeight = Dimensions.get('window').height;
 
@@ -17,17 +17,22 @@ export default class CategoryBox extends React.Component {
             <Text
               style={[
                 styles.categoryHeadingStyle,
-                {fontSize: this.props.fontSize.content},
+                {
+                  fontSize: this.props.fontSize.content,
+                  fontFamily: this.props.fontFamilyHeading,
+                },
               ]}>
-              Understanding Your Children
+              {this.props.innerSection[0][0]}
             </Text>
             <Text
               style={[
                 styles.categoryDescriptionStyle,
-                {fontSize: this.props.fontSize.content},
+                {
+                  fontSize: this.props.fontSize.content,
+                  fontFamily: this.props.fontFamilyDescription,
+                },
               ]}>
-              Learn important milestones about your child and signs of
-              developing ASD.
+              {this.props.innerSection[0][1]}
             </Text>
           </View>
         </View>
@@ -38,7 +43,7 @@ export default class CategoryBox extends React.Component {
 
 const styles = StyleSheet.create({
   categoryBoxContainer: {
-    height: 90,
+    height: 100,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -61,11 +66,11 @@ const styles = StyleSheet.create({
     paddingLeft: 7,
   },
   categoryHeadingStyle: {
-    fontFamily: Fonts.avenirHeavy,
+    // fontFamily: englishFonts.avenirHeavy,
     paddingTop: 4,
   },
   categoryDescriptionStyle: {
-    fontFamily: Fonts.avenirLight,
+    // fontFamily: englishFonts.avenirLight,
     paddingTop: 7,
   },
 });

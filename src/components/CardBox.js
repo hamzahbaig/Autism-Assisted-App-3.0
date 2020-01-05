@@ -1,18 +1,26 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
-import fonts, {Fonts} from '../assets/fonts/Fonts';
+import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
 export default class CardBox extends React.Component {
   render() {
     return (
-      <TouchableOpacity style={styles.mainContainer} onPress={this.props.onClick}>
+      <TouchableOpacity
+        style={styles.mainContainer}
+        onPress={this.props.onClick}>
         <Image
           style={styles.imageContainer}
           source={require('../assets/images/logo.png')}
         />
         <View style={styles.titleContainer}>
           <Text
-            style={[styles.titleFont, {fontSize: this.props.fontSize.content}]}>
+            style={[
+              styles.titleFont,
+              {
+                fontSize: this.props.fontSize.content,
+                fontFamily: this.props.fontFamily,
+              },
+            ]}>
             {this.props.title}
           </Text>
         </View>
@@ -45,6 +53,5 @@ const styles = StyleSheet.create({
   titleFont: {
     marginLeft: 10,
     marginRight: 5,
-    fontFamily: Fonts.avenirMedium,
   },
 });

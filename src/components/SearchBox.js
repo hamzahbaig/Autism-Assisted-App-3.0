@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {Input} from 'react-native-elements';
-import {Fonts} from '../assets/fonts/Fonts';
+import {englishFonts,urduFonts} from '../assets/fonts/Fonts';
 export default class SearchBox extends React.Component {
   render() {
     return (
@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
     borderRadius: 15,
   },
   inputStyling: {
-    fontFamily: Fonts.avenirMedium,
+    fontFamily: englishFonts.avenirMedium,
   },
 });

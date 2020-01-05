@@ -11,9 +11,9 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 import SearchBox from '../components/SearchBox';
-import {Fonts} from '../assets/fonts/Fonts';
+import {englishFonts,urduFonts} from '../assets/fonts/Fonts';
 import CategoryBox from '../components/CategoryBox';
-import {engFontSizes} from '../settings/EnglishFontConfig';
+import {engFontSizes} from '../settings/FontSizes';
 import Settings from '../settings/Settings.json';
 
 const phoneWidth = Dimensions.get('window').width;
@@ -126,7 +126,7 @@ const styles = StyleSheet.create({
   },
   mainHeadingFont: {
     color: '#707070',
-    fontFamily: Fonts.avenirBlack,
+    fontFamily: englishFonts.avenirBlack,
   },
   settingIconContainer: {
     width: phoneWidth * 0.15,
@@ -144,7 +144,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
   descriptionStyle: {
-    fontFamily: Fonts.avenirLight,
+    fontFamily: englishFonts.avenirLight,
     lineHeight: 15,
   },
   sectionContainer: {
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   },
   sectionStyling: {
     color: '#04B874',
-    fontFamily: Fonts.avenirBlack,
+    fontFamily: englishFonts.avenirBlack,
   },
   scrollViewContainer: {
     height: '100%',
