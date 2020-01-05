@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Text, Image, StyleSheet, Dimensions, Settings} from 'react-native';
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  Dimensions,
+  Settings,
+} from 'react-native';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
 const phoneHeight = Dimensions.get('window').height;
@@ -8,12 +15,25 @@ export default class CategoryBox extends React.Component {
   render() {
     return (
       <View style={styles.categoryBoxContainer}>
-        <View style={styles.innerContainer}>
+        <View
+          style={[
+            styles.innerContainer,
+            {
+              flexDirection:
+                this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
+            },
+          ]}>
           <Image
             style={styles.imageContainer}
             source={require('../assets/images/logo.png')}
           />
-          <View style={styles.categoryContentContainer}>
+          <View
+            style={[
+              styles.categoryContentContainer,
+              this.props.reverseFlag == 'english'
+                ? {paddingLeft: 7}
+                : {paddingRight: 7},
+            ]}>
             <Text
               style={[
                 styles.categoryHeadingStyle,
@@ -53,7 +73,6 @@ const styles = StyleSheet.create({
   innerContainer: {
     height: '80%',
     width: '96%',
-    flexDirection: 'row',
     alignItems: 'center',
   },
   imageContainer: {
@@ -63,14 +82,12 @@ const styles = StyleSheet.create({
   categoryContentContainer: {
     height: '100%',
     width: '75%',
-    paddingLeft: 7,
+    // paddingLeft: 7,
   },
   categoryHeadingStyle: {
-    // fontFamily: englishFonts.avenirHeavy,
     paddingTop: 4,
   },
   categoryDescriptionStyle: {
-    // fontFamily: englishFonts.avenirLight,
     paddingTop: 7,
   },
 });

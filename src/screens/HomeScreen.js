@@ -38,7 +38,7 @@ export default class HomeScreen extends React.Component {
       } else if (key == 'm') {
         Settings.currentFontSettings = 'm';
         this.setState({fontSize: engFontSizes.eng_M});
-      } else {
+      } else if (key == 'l') {
         Settings.currentFontSettings = 'l';
         this.setState({fontSize: engFontSizes.eng_L});
       }
@@ -49,7 +49,7 @@ export default class HomeScreen extends React.Component {
       } else if (key == 'm') {
         Settings.currentFontSettings = 'm';
         this.setState({fontSize: urduFontSizes.urdu_M});
-      } else {
+      } else if (key == 'l') {
         Settings.currentFontSettings = 'l';
         this.setState({fontSize: urduFontSizes.urdu_L});
       }
@@ -90,6 +90,10 @@ export default class HomeScreen extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.homeScreen
           : urdu.homeScreen,
+      // fontSize:
+      //   Settings.currentLanguage == 'english'
+      //     ? engFontSizes.eng_M
+      //     : urduFontSizes.urdu_M,
     });
   };
 

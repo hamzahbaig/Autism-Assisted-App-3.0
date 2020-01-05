@@ -166,12 +166,14 @@ export default class AutismInChildren extends React.Component {
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <View style={styles.sectionContainer}>
               <Text
@@ -190,6 +192,7 @@ export default class AutismInChildren extends React.Component {
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <View style={styles.sectionContainer}>
               <Text
@@ -208,12 +211,14 @@ export default class AutismInChildren extends React.Component {
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <View style={styles.sectionContainer}>
               <Text
@@ -232,12 +237,14 @@ export default class AutismInChildren extends React.Component {
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <View style={styles.sectionContainer}>
               <Text
@@ -256,12 +263,14 @@ export default class AutismInChildren extends React.Component {
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
               innerSection={this.state.content.innerSection}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
+              reverseFlag={Settings.currentLanguage}
             />
             <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />
             <Button
