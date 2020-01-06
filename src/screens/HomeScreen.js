@@ -55,7 +55,6 @@ export default class HomeScreen extends React.Component {
   };
 
   changeLanguage = () => {
-    console.log(Settings.currentLanguage);
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
       this.setState({content: urdu.homeScreen, fontSize: urduFontSizes.urdu_M});
@@ -88,10 +87,6 @@ export default class HomeScreen extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.homeScreen
           : urdu.homeScreen,
-      // fontSize:
-      //   Settings.currentLanguage == 'english'
-      //     ? engFontSizes.eng_M
-      //     : urduFontSizes.urdu_M,
     });
   };
 
@@ -99,11 +94,16 @@ export default class HomeScreen extends React.Component {
     this.intialise();
   }
 
-
   render() {
     return (
       <View style={styles.container}>
-        <Header />
+        <Header
+          fontSizeHandler={this.fontSizeHandler}
+          changeLanguage={this.changeLanguage}
+          fontFamilyHeading={this.calculateFontFamily('medium')}
+          fontFamilyOption={this.calculateFontFamily('Black')}
+          fontFamilyUrdu={this.calculateFontFamily('nafees')}
+        />
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
           <Text
@@ -156,10 +156,6 @@ export default class HomeScreen extends React.Component {
             fontFamily={this.calculateFontFamily('medium')}
           />
         </View>
-        <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />
-        <Button title={'Medium'} onPress={() => this.fontSizeHandler('m')} />
-        <Button title={'Large'} onPress={() => this.fontSizeHandler('l')} />
-        <Button title={'Change Language'} onPress={this.changeLanguage} />
       </View>
     );
   }

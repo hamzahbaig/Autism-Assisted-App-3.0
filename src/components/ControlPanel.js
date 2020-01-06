@@ -43,23 +43,34 @@ export default class ControlPanel extends Component {
 
   selectionHandler = key => {
     if (key == 'languageActiveUrdu') {
+      this.props.changeLanguage();
       this.setState({languageActiveUrdu: !this.state.languageActiveUrdu});
       this.setState({languageActiveEnglish: !this.state.languageActiveEnglish});
+      this.setState({fontSizeSmall: false});
+      this.setState({fontSizeLarge: false});
+      this.setState({fontSizeMedium: true});
     } else if (key == 'languageActiveEnglish') {
+      this.props.changeLanguage();
       this.setState({languageActiveEnglish: !this.state.languageActiveEnglish});
       this.setState({languageActiveUrdu: !this.state.languageActiveUrdu});
+      this.setState({fontSizeSmall: false});
+      this.setState({fontSizeLarge: false});
+      this.setState({fontSizeMedium: true});
     } else if (key == 'fontSizeSmall') {
-      this.setState({fontSizeSmall: !this.state.fontSizeSmall});
+      this.props.fontSizeHandler('s');
+      this.setState({fontSizeSmall: true});
       this.setState({fontSizeLarge: false});
       this.setState({fontSizeMedium: false});
     } else if (key == 'fontSizeMedium') {
       this.setState({fontSizeSmall: false});
       this.setState({fontSizeLarge: false});
-      this.setState({fontSizeMedium: !this.state.fontSizeMedium});
+      this.setState({fontSizeMedium: true});
+      this.props.fontSizeHandler('m');
     } else if (key == 'fontSizeLarge') {
       this.setState({fontSizeSmall: false});
-      this.setState({fontSizeLarge: !this.state.fontSizeLarge});
+      this.setState({fontSizeLarge: true});
       this.setState({fontSizeMedium: false});
+      this.props.fontSizeHandler('l');
     }
   };
   render() {
@@ -81,7 +92,15 @@ export default class ControlPanel extends Component {
                 />
               </View>
               <View style={styles.settingsContainer}>
-                <Text style={[{marginHorizontal: 15}]}>Language</Text>
+                <Text
+                  style={[
+                    {
+                      marginHorizontal: 15,
+                      fontFamily: this.props.fontFamilyHeading,
+                    },
+                  ]}>
+                  Language
+                </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
                     onPress={() => this.selectionHandler('languageActiveUrdu')}
@@ -99,6 +118,7 @@ export default class ControlPanel extends Component {
                         color: this.state.languageActiveUrdu
                           ? 'white'
                           : '#707070',
+                        fontFamily: this.props.fontFamilyUrdu,
                       }}>
                       اردو
                     </Text>
@@ -121,6 +141,7 @@ export default class ControlPanel extends Component {
                         color: this.state.languageActiveEnglish
                           ? 'white'
                           : '#707070',
+                        fontFamily: this.props.fontFamilyOption,
                       }}>
                       English
                     </Text>
@@ -128,7 +149,13 @@ export default class ControlPanel extends Component {
                 </View>
               </View>
               <View style={styles.settingsContainer}>
-                <Text style={{marginHorizontal: 15}}>TextSize</Text>
+                <Text
+                  style={{
+                    marginHorizontal: 15,
+                    fontFamily: this.props.fontFamilyHeading,
+                  }}>
+                  TextSize
+                </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
                     onPress={() => this.selectionHandler('fontSizeSmall')}
@@ -144,6 +171,7 @@ export default class ControlPanel extends Component {
                       style={{
                         textAlign: 'center',
                         color: this.state.fontSizeSmall ? 'white' : '#707070',
+                        fontFamily: this.props.fontFamilyOption,
                       }}>
                       Small
                     </Text>
@@ -162,6 +190,7 @@ export default class ControlPanel extends Component {
                       style={{
                         textAlign: 'center',
                         color: this.state.fontSizeMedium ? 'white' : '#707070',
+                        fontFamily: this.props.fontFamilyOption,
                       }}>
                       Medium
                     </Text>
@@ -174,12 +203,14 @@ export default class ControlPanel extends Component {
                         backgroundColor: this.state.fontSizeLarge
                           ? '#2C326F'
                           : 'white',
+                        fontFamily: this.props.fontFamilyOption,
                       },
                     ]}>
                     <Text
                       style={{
                         textAlign: 'center',
                         color: this.state.fontSizeLarge ? 'white' : '#707070',
+                        fontFamily: this.props.fontFamilyOption,
                       }}>
                       Large
                     </Text>
@@ -187,7 +218,13 @@ export default class ControlPanel extends Component {
                 </View>
               </View>
               <View style={styles.settingsContainer}>
-                <Text style={{marginHorizontal: 15}}>Contrast</Text>
+                <Text
+                  style={{
+                    marginHorizontal: 15,
+                    fontFamily: this.props.fontFamilyHeading,
+                  }}>
+                  Contrast
+                </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
                     style={[

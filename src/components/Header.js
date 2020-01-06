@@ -13,7 +13,13 @@ export default class Header extends React.Component {
           <SearchBox fontSize={14} />
         </View>
         <View style={styles.settingIconContainer}>
-          <ControlPanel />
+          <ControlPanel
+            fontSizeHandler={this.props.fontSizeHandler}
+            changeLanguage={this.props.changeLanguage}
+            fontFamilyHeading={this.props.fontFamilyHeading}
+            fontFamilyOption={this.props.fontFamilyOption}
+            fontFamilyUrdu={this.props.fontFamilyUrdu}
+          />
         </View>
       </View>
     );
@@ -22,10 +28,10 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    height: '8%',
+    height: phoneHeight*0.08,
     width: phoneWidth,
     backgroundColor: '#20266A',
-    flexDirection:'row'
+    flexDirection: 'row',
   },
   searchBarContainer: {
     width: phoneWidth * 0.88,
@@ -38,6 +44,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
-    marginRight:35
+    marginRight: 35,
   },
 });
