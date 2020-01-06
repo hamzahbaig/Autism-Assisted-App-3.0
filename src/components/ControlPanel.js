@@ -8,10 +8,12 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Settings from '../settings/Settings.json';
+import Icon from 'react-native-vector-icons/AntDesign';
+import Icon1 from 'react-native-vector-icons/Ionicons';
 
 export default class ControlPanel extends Component {
   state = {
-    modalVisible: true,
+    modalVisible: false,
     language: Settings.currentLanguage,
     fontSize: Settings.currentFontSettings,
     languageActiveUrdu: false,
@@ -48,16 +50,16 @@ export default class ControlPanel extends Component {
       this.setState({languageActiveUrdu: !this.state.languageActiveUrdu});
     } else if (key == 'fontSizeSmall') {
       this.setState({fontSizeSmall: !this.state.fontSizeSmall});
-      this.setState({fontSizeLarge: !this.state.fontSizeLarge});
-      this.setState({fontSizeMedium: !this.state.fontSizeMedium});
+      this.setState({fontSizeLarge: false});
+      this.setState({fontSizeMedium: false});
     } else if (key == 'fontSizeMedium') {
-      this.setState({fontSizeSmall: !this.state.fontSizeSmall});
-      this.setState({fontSizeLarge: !this.state.fontSizeLarge});
+      this.setState({fontSizeSmall: false});
+      this.setState({fontSizeLarge: false});
       this.setState({fontSizeMedium: !this.state.fontSizeMedium});
     } else if (key == 'fontSizeLarge') {
-      this.setState({fontSizeSmall: !this.state.fontSizeSmall});
+      this.setState({fontSizeSmall: false});
       this.setState({fontSizeLarge: !this.state.fontSizeLarge});
-      this.setState({fontSizeMedium: !this.state.fontSizeMedium});
+      this.setState({fontSizeMedium: false});
     }
   };
   render() {
@@ -66,12 +68,20 @@ export default class ControlPanel extends Component {
         <Modal
           transparent={true}
           visible={this.state.modalVisible}
-          onRequestClose={this.setModalVisible}>
+          onRequestClose={this.setModalVisible}
+          animationType={'slide'}>
           <View style={styles.container}>
             <View style={styles.modalContainer}>
-              <View style={{width: '100%', height: '10%'}} />
+              <View style={styles.exitContainer}>
+                <Icon
+                  name={'closecircle'}
+                  size={25}
+                  color={'#04B874'}
+                  onPress={() => this.setModalVisible(!this.state.modalVisible)}
+                />
+              </View>
               <View style={styles.settingsContainer}>
-                <Text style={{marginHorizontal: 15}}>Language</Text>
+                <Text style={[{marginHorizontal: 15}]}>Language</Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
                     onPress={() => this.selectionHandler('languageActiveUrdu')}
@@ -200,12 +210,12 @@ export default class ControlPanel extends Component {
           </View>
         </Modal>
 
-        <TouchableHighlight
-          onPress={() => {
-            this.setModalVisible(true);
-          }}>
-          <Text>Show Modal</Text>
-        </TouchableHighlight>
+        <Icon1
+          name="md-settings"
+          size={28}
+          color="white"
+          onPress={() => this.setModalVisible(true)}
+        />
       </View>
     );
   }
@@ -219,7 +229,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   modalContainer: {
-    width: '85%',
+    width: '80%',
     height: '40%',
     backgroundColor: 'white',
     borderRadius: 20,
@@ -245,5 +255,13 @@ const styles = StyleSheet.create({
   settingsContainer: {
     width: '100%',
     height: '30%',
+  },
+  exitContainer: {
+    width: '100%',
+    height: '10%',
+    justifyContent: 'center',
+    alignItems: 'flex-end',
+    marginRight: 30,
+    marginTop: 20,
   },
 });

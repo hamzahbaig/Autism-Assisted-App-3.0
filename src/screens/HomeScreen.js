@@ -7,15 +7,13 @@ import {
   Dimensions,
   Button,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
 import CardBox from '../components/CardBox';
-import SearchBox from '../components/SearchBox';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 import eng from '../content/eng.json';
 import urdu from '../content/urdu.json';
 import Settings from '../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
-import ControlPanel from '../components/ControlPanel';
+import Header from '../components/Header';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
@@ -101,26 +99,11 @@ export default class HomeScreen extends React.Component {
     this.intialise();
   }
 
-  static navigationOptions = ({navigation}) => {
-    const {params = {}} = navigation.state;
-    return {
-      headerRight: () => (
-        <View style={styles.settingIconContainer}>
-          <Icon name="md-settings" size={28} color="white" />
-        </View>
-      ),
-      headerLeft: () => (
-        <View style={styles.searchBarContainer}>
-          <SearchBox fontSize={14} />
-        </View>
-      ),
-    };
-  };
 
   render() {
     return (
       <View style={styles.container}>
-        <ControlPanel />
+        <Header />
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
           <Text
@@ -203,16 +186,5 @@ const styles = StyleSheet.create({
     width: '100%',
     height: phoneHeight * 0.22,
     marginTop: 20,
-  },
-  settingIconContainer: {
-    width: phoneWidth * 0.15,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  searchBarContainer: {
-    width: phoneWidth * 0.9,
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 });

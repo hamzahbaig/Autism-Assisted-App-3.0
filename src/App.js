@@ -6,43 +6,35 @@ import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from './screens/HomeScreen';
 import AutismInChildren from './screens/AutismInChildren';
 import AutismBasics from './screens/AutismBasics';
-import AutismInAdults from './screens/AutismInAdults'
+import AutismInAdults from './screens/AutismInAdults';
 
 const AppNavigator = createStackNavigator({
   Home: {
     screen: HomeScreen,
     navigationOptions: {
       title: null,
-      headerStyle: {
-        backgroundColor: '#20266A',
-      },
+      header: null,
     },
   },
   AutismInChildren: {
     screen: AutismInChildren,
     navigationOptions: {
       title: null,
-      headerStyle: {
-        backgroundColor: '#20266A',
-      },
+      header: null,
     },
   },
   AutismBasics: {
     screen: AutismBasics,
     navigationOptions: {
       title: null,
-      headerStyle: {
-        backgroundColor: '#20266A',
-      },
+      header: null,
     },
   },
   AutismInAdults: {
     screen: AutismInAdults,
     navigationOptions: {
       title: null,
-      headerStyle: {
-        backgroundColor: '#20266A',
-      },
+      header: null,
     },
   },
 });
