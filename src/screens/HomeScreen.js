@@ -15,7 +15,7 @@ import eng from '../content/eng.json';
 import urdu from '../content/urdu.json';
 import Settings from '../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
-
+import ControlPanel from '../components/ControlPanel';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
@@ -120,6 +120,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <ControlPanel />
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
           <Text
