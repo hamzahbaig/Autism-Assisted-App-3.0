@@ -2,26 +2,29 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
-  StatusBar,
   Dimensions,
-  Button,
+  StatusBar,
+  ScrollView,
+  BackHandler,
 } from 'react-native';
-import {NavigationEvents} from 'react-navigation';
-import CardBox from '../components/CardBox';
-import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
-import eng from '../content/eng.json';
-import urdu from '../content/urdu.json';
-import Settings from '../settings/Settings.json';
-import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
-import Header from '../components/Header';
+import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
+import eng from '../../content/eng.json';
+import urdu from '../../content/urdu.json';
+import Settings from '../../settings/Settings.json';
+import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
+import Header from '../../components/Header';
+import CategoryBox from '../../components/CategoryBox';
+import {styles} from '../../constants/Styles';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
-export default class HomeScreen extends React.Component {
+export default class AutismInAdults extends React.Component {
   state = {
+    fontSize: engFontSizes.eng_M,
     content:
-      Settings.currentLanguage == 'english' ? eng.homeScreen : urdu.homeScreen,
+      Settings.currentLanguage == 'english'
+        ? eng.autismInAdults
+        : urdu.autismInAdults,
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -37,7 +40,7 @@ export default class HomeScreen extends React.Component {
       } else if (key == 'm') {
         Settings.currentFontSettings = 'm';
         this.setState({fontSize: engFontSizes.eng_M});
-      } else if (key == 'l') {
+      } else {
         Settings.currentFontSettings = 'l';
         this.setState({fontSize: engFontSizes.eng_L});
       }
@@ -48,22 +51,27 @@ export default class HomeScreen extends React.Component {
       } else if (key == 'm') {
         Settings.currentFontSettings = 'm';
         this.setState({fontSize: urduFontSizes.urdu_M});
-      } else if (key == 'l') {
+      } else {
         Settings.currentFontSettings = 'l';
         this.setState({fontSize: urduFontSizes.urdu_L});
       }
     }
   };
-
   changeLanguage = () => {
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
-      this.setState({content: urdu.homeScreen, fontSize: urduFontSizes.urdu_M});
+      this.setState({
+        content: urdu.autismInAdults,
+        fontSize: urduFontSizes.urdu_M,
+      });
     } else if (Settings.currentLanguage == 'urdu') {
       Settings.currentLanguage = 'english';
       Settings.currentFontSettings = 'm';
-      this.setState({content: eng.homeScreen, fontSize: engFontSizes.eng_M});
+      this.setState({
+        content: eng.autismInAdults,
+        fontSize: engFontSizes.eng_M,
+      });
     }
   };
 
@@ -83,19 +91,21 @@ export default class HomeScreen extends React.Component {
     }
   };
 
-  intialise = () => {
-    this.fontSizeHandler(Settings.currentFontSettings);
-    this.setState({
-      content:
-        Settings.currentLanguage == 'english'
-          ? eng.homeScreen
-          : urdu.homeScreen,
-    });
-  };
-
   componentDidMount() {
-    this.intialise();
+    this.backHandler = BackHandler.addEventListener(
+      'hardwareBackPress',
+      this.handleBackPress,
+    );
+    this.fontSizeHandler(Settings.currentFontSettings);
   }
+
+  componentWillUnmount() {
+    this.backHandler.remove();
+  }
+
+  handleBackPress = () => {
+    this.props.navigation.state.params.refresh();
+  };
 
   render() {
     return (
@@ -121,73 +131,33 @@ export default class HomeScreen extends React.Component {
                 fontFamily: this.calculateFontFamily('black'),
               },
             ]}>
-            {this.state.content['title']}
+            {this.state.content.title}
           </Text>
         </View>
-        <View style={styles.rowContainer}>
-          <CardBox
-            title={this.state.content['category'][0]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismBasics', {
-                refresh: this.intialise,
-              })
-            }
-          />
-          <CardBox
-            title={this.state.content['category'][1]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismInChildren', {
-                refresh: this.intialise,
-              })
-            }
-          />
+        <View style={styles.descriptionContainer}>
+          <Text
+            style={{
+              fontSize: this.state.fontSize.content,
+              fontFamily: this.calculateFontFamily('light'),
+              lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+            }}>
+            {this.state.content.description}
+          </Text>
         </View>
-        <View style={styles.rowContainer}>
-          <CardBox
-            title={this.state.content['category'][2]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismInAdults', {
-                refresh: this.intialise,
-              })
-            }
-          />
-          <CardBox
-            title={this.state.content['category'][3]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-          />
-        </View>
+        <ScrollView style={styles.scrollViewContainer}>
+          <View style={styles.innerScrollViewContainer}>
+            {this.state.content.innerSection.map(x => (
+              <CategoryBox
+                fontSize={this.state.fontSize}
+                innerSection={x}
+                fontFamilyHeading={this.calculateFontFamily('heavy')}
+                fontFamilyDescription={this.calculateFontFamily('light')}
+                reverseFlag={Settings.currentLanguage}
+              />
+            ))}
+          </View>
+        </ScrollView>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    height: '100%',
-    width: '90%',
-    alignItems: 'center',
-    alignSelf: 'center',
-  },
-  mainHeadingContainer: {
-    width: '100%',
-    height: '4%',
-    marginTop: 20,
-  },
-  mainHeadingFont: {
-    color: '#707070',
-  },
-  rowContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '100%',
-    height: phoneHeight * 0.22,
-    marginTop: 20,
-  },
-});

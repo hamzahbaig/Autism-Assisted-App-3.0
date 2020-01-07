@@ -2,23 +2,19 @@ import React from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   Dimensions,
   StatusBar,
-  Button,
   ScrollView,
   BackHandler,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import SearchBox from '../components/SearchBox';
-import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
-import CategoryBox from '../components/CategoryBox';
-import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
-import Settings from '../settings/Settings.json';
-import eng from '../content/eng.json';
-import urdu from '../content/urdu.json';
-import Header from '../components/Header';
-
+import CategoryBox from '../../components/CategoryBox';
+import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
+import eng from '../../content/eng.json';
+import urdu from '../../content/urdu.json';
+import Settings from '../../settings/Settings.json';
+import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
+import Header from '../../components/Header';
+import {styles} from '../../constants/Styles';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
@@ -138,19 +134,17 @@ export default class AutismBasics extends React.Component {
         </View>
         <View style={styles.descriptionContainer}>
           <Text
-            style={[
-              styles.descriptionStyle,
-              {
-                fontSize: this.state.fontSize.content,
-                fontFamily: this.calculateFontFamily('light'),
-              },
-            ]}>
+            style={{
+              fontSize: this.state.fontSize.content,
+              fontFamily: this.calculateFontFamily('light'),
+              lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+            }}>
             {this.state.content.description}
           </Text>
         </View>
         <ScrollView style={styles.scrollViewContainer}>
           <View style={styles.innerScrollViewContainer}>
-            {this.state.content.questions.map(x => (
+            {this.state.content.innerSection.map(x => (
               <CategoryBox
                 fontSize={this.state.fontSize}
                 innerSection={x}
@@ -165,57 +159,3 @@ export default class AutismBasics extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    height: '100%',
-    width: '90%',
-    alignItems: 'center',
-    alignSelf: 'center',
-  },
-  mainHeadingContainer: {
-    width: '100%',
-    height: '4%',
-    marginTop: 20,
-  },
-  mainHeadingFont: {
-    color: '#707070',
-    fontFamily: englishFonts.avenirBlack,
-  },
-  settingIconContainer: {
-    width: phoneWidth * 0.15,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  searchBarContainer: {
-    width: phoneWidth * 0.9,
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  descriptionContainer: {
-    width: '100%',
-    marginTop: 20,
-  },
-  descriptionStyle: {
-    fontFamily: englishFonts.avenirLight,
-    lineHeight: 15,
-  },
-  sectionContainer: {
-    width: '100%',
-    marginTop: 10,
-  },
-  sectionStyling: {
-    color: '#04B874',
-    fontFamily: englishFonts.avenirBlack,
-  },
-  scrollViewContainer: {
-    height: '100%',
-    width: phoneWidth,
-    marginTop: 20,
-  },
-  innerScrollViewContainer: {
-    width: '90%',
-    alignSelf: 'center',
-  },
-});

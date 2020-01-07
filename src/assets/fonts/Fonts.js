@@ -1,8 +1,8 @@
 export const englishFonts = {
   avenirBlack: 'avenirltstd-black',
   avenirMedium: 'avenirltstd-medium',
-  avenirLight: 'avenirltstd-lightoblique',
-  avenirHeavy: 'avenirltstd-heavyoblique',
+  avenirLight: 'AvenirLTStd-Light',
+  avenirHeavy: 'AvenirLTStd-Heavy',
 };
 
 export const urduFonts = {

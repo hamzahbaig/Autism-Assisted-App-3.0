@@ -46,6 +46,8 @@
 		61163A08BF4C464996294D5D /* avenirltstd-mediumoblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF7E167B498A4129A63498D0 /* avenirltstd-mediumoblique.otf */; };
 		54646D518A114358BA3C2FC7 /* lte50186.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1049BE4CD8D45F3997694E9 /* lte50186.ttf */; };
 		1AC76AA4D156410ABDCB63AF /* Nafees Pakistani Web Naskh BTK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11D7FA7F27D14D66971544B3 /* Nafees Pakistani Web Naskh BTK.ttf */; };
+		B0475CC20F654119A11BE418 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A71E349977FF4B77BDE1D48F /* AvenirLTStd-Light.otf */; };
+		EB2456B0A0604EE5BFF7CB5D /* AvenirLTStd-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = A833D2CD33F148E8A2C51084 /* AvenirLTStd-Heavy.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		DF7E167B498A4129A63498D0 /* avenirltstd-mediumoblique.otf */ = {isa = PBXFileReference; name = "avenirltstd-mediumoblique.otf"; path = "../src/assets/fonts/avenirltstd-mediumoblique.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		C1049BE4CD8D45F3997694E9 /* lte50186.ttf */ = {isa = PBXFileReference; name = "lte50186.ttf"; path = "../src/assets/fonts/lte50186.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		11D7FA7F27D14D66971544B3 /* Nafees Pakistani Web Naskh BTK.ttf */ = {isa = PBXFileReference; name = "Nafees Pakistani Web Naskh BTK.ttf"; path = "../src/assets/fonts/Nafees Pakistani Web Naskh BTK.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A71E349977FF4B77BDE1D48F /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Light.otf"; path = "../src/assets/fonts/AvenirLTStd-Light.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A833D2CD33F148E8A2C51084 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; name = "AvenirLTStd-Heavy.otf"; path = "../src/assets/fonts/AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +284,8 @@
 				DF7E167B498A4129A63498D0 /* avenirltstd-mediumoblique.otf */,
 				C1049BE4CD8D45F3997694E9 /* lte50186.ttf */,
 				11D7FA7F27D14D66971544B3 /* Nafees Pakistani Web Naskh BTK.ttf */,
+				A71E349977FF4B77BDE1D48F /* AvenirLTStd-Light.otf */,
+				A833D2CD33F148E8A2C51084 /* AvenirLTStd-Heavy.otf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -451,6 +457,8 @@
 				61163A08BF4C464996294D5D /* avenirltstd-mediumoblique.otf in Resources */,
 				54646D518A114358BA3C2FC7 /* lte50186.ttf in Resources */,
 				1AC76AA4D156410ABDCB63AF /* Nafees Pakistani Web Naskh BTK.ttf in Resources */,
+				B0475CC20F654119A11BE418 /* AvenirLTStd-Light.otf in Resources */,
+				EB2456B0A0604EE5BFF7CB5D /* AvenirLTStd-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,5 @@
 import React, {Component} from 'react';
-import {
-  Modal,
-  Text,
-  TouchableHighlight,
-  View,
-  StyleSheet,
-  TouchableOpacity,
-} from 'react-native';
+import {Modal, Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import Settings from '../settings/Settings.json';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon1 from 'react-native-vector-icons/Ionicons';
@@ -34,7 +27,7 @@ export default class ControlPanel extends Component {
                 <Icon
                   name={'closecircle'}
                   size={25}
-                  color={'#04B874'}
+                  color={'firebrick'}
                   onPress={() => this.setModalVisible(!this.state.modalVisible)}
                 />
               </View>
@@ -50,7 +43,11 @@ export default class ControlPanel extends Component {
                 </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
-                    onPress={() => this.props.changeLanguage()}
+                    onPress={() =>
+                      this.props.languageSettings == 'urdu'
+                        ? null
+                        : this.props.changeLanguage()
+                    }
                     style={[
                       styles.buttonContainer,
                       {
@@ -82,7 +79,11 @@ export default class ControlPanel extends Component {
                             : 'white',
                       },
                     ]}
-                    onPress={() => this.props.changeLanguage()}>
+                    onPress={() =>
+                      this.props.languageSettings == 'english'
+                        ? null
+                        : this.props.changeLanguage()
+                    }>
                     <Text
                       style={{
                         textAlign: 'center',
@@ -213,6 +214,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'rgba(0,0,0,0.5)',
   },
   modalContainer: {
     width: '80%',

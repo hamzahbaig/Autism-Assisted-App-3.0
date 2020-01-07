@@ -3,10 +3,10 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 // Import Screens
-import HomeScreen from './screens/HomeScreen';
-import AutismInChildren from './screens/AutismInChildren';
-import AutismBasics from './screens/AutismBasics';
-import AutismInAdults from './screens/AutismInAdults';
+import HomeScreen from './screens/HomeScreen/HomeScreen';
+import AutismInChildren from './screens/AutismInChildren/AutismInChildren';
+import AutismBasics from './screens/AutismBasics/AutismBasics';
+import AutismInAdults from './screens/AutismInAdults/AutismInAdults';
 
 const AppNavigator = createStackNavigator({
   Home: {

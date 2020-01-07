@@ -31,8 +31,8 @@ export default class CategoryBox extends React.Component {
             style={[
               styles.categoryContentContainer,
               this.props.reverseFlag == 'english'
-                ? {paddingLeft: 7}
-                : {paddingRight: 7},
+                ? {paddingLeft: 15}
+                : {paddingRight: 15},
             ]}>
             <Text
               style={[
@@ -42,17 +42,7 @@ export default class CategoryBox extends React.Component {
                   fontFamily: this.props.fontFamilyHeading,
                 },
               ]}>
-              {this.props.innerSection[0]}
-            </Text>
-            <Text
-              style={[
-                styles.categoryDescriptionStyle,
-                {
-                  fontSize: this.props.fontSize.content,
-                  fontFamily: this.props.fontFamilyDescription,
-                },
-              ]}>
-              {this.props.innerSection[1]}
+              {this.props.innerSection}
             </Text>
           </View>
         </View>
@@ -63,7 +53,7 @@ export default class CategoryBox extends React.Component {
 
 const styles = StyleSheet.create({
   categoryBoxContainer: {
-    height: 100,
+    height: phoneHeight*0.09,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -76,13 +66,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   imageContainer: {
-    height: '90%',
-    width: '25%',
+    height: '95%',
+    width: '20%',
+    borderRadius: 8
   },
   categoryContentContainer: {
-    height: '100%',
+    height: '90%',
     width: '75%',
-    // paddingLeft: 7,
+    justifyContent: 'center',
   },
   categoryHeadingStyle: {
     paddingTop: 4,

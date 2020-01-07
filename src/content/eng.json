@@ -13,50 +13,81 @@
     "title": "Autism in Children",
     "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
     "sections": [
-      "Section 1: Development in Children",
-      "Section 2: Testing for Autism",
-      "Section 3: Treating Autism",
-      "Section 4: Autism & Society",
-      "Section 5: Autism and Nutrition"
-    ],
-    "innerSection": [
       [
-        "Understanding Your Children",
-        "Learn important milestones about your child and signs of developing ASD."
+        "Section 1: Development in Children",
+        [
+          "Your Child Development",
+          "Signs of Autism in Children"
+        ]
+      ],
+      [
+        "Section 2: Testing for Autism",
+        [
+          "Autism Screening and Formal Evaluation"
+        ]
+      ],
+      [
+        "Section 3: Treating Autism",
+        [
+          "What are Early Intervention Therapies",
+          "Treatment for Autism in children"
+        ]
+      ],
+      [
+        "Section 4: Autism & Society",
+        [
+          "Benefits of Disclosing",
+          "Whom to disclose to"
+        ]
+      ],
+      [
+        "Section 5: Autism and Nutrition",
+        [
+          "Effects of Diet",
+          "Tips for Meal Time"
+        ]
       ]
     ]
   },
   "autismBasics": {
     "title": "Autism Basics",
     "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
-    "questions": [
+    "innerSection": [
       [
-        "What is Autism?",
-        ""
+        "What is Autism?"
       ],
       [
-        "Signs And Symptoms",
-        ""
+        "Signs And Symptoms"
       ],
       [
-        "Testing for Autism",
-        ""
+        "Testing for Autism"
       ],
       [
-        "Treatments For Autism",
-        ""
+        "Treatments For Autism"
       ],
       [
-        "Related Diseases",
-        ""
+        "Related Diseases"
       ],
       [
-        "Causes of Autism",
-        ""
+        "Causes of Autism"
       ],
       [
-        "Frequently Asked Questions",
-        ""
+        "Frequently Asked Questions"
+      ]
+    ]
+  },
+  "autismInAdults": {
+    "title": "Autism in Adults",
+    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
+    "innerSection": [
+      [
+        "Symptons in Adults"
+      ],
+      [
+        "Diagnosis and Treatement"
+      ],
+      [
+        "Could I Have Autism?"
       ]
     ]
   }
