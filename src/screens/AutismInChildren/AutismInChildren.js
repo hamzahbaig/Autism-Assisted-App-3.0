@@ -28,6 +28,7 @@ export default class AutismInChildren extends React.Component {
         ? engFontSizes.eng_M
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
+    contrast: Settings.currentContrast,
   };
 
   fontSizeHandler = key => {
@@ -71,7 +72,18 @@ export default class AutismInChildren extends React.Component {
       }
     }
   };
-
+  contrastChanger = key => {
+    if (key == '#FACC56') {
+      Settings.currentContrast = '#FACC56';
+      this.setState({contrast: '#FACC56'});
+    } else if (key == '#ACD7E5') {
+      Settings.currentContrast = '#ACD7E5';
+      this.setState({contrast: '#ACD7E5'});
+    } else {
+      Settings.currentContrast = null;
+      this.setState({contrast: null});
+    }
+  };
   changeLanguage = () => {
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
@@ -107,68 +119,77 @@ export default class AutismInChildren extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View
+        style={{
+          backgroundColor: this.state.contrast,
+          width: '100%',
+          height: '100%',
+        }}>
+        <View style={styles.container}>
         <Header
-          languageSettings={Settings.currentLanguage}
-          fontSettings={Settings.currentFontSettings}
-          fontSizeHandler={this.fontSizeHandler}
-          changeLanguage={this.changeLanguage}
-          fontFamilyHeading={englishFonts.avenirMedium}
-          fontFamilyOption={englishFonts.avenirMedium}
-          fontFamilyUrdu={urduFonts.nafees}
-          reverseFlag={Settings.currentLanguage}
-          fontSize={this.state.fontSize}
-        />
-        <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-        <View style={styles.mainHeadingContainer}>
-          <Text
-            style={[
-              styles.mainHeadingFont,
-              {
-                fontSize: this.state.fontSize.heading,
-                fontFamily: this.calculateFontFamily('black'),
-              },
-            ]}>
-            {this.state.content.title}
-          </Text>
-        </View>
-        <View style={styles.descriptionContainer}>
-          <Text
-            style={{
-              fontSize: this.state.fontSize.content,
-              fontFamily: this.calculateFontFamily('light'),
-              lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
-            }}>
-            {this.state.content.description}
-          </Text>
-        </View>
-        <ScrollView style={styles.scrollViewContainer}>
-          {this.state.content.sections.map(x => (
-            <View style={styles.innerScrollViewContainer}>
-              <View style={styles.sectionContainer}>
-                <Text
-                  style={[
-                    styles.sectionStyling,
-                    {
-                      fontSize: this.state.fontSize.heading,
-                      fontFamily: this.calculateFontFamily('black'),
-                    },
-                  ]}>
-                  {x[0]}
-                </Text>
+            languageSettings={Settings.currentLanguage}
+            fontSettings={Settings.currentFontSettings}
+            contrast={Settings.currentContrast}
+            fontSizeHandler={this.fontSizeHandler}
+            changeLanguage={this.changeLanguage}
+            fontFamilyHeading={englishFonts.avenirMedium}
+            fontFamilyOption={englishFonts.avenirMedium}
+            fontFamilyUrdu={urduFonts.nafees}
+            reverseFlag={Settings.currentLanguage}
+            fontSize={this.state.fontSize}
+            contrastChanger={this.contrastChanger}
+          />
+          <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
+          <View style={styles.mainHeadingContainer}>
+            <Text
+              style={[
+                styles.mainHeadingFont,
+                {
+                  fontSize: this.state.fontSize.heading,
+                  fontFamily: this.calculateFontFamily('black'),
+                },
+              ]}>
+              {this.state.content.title}
+            </Text>
+          </View>
+          <View style={styles.descriptionContainer}>
+            <Text
+              style={{
+                fontSize: this.state.fontSize.content,
+                fontFamily: this.calculateFontFamily('light'),
+                lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+              }}>
+              {this.state.content.description}
+            </Text>
+          </View>
+          <ScrollView style={styles.scrollViewContainer}>
+            {this.state.content.sections.map(x => (
+              <View style={styles.innerScrollViewContainer}>
+                <View style={styles.sectionContainer}>
+                  <Text
+                    style={[
+                      styles.sectionStyling,
+                      {
+                        fontSize: this.state.fontSize.heading,
+                        fontFamily: this.calculateFontFamily('black'),
+                      },
+                    ]}>
+                    {x[0]}
+                  </Text>
+                </View>
+                {x[1].map(sub => (
+                  <CategoryBox
+                    fontSize={this.state.fontSize}
+                    innerSection={sub}
+                    fontFamilyHeading={this.calculateFontFamily('heavy')}
+                    fontFamilyDescription={this.calculateFontFamily('light')}
+                    reverseFlag={Settings.currentLanguage}
+                  />
+                ))}
               </View>
-              {x[1].map(sub => (
-                <CategoryBox
-                  fontSize={this.state.fontSize}
-                  innerSection={sub}
-                  fontFamilyHeading={this.calculateFontFamily('heavy')}
-                  fontFamilyDescription={this.calculateFontFamily('light')}
-                  reverseFlag={Settings.currentLanguage}
-                />
-              ))}
-            </View>
-          ))}
-        </ScrollView>
+            ))}
+          </ScrollView>
+        </View>
       </View>
     );
   }

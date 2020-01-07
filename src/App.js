@@ -13,28 +13,28 @@ const AppNavigator = createStackNavigator({
     screen: HomeScreen,
     navigationOptions: {
       title: null,
-      header: null,
+      headerShown: false,
     },
   },
   AutismInChildren: {
     screen: AutismInChildren,
     navigationOptions: {
       title: null,
-      header: null,
+      headerShown: false,
     },
   },
   AutismBasics: {
     screen: AutismBasics,
     navigationOptions: {
       title: null,
-      header: null,
+      headerShown: false,
     },
   },
   AutismInAdults: {
     screen: AutismInAdults,
     navigationOptions: {
       title: null,
-      header: null,
+      headerShown: false,
     },
   },
 });

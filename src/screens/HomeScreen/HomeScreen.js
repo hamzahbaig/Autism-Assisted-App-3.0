@@ -1,21 +1,12 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  StatusBar,
-  Dimensions,
-  Button,
-} from 'react-native';
-import {NavigationEvents} from 'react-navigation';
+import {View, Text, StyleSheet, StatusBar, Dimensions} from 'react-native';
 import CardBox from '../../components/CardBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import eng from '../../content/eng.json';
 import urdu from '../../content/urdu.json';
-import Settings from '../../settings/Settings.json'
+import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
-const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 
 export default class HomeScreen extends React.Component {
@@ -27,6 +18,7 @@ export default class HomeScreen extends React.Component {
         ? engFontSizes.eng_M
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
+    contrast: Settings.currentContrast,
   };
 
   fontSizeHandler = key => {
@@ -83,7 +75,20 @@ export default class HomeScreen extends React.Component {
     }
   };
 
+  contrastChanger = key => {
+    if (key == '#FACC56') {
+      Settings.currentContrast = '#FACC56';
+      this.setState({contrast: '#FACC56'});
+    } else if (key == '#ACD7E5') {
+      Settings.currentContrast = '#ACD7E5';
+      this.setState({contrast: '#ACD7E5'});
+    } else {
+      Settings.currentContrast = null;
+      this.setState({contrast: null});
+    }
+  };
   intialise = () => {
+    this.contrastChanger(Settings.currentContrast);
     this.fontSizeHandler(Settings.currentFontSettings);
     this.setState({
       content:
@@ -99,69 +104,78 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Header
-          languageSettings={Settings.currentLanguage}
-          fontSettings={Settings.currentFontSettings}
-          fontSizeHandler={this.fontSizeHandler}
-          changeLanguage={this.changeLanguage}
-          fontFamilyHeading={englishFonts.avenirMedium}
-          fontFamilyOption={englishFonts.avenirMedium}
-          fontFamilyUrdu={urduFonts.nafees}
-          reverseFlag={Settings.currentLanguage}
-          fontSize={this.state.fontSize}
-        />
-        <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-        <View style={styles.mainHeadingContainer}>
-          <Text
-            style={[
-              styles.mainHeadingFont,
-              {
-                fontSize: this.state.fontSize.heading,
-                fontFamily: this.calculateFontFamily('black'),
-              },
-            ]}>
-            {this.state.content['title']}
-          </Text>
-        </View>
-        <View style={styles.rowContainer}>
-          <CardBox
-            title={this.state.content['category'][0]}
+      <View
+        style={{
+          backgroundColor: this.state.contrast,
+          width: '100%',
+          height: '100%',
+        }}>
+        <View style={styles.container}>
+          <Header
+            languageSettings={Settings.currentLanguage}
+            fontSettings={Settings.currentFontSettings}
+            contrast={Settings.currentContrast}
+            fontSizeHandler={this.fontSizeHandler}
+            changeLanguage={this.changeLanguage}
+            fontFamilyHeading={englishFonts.avenirMedium}
+            fontFamilyOption={englishFonts.avenirMedium}
+            fontFamilyUrdu={urduFonts.nafees}
+            reverseFlag={Settings.currentLanguage}
             fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismBasics', {
-                refresh: this.intialise,
-              })
-            }
+            contrastChanger={this.contrastChanger}
           />
-          <CardBox
-            title={this.state.content['category'][1]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismInChildren', {
-                refresh: this.intialise,
-              })
-            }
-          />
-        </View>
-        <View style={styles.rowContainer}>
-          <CardBox
-            title={this.state.content['category'][2]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-            onClick={() =>
-              this.props.navigation.navigate('AutismInAdults', {
-                refresh: this.intialise,
-              })
-            }
-          />
-          <CardBox
-            title={this.state.content['category'][3]}
-            fontSize={this.state.fontSize}
-            fontFamily={this.calculateFontFamily('medium')}
-          />
+          <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
+          <View style={styles.mainHeadingContainer}>
+            <Text
+              style={[
+                styles.mainHeadingFont,
+                {
+                  fontSize: this.state.fontSize.heading,
+                  fontFamily: this.calculateFontFamily('black'),
+                },
+              ]}>
+              {this.state.content['title']}
+            </Text>
+          </View>
+          <View style={styles.rowContainer}>
+            <CardBox
+              title={this.state.content['category'][0]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+              onClick={() =>
+                this.props.navigation.navigate('AutismBasics', {
+                  refresh: this.intialise,
+                })
+              }
+            />
+            <CardBox
+              title={this.state.content['category'][1]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+              onClick={() =>
+                this.props.navigation.navigate('AutismInChildren', {
+                  refresh: this.intialise,
+                })
+              }
+            />
+          </View>
+          <View style={styles.rowContainer}>
+            <CardBox
+              title={this.state.content['category'][2]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+              onClick={() =>
+                this.props.navigation.navigate('AutismInAdults', {
+                  refresh: this.intialise,
+                })
+              }
+            />
+            <CardBox
+              title={this.state.content['category'][3]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+            />
+          </View>
         </View>
       </View>
     );

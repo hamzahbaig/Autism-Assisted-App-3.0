@@ -3,7 +3,7 @@ import {Modal, Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 import Settings from '../settings/Settings.json';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon1 from 'react-native-vector-icons/Ionicons';
-
+import Icon2 from 'react-native-vector-icons/MaterialIcons';
 export default class ControlPanel extends Component {
   state = {
     modalVisible: false,
@@ -177,19 +177,31 @@ export default class ControlPanel extends Component {
                 </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
+                    onPress={() => this.props.contrastChanger('#FACC56')}
                     style={[
                       styles.buttonContainer,
-                      {backgroundColor: '#FACC56', borderColor: 'white'},
+                      {
+                        backgroundColor: '#FACC56',
+                        borderWidth: this.props.contrast == '#FACC56' ? 5 : 1,
+                      },
                     ]}></TouchableOpacity>
                   <TouchableOpacity
+                    onPress={() => this.props.contrastChanger('#ACD7E5')}
                     style={[
                       styles.buttonContainer,
-                      {backgroundColor: '#ACD7E5', borderColor: 'white'},
+                      {
+                        backgroundColor: '#ACD7E5',
+                        borderWidth: this.props.contrast == '#ACD7E5' ? 5 : 1,
+                      },
                     ]}></TouchableOpacity>
                   <TouchableOpacity
+                    onPress={() => this.props.contrastChanger(null)}
                     style={[
                       styles.buttonContainer,
-                      {backgroundColor: '#1F2669', borderColor: 'white'},
+                      {
+                        backgroundColor: 'white',
+                        borderWidth: this.props.contrast == null ? 5 : 1,
+                      },
                     ]}></TouchableOpacity>
                 </View>
               </View>

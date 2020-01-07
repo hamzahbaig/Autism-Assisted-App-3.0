@@ -40,11 +40,13 @@ export default class Header extends React.Component {
           <ControlPanel
             languageSettings={this.props.languageSettings}
             fontSettings={this.props.fontSettings}
+            contrast={this.props.contrast}
             fontSizeHandler={this.props.fontSizeHandler}
             changeLanguage={this.props.changeLanguage}
             fontFamilyHeading={this.props.fontFamilyHeading}
             fontFamilyOption={this.props.fontFamilyOption}
             fontFamilyUrdu={this.props.fontFamilyUrdu}
+            contrastChanger={this.props.contrastChanger}
           />
         </View>
       </View>
