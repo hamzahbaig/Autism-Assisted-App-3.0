@@ -9,8 +9,6 @@ import {
   ScrollView,
   BackHandler,
 } from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
-import SearchBox from '../components/SearchBox';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 import CategoryBox from '../components/CategoryBox';
 import {engFontSizes, urduFontSizes} from '../settings/FontSizes';
@@ -19,6 +17,7 @@ import eng from '../content/eng.json';
 import urdu from '../content/urdu.json';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
+import Header from '../components/Header';
 
 export default class AutismInChildren extends React.Component {
   state = {
@@ -78,16 +77,12 @@ export default class AutismInChildren extends React.Component {
   changeLanguage = () => {
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
-      this.setState({
-        content: urdu.autismInChildren,
-        fontSize: urduFontSizes.urdu_M,
-      });
+      Settings.currentFontSettings = 'm';
+      this.setState({content: urdu.homeScreen, fontSize: urduFontSizes.urdu_M});
     } else if (Settings.currentLanguage == 'urdu') {
       Settings.currentLanguage = 'english';
-      this.setState({
-        content: eng.autismInChildren,
-        fontSize: engFontSizes.eng_M,
-      });
+      Settings.currentFontSettings = 'm';
+      this.setState({content: eng.homeScreen, fontSize: engFontSizes.eng_M});
     }
   };
   componentDidMount() {
@@ -106,22 +101,20 @@ export default class AutismInChildren extends React.Component {
     this.props.navigation.state.params.refresh();
   };
 
-  static navigationOptions = {
-    headerRight: () => (
-      <View style={styles.settingIconContainer}>
-        <Icon name="md-settings" size={28} color="white" />
-      </View>
-    ),
-    headerLeft: () => (
-      <View style={styles.searchBarContainer}>
-        <SearchBox />
-      </View>
-    ),
-  };
-
   render() {
     return (
       <View style={styles.container}>
+        <Header
+          languageSettings={Settings.currentLanguage}
+          fontSettings={Settings.currentFontSettings}
+          fontSizeHandler={this.fontSizeHandler}
+          changeLanguage={this.changeLanguage}
+          fontFamilyHeading={englishFonts.avenirMedium}
+          fontFamilyOption={englishFonts.avenirMedium}
+          fontFamilyUrdu={urduFonts.nafees}
+          reverseFlag={Settings.currentLanguage}
+          fontSize={this.state.fontSize}
+        />
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>
           <Text
@@ -272,13 +265,6 @@ export default class AutismInChildren extends React.Component {
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
             />
-            <Button title={'Small'} onPress={() => this.fontSizeHandler('s')} />
-            <Button
-              title={'Medium'}
-              onPress={() => this.fontSizeHandler('m')}
-            />
-            <Button title={'Large'} onPress={() => this.fontSizeHandler('l')} />
-            <Button title={'Change Language'} onPress={this.changeLanguage} />
           </View>
         </ScrollView>
       </View>
@@ -300,17 +286,6 @@ const styles = StyleSheet.create({
   },
   mainHeadingFont: {
     color: '#707070',
-  },
-  settingIconContainer: {
-    width: phoneWidth * 0.15,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  searchBarContainer: {
-    width: phoneWidth * 0.9,
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
   },
   descriptionContainer: {
     width: '100%',

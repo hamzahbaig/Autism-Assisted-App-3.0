@@ -14,65 +14,12 @@ import Icon1 from 'react-native-vector-icons/Ionicons';
 export default class ControlPanel extends Component {
   state = {
     modalVisible: false,
-    language: Settings.currentLanguage,
-    fontSize: Settings.currentFontSettings,
-    languageActiveUrdu: false,
-    languageActiveEnglish: false,
-    fontSizeSmall: false,
-    fontSizeMedium: false,
-    fontSizeLarge: false,
   };
 
-  componentDidMount() {
-    if (this.state.language == 'english') {
-      this.setState({languageActiveEnglish: true});
-    } else if (this.state.language == 'urdu') {
-      this.setState({languageActiveUrdu: true});
-    }
-    if (this.state.fontSize == 's') {
-      this.setState({fontSizeSmall: true});
-    } else if (this.state.fontSize == 'm') {
-      this.setState({fontSizeMedium: true});
-    } else if (this.state.fontSize == 'l') {
-      this.setState({fontSizeLarge: true});
-    }
-  }
   setModalVisible(visible) {
     this.setState({modalVisible: visible});
   }
 
-  selectionHandler = key => {
-    if (key == 'languageActiveUrdu') {
-      this.props.changeLanguage();
-      this.setState({languageActiveUrdu: !this.state.languageActiveUrdu});
-      this.setState({languageActiveEnglish: !this.state.languageActiveEnglish});
-      this.setState({fontSizeSmall: false});
-      this.setState({fontSizeLarge: false});
-      this.setState({fontSizeMedium: true});
-    } else if (key == 'languageActiveEnglish') {
-      this.props.changeLanguage();
-      this.setState({languageActiveEnglish: !this.state.languageActiveEnglish});
-      this.setState({languageActiveUrdu: !this.state.languageActiveUrdu});
-      this.setState({fontSizeSmall: false});
-      this.setState({fontSizeLarge: false});
-      this.setState({fontSizeMedium: true});
-    } else if (key == 'fontSizeSmall') {
-      this.props.fontSizeHandler('s');
-      this.setState({fontSizeSmall: true});
-      this.setState({fontSizeLarge: false});
-      this.setState({fontSizeMedium: false});
-    } else if (key == 'fontSizeMedium') {
-      this.setState({fontSizeSmall: false});
-      this.setState({fontSizeLarge: false});
-      this.setState({fontSizeMedium: true});
-      this.props.fontSizeHandler('m');
-    } else if (key == 'fontSizeLarge') {
-      this.setState({fontSizeSmall: false});
-      this.setState({fontSizeLarge: true});
-      this.setState({fontSizeMedium: false});
-      this.props.fontSizeHandler('l');
-    }
-  };
   render() {
     return (
       <View style={{marginTop: 22}}>
@@ -103,21 +50,23 @@ export default class ControlPanel extends Component {
                 </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
-                    onPress={() => this.selectionHandler('languageActiveUrdu')}
+                    onPress={() => this.props.changeLanguage()}
                     style={[
                       styles.buttonContainer,
                       {
-                        backgroundColor: this.state.languageActiveUrdu
-                          ? '#2C326F'
-                          : 'white',
+                        backgroundColor:
+                          this.props.languageSettings == 'urdu'
+                            ? '#2C326F'
+                            : 'white',
                       },
                     ]}>
                     <Text
                       style={{
                         textAlign: 'center',
-                        color: this.state.languageActiveUrdu
-                          ? 'white'
-                          : '#707070',
+                        color:
+                          this.props.languageSettings == 'urdu'
+                            ? 'white'
+                            : '#707070',
                         fontFamily: this.props.fontFamilyUrdu,
                       }}>
                       اردو
@@ -127,20 +76,20 @@ export default class ControlPanel extends Component {
                     style={[
                       styles.buttonContainer,
                       {
-                        backgroundColor: this.state.languageActiveEnglish
-                          ? '#2C326F'
-                          : 'white',
+                        backgroundColor:
+                          this.props.languageSettings == 'english'
+                            ? '#2C326F'
+                            : 'white',
                       },
                     ]}
-                    onPress={() =>
-                      this.selectionHandler('languageActiveEnglish')
-                    }>
+                    onPress={() => this.props.changeLanguage()}>
                     <Text
                       style={{
                         textAlign: 'center',
-                        color: this.state.languageActiveEnglish
-                          ? 'white'
-                          : '#707070',
+                        color:
+                          this.props.languageSettings == 'english'
+                            ? 'white'
+                            : '#707070',
                         fontFamily: this.props.fontFamilyOption,
                       }}>
                       English
@@ -154,62 +103,62 @@ export default class ControlPanel extends Component {
                     marginHorizontal: 15,
                     fontFamily: this.props.fontFamilyHeading,
                   }}>
-                  TextSize
+                  Text Size
                 </Text>
                 <View style={styles.outerButttonContainer}>
                   <TouchableOpacity
-                    onPress={() => this.selectionHandler('fontSizeSmall')}
+                    onPress={() => this.props.fontSizeHandler('s')}
                     style={[
                       styles.buttonContainer,
                       {
-                        backgroundColor: this.state.fontSizeSmall
-                          ? '#2C326F'
-                          : 'white',
+                        backgroundColor:
+                          this.props.fontSettings == 's' ? '#2C326F' : 'white',
                       },
                     ]}>
                     <Text
                       style={{
                         textAlign: 'center',
-                        color: this.state.fontSizeSmall ? 'white' : '#707070',
+                        color:
+                          this.props.fontSettings == 's' ? 'white' : '#707070',
                         fontFamily: this.props.fontFamilyOption,
                       }}>
                       Small
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
-                    onPress={() => this.selectionHandler('fontSizeMedium')}
+                    onPress={() => this.props.fontSizeHandler('m')}
                     style={[
                       styles.buttonContainer,
                       {
-                        backgroundColor: this.state.fontSizeMedium
-                          ? '#2C326F'
-                          : 'white',
+                        backgroundColor:
+                          this.props.fontSettings == 'm' ? '#2C326F' : 'white',
                       },
                     ]}>
                     <Text
                       style={{
                         textAlign: 'center',
-                        color: this.state.fontSizeMedium ? 'white' : '#707070',
+                        color:
+                          this.props.fontSettings == 'm' ? 'white' : '#707070',
                         fontFamily: this.props.fontFamilyOption,
                       }}>
                       Medium
                     </Text>
                   </TouchableOpacity>
                   <TouchableOpacity
-                    onPress={() => this.selectionHandler('fontSizeLarge')}
+                    onPress={() => this.props.fontSizeHandler('l')}
                     style={[
                       styles.buttonContainer,
                       {
-                        backgroundColor: this.state.fontSizeLarge
-                          ? '#2C326F'
-                          : 'white',
+                        backgroundColor:
+                          this.props.fontSettings == 'l' ? '#2C326F' : 'white',
                         fontFamily: this.props.fontFamilyOption,
                       },
                     ]}>
                     <Text
                       style={{
                         textAlign: 'center',
-                        color: this.state.fontSizeLarge ? 'white' : '#707070',
+                        color:
+                          this.props.fontSettings == 'l' ? 'white' : '#707070',
                         fontFamily: this.props.fontFamilyOption,
                       }}>
                       Large
@@ -288,6 +237,7 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     borderColor: '#2C326F',
     borderWidth: 1,
+    justifyContent: 'center',
   },
   settingsContainer: {
     width: '100%',

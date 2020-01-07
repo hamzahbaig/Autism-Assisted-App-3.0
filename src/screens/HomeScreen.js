@@ -7,6 +7,7 @@ import {
   Dimensions,
   Button,
 } from 'react-native';
+import {NavigationEvents} from 'react-navigation';
 import CardBox from '../components/CardBox';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 import eng from '../content/eng.json';
@@ -57,9 +58,11 @@ export default class HomeScreen extends React.Component {
   changeLanguage = () => {
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
+      Settings.currentFontSettings = 'm';
       this.setState({content: urdu.homeScreen, fontSize: urduFontSizes.urdu_M});
     } else if (Settings.currentLanguage == 'urdu') {
       Settings.currentLanguage = 'english';
+      Settings.currentFontSettings = 'm';
       this.setState({content: eng.homeScreen, fontSize: engFontSizes.eng_M});
     }
   };
@@ -98,11 +101,15 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Header
+          languageSettings={Settings.currentLanguage}
+          fontSettings={Settings.currentFontSettings}
           fontSizeHandler={this.fontSizeHandler}
           changeLanguage={this.changeLanguage}
-          fontFamilyHeading={this.calculateFontFamily('medium')}
-          fontFamilyOption={this.calculateFontFamily('Black')}
-          fontFamilyUrdu={this.calculateFontFamily('nafees')}
+          fontFamilyHeading={englishFonts.avenirMedium}
+          fontFamilyOption={englishFonts.avenirMedium}
+          fontFamilyUrdu={urduFonts.nafees}
+          reverseFlag={Settings.currentLanguage}
+          fontSize={this.state.fontSize}
         />
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
         <View style={styles.mainHeadingContainer}>

@@ -1,20 +1,20 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {Input} from 'react-native-elements';
-import {englishFonts,urduFonts} from '../assets/fonts/Fonts';
+import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 export default class SearchBox extends React.Component {
   render() {
     return (
       <React.Fragment>
         <Input
-          placeholder={'Search'}
+          placeholder={this.props.searchTitle.text}
           placeholderTextColor={'#707070'}
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={{borderBottomWidth: 0}}
-          inputStyle={[
-            styles.inputStyling,
-            {fontSize: 14},
-          ]}
+          inputStyle={{
+            fontSize: this.props.fontSize,
+            fontFamily: this.props.searchTitle.fontFamily,
+          }}
         />
       </React.Fragment>
     );

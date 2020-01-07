@@ -8,12 +8,38 @@ const phoneHeight = Dimensions.get('window').height;
 export default class Header extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.searchBarContainer}>
-          <SearchBox fontSize={14} />
+      <View
+        style={[
+          styles.container,
+          {
+            flexDirection:
+              this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
+          },
+        ]}>
+        <View
+          style={[
+            styles.searchBarContainer,
+            this.props.reverseFlag == 'english' ? null : {marginRight: 5},
+          ]}>
+          <SearchBox
+            fontSize={this.props.fontSize.content}
+            searchTitle={
+              this.props.reverseFlag == 'english'
+                ? {text: 'Search', fontFamily: this.props.fontFamilyHeading}
+                : {text: 'سرچ', fontFamily: this.props.fontFamilyUrdu}
+            }
+          />
         </View>
-        <View style={styles.settingIconContainer}>
+        <View
+          style={[
+            styles.settingIconContainer,
+            this.props.reverseFlag == 'english'
+              ? {marginRight: 35}
+              : {marginLeft: 40},
+          ]}>
           <ControlPanel
+            languageSettings={this.props.languageSettings}
+            fontSettings={this.props.fontSettings}
             fontSizeHandler={this.props.fontSizeHandler}
             changeLanguage={this.props.changeLanguage}
             fontFamilyHeading={this.props.fontFamilyHeading}
@@ -28,10 +54,9 @@ export default class Header extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    height: phoneHeight*0.08,
+    height: phoneHeight * 0.08,
     width: phoneWidth,
     backgroundColor: '#20266A',
-    flexDirection: 'row',
   },
   searchBarContainer: {
     width: phoneWidth * 0.88,
@@ -44,6 +69,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginBottom: 20,
-    marginRight: 35,
   },
 });
