@@ -78,11 +78,17 @@ export default class AutismInChildren extends React.Component {
     if (Settings.currentLanguage == 'english') {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
-      this.setState({content: urdu.homeScreen, fontSize: urduFontSizes.urdu_M});
+      this.setState({
+        content: urdu.autismInChildren,
+        fontSize: urduFontSizes.urdu_M,
+      });
     } else if (Settings.currentLanguage == 'urdu') {
       Settings.currentLanguage = 'english';
       Settings.currentFontSettings = 'm';
-      this.setState({content: eng.homeScreen, fontSize: engFontSizes.eng_M});
+      this.setState({
+        content: eng.autismInChildren,
+        fontSize: engFontSizes.eng_M,
+      });
     }
   };
   componentDidMount() {
@@ -156,14 +162,14 @@ export default class AutismInChildren extends React.Component {
             </View>
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
@@ -182,7 +188,7 @@ export default class AutismInChildren extends React.Component {
             </View>
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
@@ -201,14 +207,14 @@ export default class AutismInChildren extends React.Component {
             </View>
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
@@ -227,14 +233,14 @@ export default class AutismInChildren extends React.Component {
             </View>
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
@@ -253,14 +259,14 @@ export default class AutismInChildren extends React.Component {
             </View>
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}
             />
             <CategoryBox
               fontSize={this.state.fontSize}
-              innerSection={this.state.content.innerSection}
+              innerSection={this.state.content.innerSection[0]}
               fontFamilyHeading={this.calculateFontFamily('heavy')}
               fontFamilyDescription={this.calculateFontFamily('light')}
               reverseFlag={Settings.currentLanguage}

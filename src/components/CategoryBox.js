@@ -42,7 +42,7 @@ export default class CategoryBox extends React.Component {
                   fontFamily: this.props.fontFamilyHeading,
                 },
               ]}>
-              {this.props.innerSection[0][0]}
+              {this.props.innerSection[0]}
             </Text>
             <Text
               style={[
@@ -52,7 +52,7 @@ export default class CategoryBox extends React.Component {
                   fontFamily: this.props.fontFamilyDescription,
                 },
               ]}>
-              {this.props.innerSection[0][1]}
+              {this.props.innerSection[1]}
             </Text>
           </View>
         </View>

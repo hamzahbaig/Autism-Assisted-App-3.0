@@ -25,5 +25,39 @@
         "Learn important milestones about your child and signs of developing ASD."
       ]
     ]
+  },
+  "autismBasics": {
+    "title": "Autism Basics",
+    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
+    "questions": [
+      [
+        "What is Autism?",
+        ""
+      ],
+      [
+        "Signs And Symptoms",
+        ""
+      ],
+      [
+        "Testing for Autism",
+        ""
+      ],
+      [
+        "Treatments For Autism",
+        ""
+      ],
+      [
+        "Related Diseases",
+        ""
+      ],
+      [
+        "Causes of Autism",
+        ""
+      ],
+      [
+        "Frequently Asked Questions",
+        ""
+      ]
+    ]
   }
 }
