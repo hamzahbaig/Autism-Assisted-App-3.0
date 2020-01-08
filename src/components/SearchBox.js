@@ -1,7 +1,6 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, Platform} from 'react-native';
 import {Input} from 'react-native-elements';
-import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 export default class SearchBox extends React.Component {
   render() {
     return (
@@ -11,10 +10,18 @@ export default class SearchBox extends React.Component {
           placeholderTextColor={'#707070'}
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={{borderBottomWidth: 0}}
-          inputStyle={{
-            fontSize: this.props.fontSize,
-            fontFamily: this.props.searchTitle.fontFamily,
-          }}
+          inputStyle={[
+            {
+              fontSize: this.props.fontSize,
+              fontFamily: this.props.searchTitle.fontFamily,
+            },
+            this.props.languageSettings == 'urdu'
+              ? Platform.OS == 'ios'
+                ? {textAlign: 'right'}
+                : null
+              : null,
+            Platform.OS == 'ios' ? {marginTop: 4} : null,
+          ]}
         />
       </React.Fragment>
     );
@@ -27,8 +34,5 @@ const styles = StyleSheet.create({
     height: '67%',
     backgroundColor: 'white',
     borderRadius: 15,
-  },
-  inputStyling: {
-    fontFamily: englishFonts.avenirMedium,
   },
 });

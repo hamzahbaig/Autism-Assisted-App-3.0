@@ -6,5 +6,5 @@ export const englishFonts = {
 };
 
 export const urduFonts = {
-  nafees: 'Nafees Pakistani Web Naskh BTK',
+  nafees: 'NafeesWebNaskhpakistaniBTK',
 };

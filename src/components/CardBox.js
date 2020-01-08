@@ -12,7 +12,15 @@ export default class CardBox extends React.Component {
           style={styles.imageContainer}
           source={require('../assets/images/logo.png')}
         />
-        <View style={styles.titleContainer}>
+        <View
+          style={[
+            styles.titleContainer,
+            this.props.currentLanguage == 'urdu'
+              ? Platform.OS == 'ios'
+                ? {alignItems: 'flex-end'}
+                : null
+              : null,
+          ]}>
           <Text
             style={[
               styles.titleFont,

@@ -1,5 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet, StatusBar, Dimensions} from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  StatusBar,
+  Dimensions,
+  Platform,
+} from 'react-native';
 import CardBox from '../../components/CardBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import eng from '../../content/eng.json';
@@ -125,7 +132,15 @@ export default class HomeScreen extends React.Component {
             contrastChanger={this.contrastChanger}
           />
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-          <View style={styles.mainHeadingContainer}>
+          <View
+            style={[
+              styles.mainHeadingContainer,
+              Settings.currentLanguage == 'urdu'
+                ? Platform.OS == 'ios'
+                  ? {alignItems: 'flex-end'}
+                  : null
+                : null,
+            ]}>
             <Text
               style={[
                 styles.mainHeadingFont,
@@ -139,6 +154,7 @@ export default class HomeScreen extends React.Component {
           </View>
           <View style={styles.rowContainer}>
             <CardBox
+              currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][0]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
@@ -149,11 +165,12 @@ export default class HomeScreen extends React.Component {
               }
             />
             <CardBox
-              title={this.state.content['category'][1]}
+              currentLanguage={Settings.currentLanguage}
+              title={this.state.content['category'][0]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
               onClick={() =>
-                this.props.navigation.navigate('AutismInChildren', {
+                this.props.navigation.navigate('AutismBasics', {
                   refresh: this.intialise,
                 })
               }
@@ -161,16 +178,18 @@ export default class HomeScreen extends React.Component {
           </View>
           <View style={styles.rowContainer}>
             <CardBox
-              title={this.state.content['category'][2]}
+              currentLanguage={Settings.currentLanguage}
+              title={this.state.content['category'][0]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
               onClick={() =>
-                this.props.navigation.navigate('AutismInAdults', {
+                this.props.navigation.navigate('AutismBasics', {
                   refresh: this.intialise,
                 })
               }
             />
             <CardBox
+              currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][3]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
