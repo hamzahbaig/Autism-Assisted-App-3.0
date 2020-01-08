@@ -40,6 +40,7 @@ export default class CategoryBox extends React.Component {
                 {
                   fontSize: this.props.fontSize.content,
                   fontFamily: this.props.fontFamilyHeading,
+                  textAlign: this.props.reverseFlag == 'urdu' ? 'right' : null,
                 },
               ]}>
               {this.props.innerSection}
@@ -53,7 +54,7 @@ export default class CategoryBox extends React.Component {
 
 const styles = StyleSheet.create({
   categoryBoxContainer: {
-    height: phoneHeight*0.09,
+    height: phoneHeight * 0.09,
     width: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -68,7 +69,7 @@ const styles = StyleSheet.create({
   imageContainer: {
     height: '95%',
     width: '20%',
-    borderRadius: 8
+    borderRadius: 8,
   },
   categoryContentContainer: {
     height: '90%',

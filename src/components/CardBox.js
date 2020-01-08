@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity, Platform} from 'react-native';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
 export default class CardBox extends React.Component {
@@ -43,6 +43,8 @@ const styles = StyleSheet.create({
     width: '45%',
     borderRadius: 8,
     elevation: 15,
+    shadowOffset: {width:2,height:2},
+    shadowOpacity:0.5
   },
   imageContainer: {
     height: '75%',

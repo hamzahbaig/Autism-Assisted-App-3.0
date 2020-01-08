@@ -132,7 +132,15 @@ export default class AutismBasics extends React.Component {
             fontSize={this.state.fontSize}
             contrastChanger={this.contrastChanger}
           />
-          <View style={styles.mainHeadingContainer}>
+          <View
+            style={[
+              styles.mainHeadingContainer,
+              Settings.currentLanguage == 'urdu'
+                ? Platform.OS == 'ios'
+                  ? {alignItems: 'flex-end'}
+                  : null
+                : null,
+            ]}>
             <Text
               style={[
                 styles.mainHeadingFont,
@@ -150,6 +158,7 @@ export default class AutismBasics extends React.Component {
                 fontSize: this.state.fontSize.content,
                 fontFamily: this.calculateFontFamily('light'),
                 lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+                textAlign: Settings.currentLanguage == "urdu" ? 'right' : null
               }}>
               {this.state.content.description}
             </Text>
