@@ -104,20 +104,8 @@ export default class AutismInAdults extends React.Component {
     }
   };
   componentDidMount() {
-    this.backHandler = BackHandler.addEventListener(
-      'hardwareBackPress',
-      this.handleBackPress,
-    );
     this.fontSizeHandler(Settings.currentFontSettings);
   }
-
-  componentWillUnmount() {
-    this.backHandler.remove();
-  }
-
-  handleBackPress = () => {
-    this.props.navigation.state.params.refresh();
-  };
 
   render() {
     return (
@@ -129,6 +117,7 @@ export default class AutismInAdults extends React.Component {
         }}>
         <View style={styles.container}>
           <Header
+            backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
             contrast={Settings.currentContrast}
@@ -142,7 +131,15 @@ export default class AutismInAdults extends React.Component {
             contrastChanger={this.contrastChanger}
           />
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-          <View style={styles.mainHeadingContainer}>
+          <View
+            style={[
+              styles.mainHeadingContainer,
+              Settings.currentLanguage == 'urdu'
+                ? Platform.OS == 'ios'
+                  ? {alignItems: 'flex-end'}
+                  : null
+                : null,
+            ]}>
             <Text
               style={[
                 styles.mainHeadingFont,
@@ -160,6 +157,7 @@ export default class AutismInAdults extends React.Component {
                 fontSize: this.state.fontSize.content,
                 fontFamily: this.calculateFontFamily('light'),
                 lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+                textAlign: Settings.currentLanguage == 'urdu' ? 'right' : null,
               }}>
               {this.state.content.description}
             </Text>

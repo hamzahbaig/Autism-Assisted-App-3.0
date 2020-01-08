@@ -30,7 +30,7 @@ export default class SearchBox extends React.Component {
 
 const styles = StyleSheet.create({
   searchBarContainer: {
-    width: '93%',
+    width: '100%',
     height: '67%',
     backgroundColor: 'white',
     borderRadius: 15,

@@ -1,25 +1,15 @@
 import React, {Component} from 'react';
 import {Modal, Text, View, StyleSheet, TouchableOpacity} from 'react-native';
-import Settings from '../settings/Settings.json';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon1 from 'react-native-vector-icons/Ionicons';
-import Icon2 from 'react-native-vector-icons/MaterialIcons';
 export default class ControlPanel extends Component {
-  state = {
-    modalVisible: false,
-  };
-
-  setModalVisible(visible) {
-    this.setState({modalVisible: visible});
-  }
-
   render() {
     return (
       <View style={{marginTop: 22}}>
         <Modal
           transparent={true}
-          visible={this.state.modalVisible}
-          onRequestClose={this.setModalVisible}
+          visible={this.props.modalVisible}
+          onRequestClose={this.props.setModalVisible}
           animationType={'slide'}>
           <View style={styles.container}>
             <View style={styles.modalContainer}>
@@ -28,7 +18,7 @@ export default class ControlPanel extends Component {
                   name={'closecircle'}
                   size={25}
                   color={'firebrick'}
-                  onPress={() => this.setModalVisible(!this.state.modalVisible)}
+                  onPress={() => this.props.setModalVisible(false)}
                 />
               </View>
               <View style={styles.settingsContainer}>
@@ -208,12 +198,11 @@ export default class ControlPanel extends Component {
             </View>
           </View>
         </Modal>
-
         <Icon1
           name="md-settings"
           size={28}
           color="white"
-          onPress={() => this.setModalVisible(true)}
+          onPress={() => this.props.setModalVisible(true)}
         />
       </View>
     );

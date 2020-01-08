@@ -14,6 +14,7 @@ import urdu from '../../content/urdu.json';
 import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
+import {NavigationEvents} from 'react-navigation';
 const phoneHeight = Dimensions.get('window').height;
 
 export default class HomeScreen extends React.Component {
@@ -117,6 +118,7 @@ export default class HomeScreen extends React.Component {
           width: '100%',
           height: '100%',
         }}>
+        <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <Header
             languageSettings={Settings.currentLanguage}
@@ -166,11 +168,11 @@ export default class HomeScreen extends React.Component {
             />
             <CardBox
               currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][0]}
+              title={this.state.content['category'][1]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
               onClick={() =>
-                this.props.navigation.navigate('AutismBasics', {
+                this.props.navigation.navigate('AutismInChildren', {
                   refresh: this.intialise,
                 })
               }
@@ -179,11 +181,11 @@ export default class HomeScreen extends React.Component {
           <View style={styles.rowContainer}>
             <CardBox
               currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][0]}
+              title={this.state.content['category'][2]}
               fontSize={this.state.fontSize}
               fontFamily={this.calculateFontFamily('medium')}
               onClick={() =>
-                this.props.navigation.navigate('AutismBasics', {
+                this.props.navigation.navigate('AutismInAdults', {
                   refresh: this.intialise,
                 })
               }

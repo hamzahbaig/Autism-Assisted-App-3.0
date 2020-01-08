@@ -1,11 +1,25 @@
 import React from 'react';
-import {View, StyleSheet, Dimensions, Platform} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Dimensions,
+  Platform,
+  TouchableOpacity,
+} from 'react-native';
 import SearchBox from '../components/SearchBox';
 import ControlPanel from '../components/ControlPanel';
-
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 export default class Header extends React.Component {
+  state = {
+    modalVisible: false,
+  };
+
+  setModalVisible = visible => {
+    this.setState({modalVisible: visible});
+  };
+
   render() {
     return (
       <View>
@@ -28,6 +42,11 @@ export default class Header extends React.Component {
               marginTop: Platform.OS == 'ios' ? 35 : 0,
             },
           ]}>
+          <TouchableOpacity
+            style={styles.backButtonContainer}
+            onPress={this.props.backHandler}>
+            <Icon name={'keyboard-backspace'} size={30} color={'white'} />
+          </TouchableOpacity>
           <View
             style={[
               styles.searchBarContainer,
@@ -46,13 +65,9 @@ export default class Header extends React.Component {
               }
             />
           </View>
-          <View
-            style={[
-              styles.settingIconContainer,
-              this.props.reverseFlag == 'english'
-                ? {marginRight: 35}
-                : {marginLeft: 40},
-            ]}>
+          <TouchableOpacity
+            onPress={() => this.setModalVisible(!this.state.modalVisible)}
+            style={[styles.settingIconContainer]}>
             <ControlPanel
               languageSettings={this.props.languageSettings}
               fontSettings={this.props.fontSettings}
@@ -63,8 +78,10 @@ export default class Header extends React.Component {
               fontFamilyOption={this.props.fontFamilyOption}
               fontFamilyUrdu={this.props.fontFamilyUrdu}
               contrastChanger={this.props.contrastChanger}
+              modalVisible={this.state.modalVisible}
+              setModalVisible={this.setModalVisible}
             />
-          </View>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -77,8 +94,14 @@ const styles = StyleSheet.create({
     width: phoneWidth,
     backgroundColor: '#20266A',
   },
+  backButtonContainer: {
+    width: phoneWidth * 0.1,
+    height: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   searchBarContainer: {
-    width: phoneWidth * 0.88,
+    width: phoneWidth * 0.8,
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
@@ -87,6 +110,6 @@ const styles = StyleSheet.create({
     width: phoneWidth * 0.1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginBottom: 20,
+    paddingBottom: 20,
   },
 });
