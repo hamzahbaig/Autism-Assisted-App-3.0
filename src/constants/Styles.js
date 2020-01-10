@@ -10,7 +10,6 @@ export const styles = StyleSheet.create({
   },
   mainHeadingContainer: {
     width: '100%',
-    height: '4%',
     marginTop: 20,
   },
   mainHeadingFont: {

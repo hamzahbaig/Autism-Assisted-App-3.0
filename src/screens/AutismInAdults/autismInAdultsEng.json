@@ -1,75 +1,178 @@
 {
-  "1": {
-    "title": "Symptoms in adults",
-    "description": "According to the American Psychiatric Association’s Diagnostic and Statistical Manual of Mental Disorders (DSM V), the handbook doctors use to diagnose psychiatric disorders, a person is on the autistic spectrum if they show persistent issues with:",
-    "sections": [{
-       "title": "Social and Communication Symptoms",
-        "description": "Autistic people tend to have difficulties understanding how to regulate their emotions, as well as difficulty understanding the feelings of others. They struggle with understanding body language and non-verbal cues that are a subtle part of social communication. Due to these difficulties with communication, they tend to find it difficult to develop and maintain social relationships. Some symptoms to look for are listed below:",
-        "innerSection": [
+  "autismInAdultsEng": [
+    {
+      "title": "Symptoms in Adults",
+      "description": "According to the American Psychiatric Association’s Diagnostic and Statistical Manual of Mental Disorders (DSM V), the handbook doctors use to diagnose psychiatric disorders, a person is on the autistic spectrum if they show persistent issues with:",
+      "sections": [
+        {
+          "title": "Social and Communication Symptoms",
+          "description": "Autistic people tend to have difficulties understanding how to regulate their emotions, as well as difficulty understanding the feelings of others. They struggle with understanding body language and non-verbal cues that are a subtle part of social communication. Due to these difficulties with communication, they tend to find it difficult to develop and maintain social relationships. Some symptoms to look for are listed below:",
+          "innerSection": [
             {
-                "title": "Social and Communication Weaknesses",
-                "description": ["Autistic persons may have no speech or inappropriate forms of speech.","Difficulty in understanding body language, social cues, or facial expressions.","Lack of eye contact with others.","Difficulty in understanding and expressing your feelings, or difficulty with emotional regulation (e.g. losing your temper easily).","Difficulty understanding how others are feeling or thinking.","Seeming blunt, rude or uninterested without meaning to.","Having trouble keeping up in a conversation and tending to go off on monologues on a favourite subject. Not understanding the natural give and take flow of a conversation.","Finding it difficult to make friends.","Being unaware of other people’s personal space, but being very upset if their own personal space is disrupted.","Not good at teamwork, prefer solitary work or activities.","Taking things very literally and at face value: not understanding sarcasm, jokes or metaphor.","Lack of understanding of context/environment/space.","Perspective taking is often a problem.","They often lack understanding of social situations."]
+              "title": "Social and Communication Weaknesses",
+              "description": [
+                "Autistic persons may have no speech or inappropriate forms of speech.",
+                "Difficulty in understanding body language, social cues, or facial expressions.",
+                "Lack of eye contact with others.",
+                "Difficulty in understanding and expressing your feelings, or difficulty with emotional regulation (e.g. losing your temper easily).",
+                "Difficulty understanding how others are feeling or thinking.",
+                "Seeming blunt, rude or uninterested without meaning to.",
+                "Having trouble keeping up in a conversation and tending to go off on monologues on a favourite subject. Not understanding the natural give and take flow of a conversation.",
+                "Finding it difficult to make friends.",
+                "Being unaware of other people’s personal space, but being very upset if their own personal space is disrupted.",
+                "Not good at teamwork, prefer solitary work or activities.",
+                "Taking things very literally and at face value: not understanding sarcasm, jokes or metaphor.",
+                "Lack of understanding of context/environment/space.",
+                "Perspective taking is often a problem.",
+                "They often lack understanding of social situations."
+              ]
             },
             {
               "title": "Social and Communication Strengths",
-              "description": ["Can be taught to learn and recognise non-verbal communication cues.","Honest and loyal; speaking directly and clearly what is on their mind.","Very verbal, can give very good detailed instructions or descriptions.","Less concern for what others think of them; tend to be independent thinkers and can give fresh perspectives on society due to their non conformity.","Prefer logical thinking over emotional, and thus make rational decisions."]
+              "description": [
+                "Can be taught to learn and recognise non-verbal communication cues.",
+                "Honest and loyal; speaking directly and clearly what is on their mind.",
+                "Very verbal, can give very good detailed instructions or descriptions.",
+                "Less concern for what others think of them; tend to be independent thinkers and can give fresh perspectives on society due to their non conformity.",
+                "Prefer logical thinking over emotional, and thus make rational decisions."
+              ]
             }
-        ],
-        "footer": null
+          ],
+          "footer": null
+        },
+        {
+          "title": "Repetitive Behaviour Symptoms",
+          "description": "These tend to be characterized by repetitive physical movements (e.g. swinging back and forth), an insistence on routine and order, very restricted interests, and a sensitivity to their environments.\nIn addition, if you have ever been diagnosed with any of the following conditions, it may also be worth checking for autism:",
+          "innerSection": [
+            {
+              "title": null,
+              "description": [
+                "Developmental delays: These may include delayed speech, hearing impairment, fine motor skills, social interactions or thinking skills.",
+                "Narrowed or obsessive interests: Some autistic people are misdiagnosed as having OCD (Obsessive Compulsive Disorder). As children, they may have only taken interest in a very narrow set of activities.",
+                "High intelligence: If as a child you started reading at a young age or showed other signs of high intelligence, you may have autism. This is especially true in cases where the child may have trouble communicating with others, despite these signs of intelligence.",
+                "Sensory issues: If you currently have sensitivities to light, sound or touch, or had them as a child, you may have autism.",
+                "Lead poisoning: Lead poisoning leads to the same kind of developmental delays and learning difficulties that autism does, and you may have been misdiagnosed with this in the past when you may have had autism.",
+                "Childhood personality and behaviours: As children, autistic boys may be very rowdy while autistic girls tend to withdraw and seem to be better at managing social situations. Thus, it may be harder to detect autism in women. It is important to remember that these personality types must be accompanied by difficulties in social interaction and the restrictive behaviour patterns mentioned above for an autism diagnosis.",
+                "Other psychological disorders: If you have ever been diagnosed with ADHD, anxiety, depression, or bipolar disorder it may be important to check if you are on the spectrum, since these can be common psychological disorders that accompany autism."
+              ]
+            }
+          ],
+          "footer": "It is especially important to check for any of the psychological disorders mentioned above (i.e. ADHD, OCD, anxiety, depression, and bipolar disorder). These commonly accompany autism and, if left untreated, can significantly reduce your quality of life. Luckily, there have been major advances in the treatment of these disorders and the proper diagnosis is not far off. Therefore, it is important to also recognize the signs of these disorders."
+        },
+        {
+          "title": "Attention Deficit Hyperactivity Disorder (ADHD)",
+          "description": "Inattention, hyperactivity and impulsive behaviour are all signs of ADHD.",
+          "innerSection": [
+            {
+              "title": null,
+              "description": [
+                "Inattention symptoms include difficulty focusing on a task or following orders.",
+                "Hyperactivity may involve constant fidgeting or squirming, and general difficulty staying still.",
+                "The final symptom of impulsivity involves acting without thinking of the consequences. Impulsive people have difficulty thinking things through or understanding the results of their actions (e.g. speaking without thinking). Impulsive people tend to be impatient."
+              ]
+            }
+          ],
+          "footer": "To be diagnosed with ADHD, you must have symptoms that start in childhood and continue into adulthood and they must be affecting at least two areas in life eg. from home/school/work. A diagnosis can give you access to medication that can significantly improve your quality of life."
+        },
+        {
+          "title": "Obsessive Compulsive Disorder (OCD)",
+          "description": "OCD is characterised by obsessions which are constant, unwanted, persistent thoughts, ideas, or urges that cause the individual extreme stress and anxiety. Compulsions are repetitive behaviours that people with OCD engage in to combat these obsessions. A common example is an individual with OCD may be obsessed with the idea of cleanliness, fearing exaggerated dangerous consequences of not being clean. The compulsive behaviour they may engage in to calm their obsession may be showering an excessive number of times a day.\nRepetitive behaviours are a distinguishing sign of autism. The difference between autistic repetitive behaviours and the repetitive behaviours in OCD is that engaging in the repetitive behaviour that may or may not reduce anxiety in individuals with OCD. Autistic persons who do not have OCD are often not bothered by their repetitive behaviours.\nIt is important that the doctor you seek an OCD diagnosis from is familiar with autism. Medication and behavioural therapy can greatly reduce the symptoms of OCD.",
+          "innerSection": null,
+          "footer": null
+        },
+        {
+          "title": "Anxiety",
+          "description": "Anxiety, like autism, can fall on a spectrum. Some anxieties are mild while others can be severely debilitating and be completely irrational. Some autistic persons may have specific fears or phobias, while others may have separation anxiety or panic disorder.\nMedicines for treating anxiety work best when they are accompanied by counselling. If you suspect you have anxiety, seek the help of a mental health professional.",
+          "innerSection": null,
+          "footer": null
+        },
+        {
+          "title": "Depression",
+          "description": "Depression can be very difficult to diagnose in people with autism because they are not good at understanding and communicating their emotions. The general signs of depression include feelings of hopelessness or despair that do not seem to go away and start to interfere with your ability to live your life. Depression is not the same as sadness. Sadness is a normal human emotion, and everybody feels down from time to time. However, sadness turns into depression when you can no longer perform normal daily activities and it starts to disrupt your ability to function at school, work, or in your personal life. Signs include:",
+          "innerSection": [
+            {
+              "title": null,
+              "description": [
+                "Feeling helpless or hopeless",
+                "Anger and irritability",
+                "Loss of interest in daily activities",
+                "Appetite changes",
+                "Sleep changes",
+                "Loss of energy",
+                "Self hate",
+                "Concentration problems",
+                "Unexplained aches or pains",
+                "Reckless behaviour"
+              ]
+            }
+          ],
+          "footer": "If you suspect you may be depressed, seek help from a mental health professional. If possible, it is important to work with a professional who is also familiar with autism. A combination of medicine and counselling can be greatly beneficial in treating depression."
+        },
+        {
+          "title": "Bipolar Disorder",
+          "description": "Bipolar disorder is characterised by feelings of abnormally high moods or energy levels (extreme joy, energy, etc.) followed by a “crash” (usually a very severe low, like depression). Among autistic individuals, symptoms include pacing, impulsivity, insomnia, and irritability. Seek the attention of a psychiatrist if you suspect you may have bipolar disorder. Mood stabilizing medication is often prescribed to calm these extreme mood swings.",
+          "innerSection": null,
+          "footer": null
+        }
+      ]
     },
     {
-       "title": "Repetitive Behaviour Symptoms",
-        "description": "These tend to be characterized by repetitive physical movements (e.g. swinging back and forth), an insistence on routine and order, very restricted interests, and a sensitivity to their environments.\nIn addition, if you have ever been diagnosed with any of the following conditions, it may also be worth checking for autism:",
-        "innerSection": [
+      "title": "Diagnosis and Treatment",
+      "description": null,
+      "sections": [
+        {
+          "title": "Why Should I Get a Diagnosis Now?",
+          "description": "You may be wondering why you should get a diagnosis for autism as an adult when you have lived undiagnosed for most of your life. A diagnosis can greatly improve your quality of life. It will provide great relief to you and your family to finally understand what condition you have. The first step towards finding solutions for any problem is to know and understand the problem itself, and the correct diagnosis can help you do that. It would be of great relief to you to understand that there are many others who live successful and fulfilled lives despite, and sometimes even because of, their autism. Some individuals with autism are unusually gifted in the fields of music, mathematics and art, and about 40% of autistic individuals have average or above average intelligence. Others are happily married, and many are fully employed. The proper diagnosis can help you join autistic support groups and allow doctors to give you the proper treatments you need. If you suspect you may be autistic, do not delay in seeking a diagnosis and getting the support you deserve to live a full life.",
+          "innerSection": null,
+          "footer": null
+        },
+        {
+          "title": "How to Get an Autism Diagnosis as an Adult",
+          "description": "Despite the increase in autism awareness in recent years, there are very few established methods of diagnosing autism in adults. If the symptoms listed above sound like you, these are a few tests that can help you build your case to present to a doctor. Try the links below:",
+          "innerSection": [
             {
-                "title": null,
-                "description": ["Developmental delays: These may include delayed speech, hearing impairment, fine motor skills, social interactions or thinking skills.","Narrowed or obsessive interests: Some autistic people are misdiagnosed as having OCD (Obsessive Compulsive Disorder). As children, they may have only taken interest in a very narrow set of activities.","High intelligence: If as a child you started reading at a young age or showed other signs of high intelligence, you may have autism. This is especially true in cases where the child may have trouble communicating with others, despite these signs of intelligence.","Sensory issues: If you currently have sensitivities to light, sound or touch, or had them as a child, you may have autism.","Lead poisoning: Lead poisoning leads to the same kind of developmental delays and learning difficulties that autism does, and you may have been misdiagnosed with this in the past when you may have had autism.","Childhood personality and behaviours: As children, autistic boys may be very rowdy while autistic girls tend to withdraw and seem to be better at managing social situations. Thus, it may be harder to detect autism in women. It is important to remember that these personality types must be accompanied by difficulties in social interaction and the restrictive behaviour patterns mentioned above for an autism diagnosis.","Other psychological disorders: If you have ever been diagnosed with ADHD, anxiety, depression, or bipolar disorder it may be important to check if you are on the spectrum, since these can be common psychological disorders that accompany autism."]
+              "title": null,
+              "description": [
+                "https://www.additudemag.com/screener-autism-spectrum-disorder-symptoms-test-adults/",
+                "https://psychcentral.com/quizzes/autism-test/"
+              ]
             }
-        ],
-        "footer": "It is especially important to check for any of the psychological disorders mentioned above (i.e. ADHD, OCD, anxiety, depression, and bipolar disorder). These commonly accompany autism and, if left untreated, can significantly reduce your quality of life. Luckily, there have been major advances in the treatment of these disorders and the proper diagnosis is not far off. Therefore, it is important to also recognize the signs of these disorders."
-
-    },
-  {
-       "title": "Attention Deficit Hyperactivity Disorder (ADHD)",
-        "description": "Inattention, hyperactivity and impulsive behaviour are all signs of ADHD.",
-        "innerSection": [
-            {
-                "title": null,
-                "description": ["Inattention symptoms include difficulty focusing on a task or following orders.","Hyperactivity may involve constant fidgeting or squirming, and general difficulty staying still.","The final symptom of impulsivity involves acting without thinking of the consequences. Impulsive people have difficulty thinking things through or understanding the results of their actions (e.g. speaking without thinking). Impulsive people tend to be impatient."]
-            }
-        ],
-        "footer": "To be diagnosed with ADHD, you must have symptoms that start in childhood and continue into adulthood and they must be affecting at least two areas in life eg. from home/school/work. A diagnosis can give you access to medication that can significantly improve your quality of life."
-
-    },
-  {
-       "title": "Obsessive Compulsive Disorder (OCD)",
-        "description": "OCD is characterised by obsessions which are constant, unwanted, persistent thoughts, ideas, or urges that cause the individual extreme stress and anxiety. Compulsions are repetitive behaviours that people with OCD engage in to combat these obsessions. A common example is an individual with OCD may be obsessed with the idea of cleanliness, fearing exaggerated dangerous consequences of not being clean. The compulsive behaviour they may engage in to calm their obsession may be showering an excessive number of times a day.\nRepetitive behaviours are a distinguishing sign of autism. The difference between autistic repetitive behaviours and the repetitive behaviours in OCD is that engaging in the repetitive behaviour that may or may not reduce anxiety in individuals with OCD. Autistic persons who do not have OCD are often not bothered by their repetitive behaviours.\nIt is important that the doctor you seek an OCD diagnosis from is familiar with autism. Medication and behavioural therapy can greatly reduce the symptoms of OCD.",
-        "innerSection": null,
-        "footer": null
-
-    },
-  {
-       "title": "Anxiety",
-        "description": "Anxiety, like autism, can fall on a spectrum. Some anxieties are mild while others can be severely debilitating and be completely irrational. Some autistic persons may have specific fears or phobias, while others may have separation anxiety or panic disorder.\nMedicines for treating anxiety work best when they are accompanied by counselling. If you suspect you have anxiety, seek the help of a mental health professional.",
-        "innerSection": null,
-        "footer": null
-
-    },
-  {
-       "title": "Depression",
-        "description": "Depression can be very difficult to diagnose in people with autism because they are not good at understanding and communicating their emotions. The general signs of depression include feelings of hopelessness or despair that do not seem to go away and start to interfere with your ability to live your life. Depression is not the same as sadness. Sadness is a normal human emotion, and everybody feels down from time to time. However, sadness turns into depression when you can no longer perform normal daily activities and it starts to disrupt your ability to function at school, work, or in your personal life. Signs include:",
-        "innerSection": [{
-          "title": null,
-          "description": ["Feeling helpless or hopeless","Anger and irritability","Loss of interest in daily activities","Appetite changes","Sleep changes","Loss of energy","Self hate","Concentration problems","Unexplained aches or pains","Reckless behaviour"]
-        }],
-        "footer": "If you suspect you may be depressed, seek help from a mental health professional. If possible, it is important to work with a professional who is also familiar with autism. A combination of medicine and counselling can be greatly beneficial in treating depression."
-
+          ],
+          "footer": "Once you have built your case, the doctor may then run tests similar to those done to screen for autism in children. The doctor may also want to speak with your parents or caretaker to see how many of the signs and symptoms of autism you may have experienced as a child. This way of taking a medical history is not fully reliable, since it depends on memory instead of catching the symptoms as they occur, but is a good enough alternative under the circumstances. If diagnosed, the doctor will refer you to a specialist who can tell you the next steps to take."
+        }
+      ]
     },
     {
-       "title": "Bipolar Disorder",
-        "description": "Bipolar disorder is characterised by feelings of abnormally high moods or energy levels (extreme joy, energy, etc.) followed by a “crash” (usually a very severe low, like depression). Among autistic individuals, symptoms include pacing, impulsivity, insomnia, and irritability. Seek the attention of a psychiatrist if you suspect you may have bipolar disorder. Mood stabilizing medication is often prescribed to calm these extreme mood swings.",
-        "innerSection": null,
-        "footer": null
-    }]
-  }
+      "title": "Could I have Autism?",
+      "description": null,
+      "sections": [
+        {
+          "title": "Autism in Adults",
+          "description": "As an adult going through the material on this website, you may be wondering if you could be autistic yourself. Autism diagnoses have only recently become more accurate, but they mainly focus on detecting it in the early stages of childhood. If you only have mild or high functioning autism, your autism may have been left undiagnosed, or misdiagnosed for something else.\nAccording to the American Psychiatric Association’s Diagnostic and Statistical Manual of Mental Disorders (DSM V), the handbook doctors use to diagnose psychiatric disorders, a person is on the autistic spectrum if they show persistent issues with:",
+          "innerSection": [
+            {
+              "title": "1. Social communication and interaction, including:",
+              "description": [
+                "Emotional understanding",
+                "Understanding of non-verbal communication and body language",
+                "Difficulty developing or maintaining relationships",
+                "Deficits in nonverbal communicative behaviors used for social interaction"
+              ]
+            },
+            {
+              "title": "2. Restricted and repetitive behaviour patterns, showing at least 2 recurring symptoms from:",
+              "description": [
+                "Repetitive physical movements",
+                "Stereotyped or repetitive speech, motor movements, or use of objects; (such as echolalia or repetitive use objects)",
+                "Insistence on routine and order",
+                "Restricted and intense interests in a certain subject",
+                "Hyper- or hypo sensitivity to their environment"
+              ]
+            }
+          ],
+          "footer": "Examples of symptoms in each category are given here. It is important to note that though each of these symptoms may make your experience of life different, there can be hidden strengths in each of these symptoms if correctly channelled."
+        }
+      ]
+    }
+  ]
 }

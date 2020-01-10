@@ -24,7 +24,9 @@ export default class AutismInAdultsCategroies extends React.Component {
     fontSize: engFontSizes.eng_M,
     content:
       Settings.currentLanguage == 'english'
-        ? autismInAdultsEng['1']
+        ? autismInAdultsEng.autismInAdultsEng[
+            this.props.navigation.getParam('index')
+          ]
         : urdu.autismInAdults,
     fontSize:
       Settings.currentLanguage == 'english'
@@ -98,7 +100,10 @@ export default class AutismInAdultsCategroies extends React.Component {
       Settings.currentLanguage = 'english';
       Settings.currentFontSettings = 'm';
       this.setState({
-        content: eng.autismInChildren,
+        content:
+          autismInAdultsEng.autismInAdultsEng[
+            this.props.navigation.getParam('index')
+          ],
         fontSize: engFontSizes.eng_M,
       });
     }
@@ -145,18 +150,21 @@ export default class AutismInAdultsCategroies extends React.Component {
           </View>
           <ScrollView style={styles.scrollViewContainer}>
             <View style={styles.innerScrollViewContainer}>
-              <View style={styles.contentDescriptionContainer}>
-                <Text
-                  style={{
-                    fontSize: this.state.fontSize.content,
-                    fontFamily: this.calculateFontFamily('light'),
-                    lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
-                    textAlign:
-                      Settings.currentLanguage == 'urdu' ? 'right' : null,
-                  }}>
-                  {this.state.content.description}
-                </Text>
-              </View>
+              {this.state.content.description ? (
+                <View style={styles.contentDescriptionContainer}>
+                  <Text
+                    style={{
+                      fontSize: this.state.fontSize.content,
+                      fontFamily: this.calculateFontFamily('light'),
+                      lineHeight:
+                        Settings.currentLanguage == 'english' ? 20 : 25,
+                      textAlign:
+                        Settings.currentLanguage == 'urdu' ? 'right' : null,
+                    }}>
+                    {this.state.content.description}
+                  </Text>
+                </View>
+              ) : null}
               {this.state.content.sections.map((section, index) => (
                 <View>
                   <View style={styles.sectionContainer}>
@@ -193,7 +201,8 @@ export default class AutismInAdultsCategroies extends React.Component {
                           <Text
                             style={{
                               fontSize: this.state.fontSize.innerHeading,
-                              fontFamily: this.calculateFontFamily('black'),
+                              fontFamily: this.calculateFontFamily('heavy'),
+                              lineHeight: 20,
                               textAlign:
                                 Settings.currentLanguage == 'urdu'
                                   ? 'right'

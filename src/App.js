@@ -62,7 +62,7 @@ const AppNavigator = createStackNavigator(
       },
     },
   },
-  // {initialRouteName: 'FAQScreen'},
+  // {initialRouteName: 'AutismInAdultsCategroies'},
 );
 
 export default createAppContainer(AppNavigator);

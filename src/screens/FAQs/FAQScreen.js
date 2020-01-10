@@ -94,7 +94,7 @@ export default class FAQScreen extends React.Component {
       this.setState({contrast: null});
     }
   };
-  componentWillMount() {
+  componentDidMount() {
     this.fontSizeHandler(Settings.currentFontSettings);
   }
 
@@ -150,7 +150,7 @@ export default class FAQScreen extends React.Component {
                   fontSize: this.state.fontSize.heading,
                   fontFamily: this.calculateFontFamily('black'),
                   color: '#04B874',
-                  lineHeight:20
+                  lineHeight: 20,
                 },
               ]}>
               {
@@ -167,7 +167,7 @@ export default class FAQScreen extends React.Component {
                 fontFamily: this.calculateFontFamily('light'),
                 lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
                 textAlign: Settings.currentLanguage == 'urdu' ? 'right' : null,
-                marginTop:10
+                marginTop: 10,
               }}>
               {
                 this.state.content.englishFAQs[

@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   innerContainer: {
-    height: '80%',
+    height: '90%',
     width: '96%',
     alignItems: 'center',
   },
@@ -81,7 +81,5 @@ const styles = StyleSheet.create({
   categoryHeadingStyle: {
     paddingTop: 4,
   },
-  categoryDescriptionStyle: {
-    paddingTop: 7,
-  },
+
 });
