@@ -1,4 +1,4 @@
-import {StyleSheet,Dimensions} from 'react-native';
+import {StyleSheet, Dimensions} from 'react-native';
 const phoneWidth = Dimensions.get('window').width;
 const phoneHeight = Dimensions.get('window').height;
 export const styles = StyleSheet.create({
@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     height: '100%',
     width: phoneWidth,
     marginTop: 20,
-    marginBottom:10
+    marginBottom: 10,
   },
   innerScrollViewContainer: {
     width: '90%',
@@ -39,5 +39,27 @@ export const styles = StyleSheet.create({
   },
   sectionStyling: {
     color: '#04B874',
+  },
+  bannerContainer: {
+    width: phoneWidth,
+    height: '10%',
+    backgroundColor: '#04B874',
+    justifyContent: 'center',
+  },
+  contentDescriptionContainer: {
+    width: '100%',
+    marginTop: 10,
+  },
+  innerSectionContainerTitle: {
+    width: '100%',
+    marginTop: 10,
+  },
+  innerSectionContainerDescription: {
+    width: '100%',
+    marginTop: 10,
+  },
+  footerSectionContainer: {
+    width: '100%',
+    marginTop: 10,
   },
 });

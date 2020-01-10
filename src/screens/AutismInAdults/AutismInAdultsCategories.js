@@ -131,7 +131,7 @@ export default class AutismInAdultsCategroies extends React.Component {
             contrastChanger={this.contrastChanger}
           />
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-          <View style={styles1.bannerContainer}>
+          <View style={styles.bannerContainer}>
             <Text
               style={{
                 fontSize: this.state.fontSize.superHeading,
@@ -145,7 +145,7 @@ export default class AutismInAdultsCategroies extends React.Component {
           </View>
           <ScrollView style={styles.scrollViewContainer}>
             <View style={styles.innerScrollViewContainer}>
-              <View style={styles1.contentDescriptionContainer}>
+              <View style={styles.contentDescriptionContainer}>
                 <Text
                   style={{
                     fontSize: this.state.fontSize.content,
@@ -173,7 +173,7 @@ export default class AutismInAdultsCategroies extends React.Component {
                       {section.title}
                     </Text>
                   </View>
-                  <View style={styles1.contentDescriptionContainer}>
+                  <View style={styles.contentDescriptionContainer}>
                     <Text
                       style={{
                         fontSize: this.state.fontSize.content,
@@ -189,7 +189,7 @@ export default class AutismInAdultsCategroies extends React.Component {
                   {section.innerSection &&
                     section.innerSection.map(innerData => (
                       <View>
-                        <View style={styles1.innerSectionContainerTitle}>
+                        <View style={styles.innerSectionContainerTitle}>
                           <Text
                             style={{
                               fontSize: this.state.fontSize.innerHeading,
@@ -202,7 +202,7 @@ export default class AutismInAdultsCategroies extends React.Component {
                             {innerData.title}
                           </Text>
                         </View>
-                        <View style={styles1.innerSectionContainerDescription}>
+                        <View style={styles.innerSectionContainerDescription}>
                           {innerData.description.map((data, i) => (
                             <Text
                               style={{
@@ -223,7 +223,7 @@ export default class AutismInAdultsCategroies extends React.Component {
                         </View>
                       </View>
                     ))}
-                  <View style={styles1.footerSectionContainer}>
+                  <View style={styles.footerSectionContainer}>
                     <Text
                       style={{
                         fontSize: this.state.fontSize.content,
@@ -245,28 +245,3 @@ export default class AutismInAdultsCategroies extends React.Component {
     );
   }
 }
-
-const styles1 = StyleSheet.create({
-  bannerContainer: {
-    width: phoneWidth,
-    height: '10%',
-    backgroundColor: '#04B874',
-    justifyContent: 'center',
-  },
-  contentDescriptionContainer: {
-    width: '100%',
-    marginTop: 10,
-  },
-  innerSectionContainerTitle: {
-    width: '100%',
-    marginTop: 10,
-  },
-  innerSectionContainerDescription: {
-    width: '100%',
-    marginTop: 10,
-  },
-  footerSectionContainer: {
-    width: '100%',
-    marginTop: 10,
-  },
-});

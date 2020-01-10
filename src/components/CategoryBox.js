@@ -5,7 +5,7 @@ import {
   Image,
   StyleSheet,
   Dimensions,
-  Settings,
+  TouchableOpacity,
 } from 'react-native';
 import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
@@ -14,7 +14,9 @@ const phoneHeight = Dimensions.get('window').height;
 export default class CategoryBox extends React.Component {
   render() {
     return (
-      <View style={styles.categoryBoxContainer}>
+      <TouchableOpacity
+        style={styles.categoryBoxContainer}
+        onPress={this.props.screenChangeHandler}>
         <View
           style={[
             styles.innerContainer,
@@ -47,7 +49,7 @@ export default class CategoryBox extends React.Component {
             </Text>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     );
   }
 }

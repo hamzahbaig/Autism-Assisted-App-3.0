@@ -8,6 +8,8 @@ import AutismInChildren from './screens/AutismInChildren/AutismInChildren';
 import AutismBasics from './screens/AutismBasics/AutismBasics';
 import AutismInAdults from './screens/AutismInAdults/AutismInAdults';
 import AutismInAdultsCategroies from './screens/AutismInAdults/AutismInAdultsCategories';
+import FAQs from './screens/FAQs/FAQs';
+import FAQScreen from './screens/FAQs/FAQScreen';
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -45,8 +47,22 @@ const AppNavigator = createStackNavigator(
         headerShown: false,
       },
     },
+    FAQs: {
+      screen: FAQs,
+      navigationOptions: {
+        title: null,
+        headerShown: false,
+      },
+    },
+    FAQScreen: {
+      screen: FAQScreen,
+      navigationOptions: {
+        title: null,
+        headerShown: false,
+      },
+    },
   },
-  // {initialRouteName: 'AutismInAdultsCategroies'},
+  // {initialRouteName: 'FAQScreen'},
 );
 
 export default createAppContainer(AppNavigator);
