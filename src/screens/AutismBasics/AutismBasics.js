@@ -154,10 +154,16 @@ export default class AutismBasics extends React.Component {
           </View>
           <ScrollView style={styles.scrollViewContainer}>
             <View style={styles.innerScrollViewContainer}>
-              {this.state.content.innerSection.map(x => (
+              {this.state.content.innerSection.map((section, i) => (
                 <CategoryBox
+                  screenChangeHandler={() =>
+                    this.props.navigation.navigate('AutismBasicsCategories', {
+                      index: i,
+                    })
+                  }
+                  screenName={'AutismBasicsCategories'}
                   fontSize={this.state.fontSize}
-                  innerSection={x}
+                  innerSection={section}
                   fontFamilyHeading={this.calculateFontFamily('heavy')}
                   fontFamilyDescription={this.calculateFontFamily('light')}
                   reverseFlag={Settings.currentLanguage}

@@ -2,9 +2,8 @@ import React from 'react';
 import {View, Text, StatusBar, ScrollView, BackHandler} from 'react-native';
 import CategoryBox from '../../components/CategoryBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
-import eng from '../../content/eng.json';
-import urdu from '../../content/urdu.json';
 import englishFAQs from '../../content/englishFAQs';
+import urduFAQs from '../../content/urduFAQs';
 import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
@@ -13,7 +12,7 @@ import {styles} from '../../constants/Styles';
 export default class FAQs extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
-    content: Settings.currentLanguage == 'english' ? englishFAQs : urdu.faqs,
+    content: Settings.currentLanguage == 'english' ? englishFAQs : urduFAQs,
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -67,7 +66,7 @@ export default class FAQs extends React.Component {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
       this.setState({
-        content: urdu.faqs,
+        content: urduFAQs,
         fontSize: urduFontSizes.urdu_M,
       });
     } else if (Settings.currentLanguage == 'urdu') {
@@ -96,10 +95,7 @@ export default class FAQs extends React.Component {
     this.contrastChanger(Settings.currentContrast);
     this.fontSizeHandler(Settings.currentFontSettings);
     this.setState({
-      content:
-        Settings.currentLanguage == 'english'
-          ? englishFAQs
-          : urdu.faqs,
+      content: Settings.currentLanguage == 'english' ? englishFAQs : urduFAQs,
     });
   };
 
@@ -165,7 +161,7 @@ export default class FAQs extends React.Component {
           </View>
           <ScrollView style={styles.scrollViewContainer}>
             <View style={styles.innerScrollViewContainer}>
-              {this.state.content.englishFAQs.map((faq, i) => (
+              {this.state.content.faqs.map((faq, i) => (
                 <CategoryBox
                   screenChangeHandler={() =>
                     this.props.navigation.navigate('FAQScreen', {

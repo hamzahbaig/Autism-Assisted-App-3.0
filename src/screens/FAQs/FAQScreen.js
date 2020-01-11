@@ -1,20 +1,17 @@
 import React from 'react';
-import {View, Text, StatusBar, ScrollView, BackHandler} from 'react-native';
-import CategoryBox from '../../components/CategoryBox';
+import {View, Text, StatusBar} from 'react-native';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
-import eng from '../../content/eng.json';
-import urdu from '../../content/urdu.json';
 import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
 import englishFAQs from '../../content/englishFAQs';
+import urduFAQs from '../../content/urduFAQs';
 
 export default class FAQScreen extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
-    content:
-      Settings.currentLanguage == 'english' ? englishFAQs : urdu.autismBasics,
+    content: Settings.currentLanguage == 'english' ? englishFAQs : urduFAQs,
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -69,7 +66,7 @@ export default class FAQScreen extends React.Component {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
       this.setState({
-        content: urdu.autismBasics,
+        content: urduFAQs,
         fontSize: urduFontSizes.urdu_M,
       });
     } else if (Settings.currentLanguage == 'urdu') {
@@ -154,9 +151,8 @@ export default class FAQScreen extends React.Component {
                 },
               ]}>
               {
-                this.state.content.englishFAQs[
-                  this.props.navigation.getParam('index')
-                ].question
+                this.state.content.faqs[this.props.navigation.getParam('index')]
+                  .question
               }
             </Text>
           </View>
@@ -170,9 +166,8 @@ export default class FAQScreen extends React.Component {
                 marginTop: 10,
               }}>
               {
-                this.state.content.englishFAQs[
-                  this.props.navigation.getParam('index')
-                ].excerpt
+                this.state.content.faqs[this.props.navigation.getParam('index')]
+                  .excerpt
               }
             </Text>
           </View>

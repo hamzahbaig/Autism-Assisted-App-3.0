@@ -21,14 +21,20 @@ export const engFontSizes = {
 
 export const urduFontSizes = {
   urdu_S: {
+    superHeading: 28,
+    innerHeading: 15,
     heading: 18,
     content: 14,
   },
   urdu_M: {
+    superHeading: 30,
+    innerHeading: 17,
     heading: 20,
     content: 16,
   },
   urdu_L: {
+    superHeading: 32,
+    innerHeading: 19,
     heading: 22,
     content: 18,
   },

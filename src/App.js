@@ -10,6 +10,7 @@ import AutismInAdults from './screens/AutismInAdults/AutismInAdults';
 import AutismInAdultsCategroies from './screens/AutismInAdults/AutismInAdultsCategories';
 import FAQs from './screens/FAQs/FAQs';
 import FAQScreen from './screens/FAQs/FAQScreen';
+import AutismBasicsCategories from './screens/AutismBasics/AutismBasicsCategories';
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -56,6 +57,13 @@ const AppNavigator = createStackNavigator(
     },
     FAQScreen: {
       screen: FAQScreen,
+      navigationOptions: {
+        title: null,
+        headerShown: false,
+      },
+    },
+    AutismBasicsCategories: {
+      screen: AutismBasicsCategories,
       navigationOptions: {
         title: null,
         headerShown: false,
