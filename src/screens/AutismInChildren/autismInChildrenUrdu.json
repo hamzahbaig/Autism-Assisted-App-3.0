@@ -2,113 +2,110 @@
   "autismInChildrenUrdu": [
     [
       {
-        "title": "Your Child's Development",
+        "title": "آپ کے بچے کی نشونما",
         "quote": null,
-        "description": "The purpose of this section is to help you understand how children below the age of 5 years develop.Every age has certain “milestones” that the child should complete to consider that the development is happening at a natural rate. Please note that every child develops differently and unless there are stark delays in the development, do not be alarmed. However, if you have a concern you should voice it immediately. It is important to remember that not all concerns will result in your child being diagnosed with a developmental disorder, nevertheless being proactive is always better.",
+        "description": "یہ بات پریشان کن بلکہ خوف ناک ہو سکتی ہے کہ آپ کے بچے کی نشونما معمول کے مطابق نہیں ہو رہی لیکن آپ کو یہ معلوم ہونا چاہیے کہ یہ بات زیادہ غیر معمولی نہیں۔ آپ اکیلے نہیں ہیں۔ اس سیکشن کا مقصد آپ کو یہ سمجھانا ہےکہ پانچ سال سے کم عمر کے بچوں کی نشونما کیسےہوتی ہے۔\nہر عمر کے کچھ سنگِ میل ہوتے ہیں جو بچے کو طے کرنے ہوتے ہیں۔ اس سے معلوم ہوتا ہے کہ نشونما معمول کے مطابق ہورہی ہے یا نہیں۔ یاد رکھیں کہ ہر بچے کی نشونما مختلف طریقے سے ہوتی ہے اور تب تک پریشانی کی کوئی بات نہیں جب تک نشونما میں بہت زیادہ تاخیر نہ ہو۔ بہرحال اس حوالے سے اپنی کسی بھی قسم کی پریشانی کو فوری طور پر ظاہر کرنا چاہیے۔ یہ یاد رکھنا چاہیے کہ آپ کے ہر پریشانی بتانے سے آپ کے بچے میں نشونما کی کوئی نئی خرابی سامنے نہیں آئے گی لیکن محتاط رہنابہرحال بہتر ہے۔",
         "sections": [
           {
-            "title": "Developmental Milestones",
-            "description": "Each child is different. Every child develops differently, especially during the first five years of their life. However, there are some key milestones all children developing in the usual manner are expected to reach by certain ages. The following is a list of milestones that your child should be reaching according to their age group.",
+            "title": "اہداف",
+            "description": "ہر بچہ دوسروں سے مختلف ہوتا ہے۔ خصوصاً زندگی کے پہلے پانچ سال ہر بچے کی نشونما مختلف طریقے سے ہوتی ہے۔ لیکن کچھ سنگِ میل ہربچے کو پانچ سال کی عمر کو پہنچنے سے پہلے عبور کر لینے چاہئیں۔ مندرجہ ذیل فہرست آپ کو یہ سمجھنے میں مدد دے گی کہ آپ کا بچہ یہ سنگِ میل عبور کر رہا ہے یا نہیں۔",
             "innerSection": [
               {
                 "title": "0-6 Months",
                 "description": [
-                  "Repeats the same sounds",
-                  "Smiles when spoken to",
-                  "Recognises familiar objects and people",
-                  "Smiles at the sound of your voice",
-                  "Turns head toward sounds"
+                  "چہروں کو دھیان سے دیکھنااور نظروں سے چلتی ہوئی چیزوں کاتعاقب کرنا ",
+                  "مانوس چیزوں اور لوگوں کو پہچاننا ",
+                  "آپ کی آواز سن کر مسکرانا",
+                  "آوازوں کی طرف سر گھمانا"
                 ]
               },
               {
                 "title": "7-12 Months",
                 "description": [
-                  "Understands and responds to own name",
-                  "Enjoys face-to-face play",
-                  "Can find partially hidden objects",
-                  "Babbles using long and short groups of sounds",
-                  "Explores with hands and mouth",
-                  "Struggles for out of reach objects",
-                  " Uses voice to express joy and displeasure",
-                  " Babbles chains of sounds"
+                  "دوسروں کے جذبات پر ردِ عمل کا اظہار کرنا ",
+                  "رو بہ رو ہو کر کھیلنا ",
+                  "آدھ چھپی چیزوں کو ڈھونڈنا ",
+                  "ہاتھوں اور منہ سے کھوجنا ",
+                  "پہنچ سےباہر چیزوں کو پانے کی کوشش کرنا ",
+                  "اپنا نام پکارے جانے پر ردِ عمل دینا ",
+                  "خوشی اور ناراضی کو ظاہر کرنے کے لیے آوازوں کا استعمال کرنا ",
+                  "مختلف آوازیں نکالنا"
                 ]
               },
               {
                 "title": "13-18 Months",
                 "description": [
-                  "Combines gestures and voice",
-                  "Points to recognised objects",
-                  "Imitates gestures",
-                  "Expressive vocabulary 3 to 20 or more words",
-                  "Follows simple commands",
-                  "Uses echolalia and jargon (slang language used by a child)"
+                  "لوگوں اور ان کی آوازوں کی نقل کرنے میں مزہ آنا ",
+                  "سادہ کھیلوں (جیسے پکڑن پکڑائی) میں مزہ آنا ",
+                  "چیزوں کا معائنہ کرنا اور چھپی ہوئی چیزوں کو تلاش کرنا ",
+                  "کسی بات سے منع کرنے پر رد عمل دینا",
+                  "سادہ اشاروں کا استعمال ",
+                  "بدلتے لہجوں میں آوازیں نکالنا ",
+                  "ایک ایک لفظ بولنا (جیسے دادا، ماما، اوہو وغیرہ) ",
+                  "اپنا نام بولنے والے کی طرف مڑنا "
                 ]
               },
               {
                 "title": "19-24 Months",
                 "description": [
-                  "Uses words more frequently than jargon",
-                  "Expressive vocabulary 50 to 100 or more words",
-                  "Receptive vocabulary 300 or more words",
-                  "Answers 'what's that’ questions",
-                  "Accurately names a few familiar objects",
-                  "Sits down on his/her own",
-                  "Enjoys play activities"
+                  "دوسروں کی حرکات کی نقل کرنا ",
+                  "دوسرے بچوں کو دیکھ کر پر جوش ہوجانا ",
+                  "کئی الفاظ سمجھ پانا ",
+                  "بہت دورچھپی چیزیں بھی ڈھونڈ نکالنا ",
+                  "مختلف تصویروں اور چیزوں کی طرف نام سے اشارہ کرنا ",
+                  "رنگ اور بناوٹ کےحساب سے چیزوں کی شناخت کرنا ",
+                  "سادہ کھیلوں میں مختلف لوگوں کے کردار ادا کر سکنا ",
+                  "دوسروں سے بات کرنے کے لیے دو الفاظ کو ملا سکنا ",
+                  "سادہ ہدایات پر عمل کرنا ",
+                  "مانوس لوگوں اور چیزوں کے نام سمجھنا "
                 ]
               },
               {
                 "title": "2-3 Years",
                 "description": [
-                  "Speech is above 50% intelligible",
-                  "Understands people talking",
-                  "Verbalizes toilet needs",
-                  "Requests items by name",
-                  "Identifies several body parts",
-                  "Receptive vocabulary 500 to 900 or more words",
-                  "Expressive vocabulary 50 to 250 or more words",
-                  "Uses words that are general in context",
-                  "Enjoys listening to short stories, songs and rhymes",
-                  "Begins developing rhythm",
-                  "Scribbles",
-                  "Has good balance",
-                  "Undresses self"
+                  "آزادانہ طریقے سے محبت اور دوسرے جذبات کا اظہار کرنا  ",
+                  "کھلونوں کو چلانے کے قابل ہونا ",
+                  "کھیلوں میں مختلف لوگوں کے کردار ادا کرنا ",
+                  "چیزوں کو بناوٹ اور رنگ کے حساب سے تقسیم کرنا اور چیزوں کو تصویروں سے جوڑنا ",
+                  "دو یا تین حصوں پر مشتمل ہدایات پر عمل کرنا ",
+                  "بات چیت کے لیے سادہ جملوں کا استعمال (جیسےباہر جاؤ) ",
+                  "ضمیر (میں ، تم ، مجھے وغیرہ) اور جمع (گاڑیاں، بلیاں وغیرہ) ",
+                  "دوسرے بچوں کے ساتھ کھیلنے میں دل چسپی ظاہر کرنا "
                 ]
               },
               {
                 "title": "3-4 Years",
                 "description": [
-                  "Understands object functions",
-                  "Understands differences in meaning asks and answers simple questions (what, why, where, when)",
-                  "Uses language to express emotion",
-                  "Receptive vocabulary 1200 to 2000 or more words",
-                  "Expressive vocabulary 800 to 1500 or more words",
-                  "Increases speech rate",
-                  "Speech is 80% intelligible (understandable)",
-                  "Engages in long conversations",
-                  "Runs and plays active games"
+                  "دوسرے بچوں سےتعاون کرنا ",
+                  "کھیلوں میں زیادہ سے زیادہ تخلیقی صلاحیتوں کا اظہار کرنا ",
+                  "کچھ رنگوں کے نام معلوم ہونا ",
+                  "گنتی کو سمجھنا ",
+                  "پانچ سے چھ الفاظ کے جملے بولنا ",
+                  "کہانیاں سنانا ",
+                  "اتنا واضح بولنا کہ کوئی اجنبی بھی بات کو سمجھ سکے ",
+                  "تین حصوں والی ہدایات کو سمجھنا ",
+                  "مماثلت اور فرق کو سمجھنا "
                 ]
               },
               {
                 "title": "4-5 Years",
                 "description": [
-                  "Uses grammatically correct sentences",
-                  "Asks for word definitions",
-                  "Speech is usually intelligible to strangers",
-                  "Receptive vocabulary above 2800 words",
-                  "Continues understanding of spatial concepts",
-                  "Pays attention to stories and answers simple questions about it",
-                  "Uses toilet independently",
-                  "Has a good grip"
+                  "اپنے دوستوں کی طرح ہونے کی خواہش کرنا",
+                  "گانے/ ناچنے اور اداکاری کو پسند کرنا",
+                  "حقیقت اور خیالات میں فرق کر نے کے قابل ہونا",
+                  "زیادہ آزادی کا اظہار کرنا",
+                  "کم از کم دس چیزوں کو گن سکنا اور کم از کم چار رنگوں کے نام درست بتانا",
+                  "پانچ لفظوں سے زیادہ کے جملے بول سکنا اور زیادہ طویل کہانیاں سنانا "
                 ]
               }
             ],
-            "footer": "If you think that your child is falling behind these milestones, then there is a chance that your child has some developmental delay. However, it is still very early to detect autism or any other disorder, especially without proper medical support. Parents must look for signs of autism in children that are behind on these developmental milestones."
+            "footer": "اگر آپ کو لگتا ہے کہ آپ کا بچہ ان اہداف کو پانے میں پیچھے رہ رہا ہے تو ممکن ہے اس کی نشونما پوری طرح نہ ہو رہی ہو۔ مزید تفصیلات کے لیے بچوں میں آٹِزم کی علامات پر ہمارا سیکشن دیکھیے۔"
           }
         ]
       },
       {
-        "title": "Signs of Autism in Children",
-        "description": "The most important thing you can do as a parent or guardian of a child is to learn the milestones mentioned above and become familiar with the early signs of developmental disorders to provide essential care as soon as necessary.\n\nFollowing is a list of “red flags” that may indicate a form of developmental delay or disorder, such as autism:",
+        "title": "بچوں میں آٹِزم کی علامات",
+        "description": "والدین یا بڑوں کے طور پرآپ سب سے اہم کام یہ کر سکتے ہیں کہ بچوں کی نشونما کے سنگِ میل یاد رکھیں اور کسی خرابی کی صورت میں فوراً ضروری نگہداشت مہیا کرنے لگیں۔مندرجہ ذیل نشونما میں کسی خرابی (جیسے آٹِزم) یا تاخیر کی علامتیں ہو سکتی ہیں:",
         "quote": null,
         "sections": [
           {
@@ -118,134 +115,131 @@
               {
                 "title": null,
                 "description": [
-                  "No big smiles or other warm, joyful expressions by six months or thereafter",
-                  "No back-and-forth sharing of sounds, smiles or other facial expressions by nine months",
-                  "No babbling by 12 months",
-                  "No back-and-forth gestures such as pointing, showing, reaching or waving by 12 months",
-                  "No expressive words by 16 months",
-                  "No meaningful two-word phrases (not including imitating or repeating) by 24 months",
-                  "Any loss of speech, babbling or social skills at any age",
-                  "Does not respond to name by 12 months"
+                  "چھ ماہ کی عمرہوجانے کے بعدبھی نمایاں مسکراہٹیں یا جذبات نہ نظر آنا ",
+                  "نو ماہ کی عمر ہوجانے کے بعد بھی بچے کا آوازوں اور مسکراہٹوں پر کوئی ردِ عمل نہ دینا ",
+                  "بارہ ماہ کی عمر ہوجانے کے بعد بھی منہ سے بے معنی آوازیں نہ نکالنا ",
+                  "بارہ ماہ کی عمر ہوجانے کے بعد بھی ہاتھوں سے بنیادی اشارے نہ کر پانا ",
+                  "سولہ ماہ کی عمر ہوجانے کے بعد بھی کوئی واضح الفاظ نہ بولنا ",
+                  "چوبیس ماہ کی عمر ہوجانے کے بعد بھی دو لفظوں کے مجموعے نہ بولنا (اس میں نقل کرنا یا دہرانا شامل نہیں) ",
+                  "عمر کے کسی بھی حصے میں بولنے کی صلاحیت یا دوسری معاشرتی صلاحیتیں کھو دینا ",
+                  "بارہ ماہ کی عمر تک پہنچنے کے بعد بھی اپنا نام پکارے جانے پر کوئی ردِ عمل نہ دینا "
                 ]
               }
             ],
-            "footer": "\nFeatures of autism can also be divided between features for younger and older children. Please look for these signs in your child according to whichever category they fall in:"
+            "footer": "\nآٹِزم کے اجزا کو چھوٹی اور بڑی عمر کےبچوں میں بھی تقسیم کیا جا سکتا ہے۔ اس حوالے سے اپنےبچے میں ان علامات کو بھی تلاش کریں۔"
           },
           {
-            "title": "Younger Children",
+            "title": "چھوٹی عمر کے بچے",
             "description": null,
             "innerSection": [
               {
                 "title": null,
                 "description": [
-                  "Absent or delayed speech",
-                  "Echolalia (repetition of speech)",
-                  "Reduced gestures",
-                  "Impaired pretend play",
-                  "Hand flapping",
-                  "Fascination with spinning/moving objects",
-                  "Attachment to unusual objects",
-                  "Poor eye contact",
-                  "Limited responsive smiling",
-                  "Poor response to name",
-                  "Poor joint attention",
-                  "Lack of interest in others",
-                  "No expressive vocabulary by 16 months",
-                  "Lack of pointing"
+                  " بولنے کی صلاحیت نہ ہونا یا دیر سے پیدا ہونا ",
+                  "ایکولیلیا (یعنی الفاظ بار بار دہرانا) ",
+                  "جسمانی حرکات میں کمی ",
+                  "کھیل میں کسی کا کردار ادا کرنےمیں مشکلات ",
+                  "ہاتھ زور زور سے ہلانا ",
+                  "گھومنے اور ہلنے والی چیزوں میں دل چسپی رکھنا ",
+                  "غیرمعمولی چیزوں سے لگاؤ ",
+                  "آنکھیں نہ ملا پانا ",
+                  "ردِ عمل کے طور پر پوری طرح نہ مسکرا سکنا ",
+                  "اپنے نام سے پکارے جانے پر متوجہ نہ ہونا ",
+                  "بیک وقت مختلف چیزوں پر توجہ مرکوز نہ کر پانا ",
+                  "دوسروں میں دل چسپی نہ ہونا ",
+                  "انگلی سے اشارہ نہ کر سکنا "
                 ]
               }
             ],
             "footer": null
           },
           {
-            "title": "Older Children",
+            "title": "بڑی عمر کے بچے",
             "description": null,
             "innerSection": [
               {
                 "title": null,
                 "description": [
-                  "Unusual vocabulary",
-                  "Difficulty having a conversation",
-                  "Poor modulation of facial expressions/gestures/posture",
-                  "Unusual interests",
-                  "Compulsive rituals such as tapping and sniffing",
-                  "Atypical eye contact",
-                  "Difficulty forming friendships",
-                  "Difficulty understanding how others feel"
+                  "غیر معمولی الفاظ کا استعمال ",
+                  "بات چیت میں مشکلات ",
+                  "جسمانی حرکات اور چہرے کے تاثرات میں ربط نہ ہونا ",
+                  "غیرمعمولی مشاغل ",
+                  "بہت گہری عادتیں (جیسے ہاتھ لگانا یا سونگھنا) ",
+                  "غیرمعمولی طریقے سے نظریں ملانا ",
+                  "دوستیاں قائم کرنے میں مشکلات ",
+                  "دوسروں کے احساسات کو سمجھنے میں مشکلات "
                 ]
               }
             ],
-            "footer": "If your child is not meeting some of the milestones or is showing any of the “red flags” mentioned above, there is still no need to panic. You should contact your family doctor or a pediatrician and let them know about your concerns. To ensure that you are able to voice your concerns properly, you should take note of the specific milestones your child has not yet met or the signs they might be showing."
+            "footer": "اگر آپ کا بچہ کسی سنگِ میل کو عبور نہیں کر پا رہا یا اوپر دی گئی علامات میں سےکوئی ظاہر ہورہی ہے تو خوف زدہ ہونے کی کوئی بات نہیں۔ آپ کو اپنے فیملی ڈاکٹر یا ماہرِ امراضِ اطفال سے ملنا چاہیے اور انھیں اپنی پریشانی کے بارےمیں بتانا چاہیے۔ تسلی کے لیے آپ کو متعلقہ اہداف یا علامات کو لکھ کے لے کر جانا چاہیے تاکہ مسئلہ بہتر طریقے سے بتایا جا سکے۔"
           }
         ]
       }
     ],
     [
       {
-        "title": "Testing for Autism",
-        "description": "When you feel you need advice on your child’s development or talk to a professional about your concerns, go to your choice of health care professional (family doctor, pediatrician). Bring the milestones checklist with you and include specific examples. Have an in-depth discussion with them regarding your concerns.\n\nIf your doctor feels like your concerns may be valid, they can direct you to a specialist who can then further assist you in the process of Autism screening.",
+        "title": "آٹِزم کےٹیسٹ",
+        "description": "جب بھی آپ کو محسوس ہو کہ آپ کو اپنے بچے کی نشونما کے حوالے سے مشورہ کرنے یا اپنی پریشانی کے بارے میں کسی ماہر سے بات کرنے کی ضرورت ہے تو اپنی مرضی کے ماہرصحت (فیملی ڈاکٹر یا ماہر امراض اطفال) کے پاس جائیں۔ اپنے ساتھ سنگِ میل والی فہرست بھی لائیں اور اس میں کچھ مثالیں بھی شامل کریں۔ اپنی پریشانیوں کے بارے میں ایک تفصیلی بحث کریں۔\n\nاگر آپ کے ڈاکٹر کو لگتا ہے کہ آپ کی پریشانی درست ہے تو وہ آپ کوآٹِزم کی سکریننگ کے لیے کسی سپیشلٹ کے پاس بھیج دے گا۔",
         "quote": null,
         "sections": [
           {
-            "title": "Autism Screening",
-            "description": "All children should receive autism screening at 18 and 24 months of age. These screenings consist of certain checklist of questions used for screening children between 16 and 30 months of age to assess their risk for autism spectrum disorder. You can find the checklist here.\n\nBefore you go to your appointment, fill out the questionnaire and bring it to your doctor. There is also a list of general questions about your concerns that you can complete and bring with you. Your doctor will ask about your specific concerns, and then use them to determine the next step of the process.\n\nIf the questionnaire indicates your child has some signs of autism, it will be important to complete the second step of the screening, the Follow-Up Interview. This will require your doctor to ask you further questions in person. Not all children who show signs of autism after the first step will have autism. For some children, this screener also picks up other developmental delays, such as speaking late. Even though these may not seem as serious as autism, they need to be addressed by professionals in due time.",
+            "title": "آٹِزم کی سکریننگ",
+            "description": "اٹھارہ سے چوبیس سال کی عمر کے ہر بچے کی آٹِزم سکریننگ ہونی چاہیے۔ اس سکریننگ میں سولہ سے تیس ماہ تک کے بچوں میں آٹِزم کی تشخیص کے لیے کچھ سوالات ہوتے ہیں۔ ان سوالات کی فہرست یہاں دیکھی جا سکتی ہے۔\nڈاکٹر کے پاس جانے سے پہلے سوال نامہ پُر کر کے ساتھ لے جائیں۔ متعلقہ مسائل کے لیے عمومی سوالات کی ایک فہرست بھی ہے جو آپ مکمل کر کے اپنےساتھ لے جا سکتے ہیں۔ آپ کا ڈاکٹر مسئلے کی تفصیلات پوچھ کے اس عمل کا اگلا مرحلہ طے کرے گا۔\nآپ کا ڈاکٹر بھی آپ کو ایسی ہی فہرست دے گا۔ ایک اور چکر سے بچنے کے لیے بہتر ہے کہ آپ اسے پہلے ہی مکمل کر کے لے جائیں۔\nاگر سوال نامے کے مطابق آپ کے بچے میں آٹِزم کی کوئی علامتیں ہیں تو سکریننگ سے اگلا مرحلہ یعنی انٹرویو ضروری ہے جس میں ڈاکٹر آپ سے ذاتی طور پر مزید سوالات کرے گا۔ ضروری نہیں کہ پہلے مرحلے میں آٹِزم کی نشانیوں والے بچوں کو واقعی آٹِزم ہی ہو۔ کچھ بچوں میں یہ سکریننگ نشونما کے دوسرے مسائل (جیسے دیر سے بولنا شروع کرنا) بھی نمایاں کر دیتی ہے۔ اگرچہ وہ آٹِزم جتنے اہم نہیں ہوتے، تاہم ان کا بھی وقت پر ماہرین سے علاج ضروری ہوتا ہے۔",
             "innerSection": null,
             "footer": null
           },
           {
-            "title": "Formal Evaluation of Autism",
-            "description": "Your general physician (doctor) might say that your child needs a more formal evaluation to learn more about how they are learning to talk, interact, act, play, learn and move. This will be a much longer visit. It is typically done by a specialist in the area of child development but may involve several different specialists.\n\nYour child can be referred for an evaluation or additional testing by your doctor if they deem it necessary. Some important points to remember are:",
+            "title": "آٹِزم کی باقاعدہ جانچ (Evaluation)",
+            "description": "آپ کا فزیشن (ڈاکٹر) آپ کو محض یہ بتا رہا ہے کہ آپ کے بچے کو ایک باقاعدہ جانچ کی ضرورت ہے تاکہ معلوم ہو سکے کہ وہ کس طرح سیکھتا ہے، بات کرتا ہے، کھیلتا ہے اور ہلتا جلتاہے۔ یہ وزٹ پہلے والے سے زیادہ طویل ہوگا۔ یہ عام طور پر بچوں کی نشونما کا سپیشلسٹ کرتا ہے لیکن اس میں ایک سے زیادہ قسم کے سپیشلسٹ بھی ہو سکتے ہیں۔\n\nآپ کے بچے کو ڈاکٹر ایک باقاعدہ جانچ (evaluation) یا مزید ٹیسٹ کروانے کے لیے کہہ سکتا ہے۔ اس سلسلے میں یہ باتیں یاد رکھیں:",
             "innerSection": [
               {
                 "title": null,
                 "description": [
-                  "A hearing test referral is made to check concerns related to language development, speech, and hearing difficulties. This is mostly done by an audiologist.",
-                  "A cognitive evaluation (or developmental assessment) is performed to measure verbal and nonverbal abilities of a child. This should ideally be conducted by a psychologist.",
-                  "A neurological evaluation is performed to test for problems like brain injury, seizure disorder, self-injury and sleep or eating disturbances.",
-                  "A speech-language-communication evaluation is performed on children who have trouble with communication, both verbal and nonverbal. This is usually performed by a speech-language psychologist or pathologist.",
-                  "A sensory-motor skills evaluation is performed when a child shows difficulty in movement and/or sensory responses. It is done by a physical or occupational therapist.",
-                  "No meaningful two-word phrases (not including imitating or repeating) by 24 months",
-                  "Any loss of speech, babbling or social skills at any age"
+                  "سننے کے ٹیسٹ کا مشورہ زبان سیکھنے، بولنے اور سننے کے مسائل سمجھنے کے لیے دیا جاتا ہےاور یہ اکثر ایک آڈیولوجسٹ کرتا ہے۔",
+                  "نشونما کا ٹیسٹ عام طور پر زبانی اور غیر زبانی صلاحیتیں جانچنے کے لیے ہوتی ہے اور اصولاً یہ ایک سائکالوجسٹ کو کرنی چاہیے۔  ",
+                  "دماغ کا ٹیسٹ دماغی چوٹ، دماغی خرابی اور نیند یا خوراک کے مسائل کے لیے کیا جاتا ہے۔  ",
+                  "بول چال، زبان اور رابطے کا ٹیسٹ ان بچوں پرکیا جاتاہے جنھیں زبانی اور غیر زبانی رابطے میں مشکلات کا سامنا ہو۔ یہ عام طور پر زبان اور بول چال کا سائکالوجسٹ یا پیتھالوجسٹ کرتا ہے۔  ",
+                  "ہلنے جلنے اور محسوس کرنے کی صلاحیتوں کا ٹیسٹ تب کیا جاتا ہے جب بچے کو ہلنے یا محسوس کرنے میں مشکلات کا سامنا ہو۔ یہ ٹیسٹ فزیکل تھراپسٹ کرتا ہے۔  "
                 ]
               }
             ],
-            "footer": "If you are referred to a specialist for a diagnostic assessment of autism, they will provide you with a written report of your child’s evaluation. This should include information on your child’s strengths and weaknesses, as well as general level of developmental functioning."
+            "footer": "اگر آپ کو کسی سپیشلسٹ سے آٹِزم کا تشخیصی ٹیسٹ کروانے کا کہا جاتا ہے تو وہ آپ کو آپ کے بچے کی جانچ کی ایک تحریری رپورٹ دیں گے۔ اس رپورٹ میں آپ کے بچےکی صلاحیتیں ، کمزوریاں اور نشونما کا لیول درج ہوگا۔ "
           }
         ]
       }
     ],
     [
       {
-        "title": "Early Intervention Therapies",
-        "description": "Screening and diagnosis are done, and your doctors have confirmed that your child has autism. Now what? You must start your child’s autism journey as soon as a diagnosis is done. The earlier you start, the more effective it would be for your child.\n\nIf your child is below 3 years, then continue reading and you can start with Early Interventions. If not, then check our “Treatment for Autism” section.",
+        "title": "نئی تشخیص اور علاج",
+        "description": "سکریننگ اور تشخیص مکمل ہوجانے کے بعد ڈاکٹروں نے بتا دیا کہ آپ کے بچےکو آٹِزم ہے۔ اب آگے کیا کرنا چاہیے؟ آپ کو تشخیص مکمل ہوتے ہی اپنے بچے کا آٹِزم کا سفر شروع کردینا چاہیے۔ آپ جتنا جلدی شروع کریں گے یہ آپ کے بچے کے لیے اتنا ہی اچھا ہوگا۔\n\nاگر آپ کا بچہ تین سال سے کم عمر کا ہے توآپ پڑھتے رہیے۔ آپ بروقت مداخلت سے شروع کر لیں ۔ اگر آپ کا بچہ تین سال سے کم عمر کا نہیں تو آٹِزم کے علاج والا سیکشن دیکھیے۔",
         "quote": null,
         "sections": [
           {
-            "title": "What is Early Intervention?",
-            "description": "Early intervention refers to acting on the information that you have and seeking help from concerned doctors as soon as your child is diagnosed with autism. In fact, appropriate steps can be taken even before a formal diagnosis is done. Once your child is diagnosed, at whatever age, delaying the treatment will only harm the development process of the child. Here are some of the strategies for early intervention:",
+            "title": "بروقت مداخلت کیا ہے؟",
+            "description": "بروقت مداخلت سے مراد ہے آٹِزم کی تشخیص ہوتے ہی متعلقہ ڈاکٹروں کی مدد سے اپنی معلومات کے مطابق عمل درآمد شروع کردینا۔ بلکہ باقاعدہ تشخیص سے پہلے بھی مناسب اقدامات کیے جا سکتے ہیں۔ جوں ہی آپ کے بچے میں آٹِز م کی تشخیص ہوجائے تو علاج میں تاخیر آپ کے بچے کو نقصان ہی پہنچا سکتی ہے۔ بروقت مداخلت کے کچھ طریقے یہ ہیں:",
             "innerSection": [
               {
                 "title": null,
                 "description": [
-                  "Family training",
-                  "Speech therapy",
-                  "Hearing impairment services",
-                  "Physical therapy",
-                  "Nutrition services"
+                  "فیملی ٹریننگ ",
+                  "بول چال کا علاج (speech therapy) ",
+                  "سننے کے آلات کا استعمال ",
+                  "جسمانی علاج ",
+                  "خوراک سے علاج "
                 ]
               }
             ],
             "footer": null
           },
           {
-            "title": "Why is it important to act early?",
-            "description": "Signs of autism can be identified in toddlers who are as young as 18 months old. Early intervention is proven to have a lifelong impact and more positive effects on children who have been receiving the treatment from a very young age. It is highly recommended that the moment your child gets diagnosed, relevant steps are taken without losing any more time.",
+            "title": "بروقت اقدامات کیوں ضروری ہیں؟",
+            "description": "آٹِزم کی علامات اٹھارہ ماہ کے بچوں میں بھی ڈھونڈی جا سکتی ہیں۔ یہ بات ثابت ہوچکی ہے کہ بروقت مداخلت سےبچوں کی زندگی پر بہت مفید اور مثبت اثرات مرتب ہوتے ہیں۔ آٹِزم کی تشخیص ہوتے ہی مزید وقت ضائع کیے بغیر متعلقہ اقدامات کرنا بہت ضروری ہے۔",
             "innerSection": null,
             "footer": null
           },
           {
-            "title": "Why Early Intervention works?",
-            "description": "Early intervention can help improving a child’s IQ, speech and social interactions. When a child is less than 3 years old, their mind is more acceptable to change. Infant brain has more potential to learn and pick up certain habits that can help them later in life. Over time, the brain’s ability to adapt to change diminishes.\n\nEarly parental involvement is also one of the keys that can greatly benefit the child. Use of specially designed exercises and strategies at home such as individualized goals, playing with toys and communicating can prevent children from developing difficult behaviors later on. Through early intervention, you can give your child a fighting chance.",
+            "title": "بروقت مداخلت کیوں بہتری کا سبب بنتی ہے؟",
+            "description": "بروقت مداخلت سے بچے کے آئی کیو (IQ)، اس کی بول چال اور اس کے معاشرتی تعلقات سب پر بہت مثبت اثرات مرتب ہوتے ہیں۔ جب ایک بچہ تین سال سے کم عمر کا ہوتا ہے تو اس کا ذہن تبدیلی کو آسانی سے قبول کرلیتا ہے۔ ایک کم عر بچے کے دماغ میں سیکھنے اور مخصوص مفید عادات کو اپنانے کی صلاحیت زیادہ ہوتی ہے۔ وقت کے ساتھ ساتھ دماغ کی تبدیلی کے مطابق ڈھلنے کی صلاحیت کم ہوجاتی ہے۔\n\nوالدین کا بروقت کردار ادا کرنا بھی بچوں کے لیے بے حد مفید ثابت ہوسکتا ہے۔ گھر پر خاص طور پر تیار کی گئی مشقوں اورخاص حکمت عملی(جیسے انفرادی لحاظ سے تیار کیے گئے اہداف، کھلونوں سے کھیلنا اور بات چیت کرتے رہنا) کے استعمال سے بچہ مستقبل میں پریشان کن رویے اپنانے سے بچ سکتا ہے۔ بروقت مداخلت سے آپ اپنے بچےکو آٹِزم سے لڑنے کا ایک موقع دیتے ہیں۔",
             "innerSection": null,
             "footer": null
           }
@@ -254,76 +248,76 @@
       {
         "title": "Treatments for Autism in Children",
         "quote": null,
-        "description": "No matter at whatever age your child is diagnosed with autism, the treatment should start immediately. Delaying the process will only harm your child. Treatment for autism consists of multiple therapies which are designed to cater to your child’s specific needs. Please note that there is no medication that can treat autism. Medication should only be given if there are other physical or mental complications due to autism. Other than that, only therapies and a lifestyle change can help a child with autism. The type of therapies that your child will receive depends on his/her needs. This will be determined by your doctor. Usually there are certain models that therapists and physicians use to help with autism. These models consist of different individual therapies which target the areas that your child needs help in. Here are few of these models:",
+        "description": "آپ کے بچے میں آٹِزم کی تشخیص جس عمر میں بھی ہو، فوری علاج ضرور شروع ہونا چاہیے۔ اس عمل میں تاخیر سے آپ کے بچے کو نقصان ہوگا۔ آٹِزم کے علاج(therapies)آپ کے بچے کی مخصوص ضروریات کو مدِنظر رکھ کر تیار کیے جاتے ہیں۔\nیاد رکھیے کوئی دوا آٹِزم کو ٹھیک نہیں کر سکتی ۔ دوا صرف اس کی وجہ سے ہونے والی دوسری جسمانی اور ذہنی پیچیدگیوں سے نمٹنے کے لیے استعمال کی جانی چاہیے۔ اس کے علاوہ آٹِزم سے متاثرہ بچے کی مدد صرف علج (therapies) اور طرزِ زندگی میں تبدیلی سے ممکن ہے۔\nآپ کے بچے کو دی جانے والی تھراپی کا انحصار اس کی ضروریات پر ہے اور اس کا فیصلہ آپ کے ڈاکٹر نے کرنا ہے۔ عموماً تھراپسٹ اور فزیشن آٹِزم میں مدد کے لیے کچھ ماڈل استعمال کرتے ہیں۔ ان ماڈلوں میں مختلف انفرادی علاج ہیں جو آپ کے بچے کو مختلف چیزوں میں مدد دیتے ہیں۔ ان میں سے کچھ ماڈل یہ ہیں:",
         "sections": [
           {
             "title": "Applied Behavioral Analysis (ABA)",
-            "description": "Perhaps the primary and most well studied method of helping in autism, this model focuses on how a child learns. It focuses on certain principles. One of those principles is Positive reinforcement. When a child is rewarded for some behavior, he/she is more likely to repeat that behavior. There are multiple fields and exercises within ABA. For details on ABA please refer to our important links section.",
+            "description": "یہ آٹِزم میں مدد کے لیے سب سے بنیادی اور بہتر تحقیق شدہ طریقہ ہے۔ ABAاس بات پر توجہ دی جاتی ہے کہ بچہ سیکھتا کیسے ہے۔ یہ کچھ مخصوص اصولوں پر کام کرتا ہے جن میں سے ایک اچھے کاموں پر حوصلہ افزائی بھی ہے۔ جب کسی بچےکو ایک خاص رویے پر نوازا جاتا ہے تو اس رویے کے دوبارہ ظاہر ہونے کے امکانات بڑھ جاتے ہیں۔ ABAمیں بھی مختلف شعبے اور مشقیں ہیں۔ مزید تفصیلات کے لیے ہمارا اہم لنکس والا سیکشن دیکھیے۔",
             "innerSection": null,
             "footer": null
           },
           {
             "title": "Early Start Denver Model (ESDM)",
-            "description": "This model uses board games to help the child express feelings, speak and form relations. The aim of the therapy is to form important social-emotional skills and help in language building and information processing.",
+            "description": "یہ ماڈل بورڈ گیمز (شطرنج اور لڈو وغیرہ) کا استعمال کر کے بچے کو اپنے احساسات کا اظہار کرنے اور تعلقات قائم کرنے میں مدد دیتا ہے۔ اس تھراپی کا مقصد اہم معاشرتی اور محسوساتی مہارتوں کو بنانا اور زبان سیکھنے میں مدد کرنا ہے۔",
             "innerSection": null,
             "footer": null
           },
           {
             "title": "Pivotal Response Treatment (PRT)",
-            "description": "This model is also based on games. Unlike ESDM, however, it focuses on targeted areas that the child needs development in. These areas can be like motivation and self-management. The treatment is planned in a way that it teaches the child how to respond to verbal cues by the parents or the therapist.",
+            "description": "ESDM کی طرح یہ ماڈل بھی گیموں سے متعلق ہے لیکن یہ ان چیزوں کو اہمیت دیتا ہے جن کی بچے کو ضرورت ہوتی ہے جیسے حوصلہ یا ذاتی انتظام وغیرہ۔ اس علاج کی منصوبہ بندی اس طرح کی جاتی ہے کہ بچہ والدین اور تھراپسٹ کی ہدایات کو سمجھ سکے۔",
             "innerSection": null,
             "footer": null
           },
           {
-            "title": "What to look for in these therapies?",
-            "description": "The aim of these therapies and exercises is to form a well-structured environment for the child. This also includes the environment of the home. All these therapies make use of two main things:",
+            "title": "ان علاج کے طریقوں میں کیا چیز اہم ہے؟",
+            "description": "ان علاج کے طریقوں اور مشقوں کا مقصد بچے کو موزوں ماحول فراہم کرنا ہے۔ اس میں گھر کا ماحول بھی شامل ہے۔ ان تمام طریقوں میں دو اہم چیزوں کا استعمال شامل ہے:",
             "innerSection": [
               {
-                "title": "Family",
+                "title": "فیملی",
                 "description": [
-                  "Family members working alongside professionals to help the child",
-                  "Flexible timings and exercises so that the child can work in a comfortable setting",
-                  "Helping the family members through the journey"
+                  "بچے کی مدد کے لیے افرادِ خانہ کا ماہرین کے ساتھ مل کر کام کرنا",
+                  "بچے کی سہولت کو مدِ نظر رکھ کے تیار کیے گئے اوقات اور مشقیں",
+                  "آٹِزم کےاس سفر میں اہلِ خانہ کی مدد کرنا "
                 ]
               },
               {
-                "title": "Structure",
+                "title": "ترتیب",
                 "description": [
-                  "Developing an individualized plan for your child to cater to his/her specific needs",
-                  "Monitoring the child’s progress through regular tests",
-                  "Providing a supportive and encouraging environment for the child",
-                  "Having well trained staff (doctors, caretakers, etc) who can regularly provide these interventions to the child"
+                  "بچے کی ضروریات کے حساب سے اس کے لیے ایک انفرادی منصوبہ تیار کیا جائے ",
+                  "بچے میں آنے والی بہتری کو پابندی سے ٹیسٹ کروا کر مانیٹر کیا جائے ",
+                  "بچے کو ایک حوصلہ افزا ماحول فراہم کیا جائے ",
+                  "بہترین تربیت والے ماہرین کی خدمات حاصل کی جائیں "
                 ]
               },
               {
-                "title": "Some other types of therapies:",
+                "title": "تھراپی کی کچھ اور قسمیں یہ ہیں:",
                 "description": [
-                  "Educational and school-based therapies",
-                  "Joint attention therapy",
-                  "Medication treatment",
-                  "Nutritional therapy",
-                  "Occupational therapy",
-                  "Parent-mediated therapy",
-                  "Physical therapy",
-                  "Social skills training",
-                  "Speech-language therapy"
+                  "تعلیمی تھراپی ",
+                  "مشترکہ توجہ کی تھراپی ",
+                  "ادویات سے علاج",
+                  "خوراک سے علاج ",
+                  "پیشہ جاتی تھراپی ",
+                  "والدین کی مدد سے کی جانے والی تھراپی ",
+                  "جسمانی تھراپی ",
+                  "معاشرتی مہارتوں کی تھراپی",
+                  "بول چال کی تھراپی"
                 ]
               }
             ],
-            "footer": "Bear in mind that your therapists knows best. These are just some possible paths that your child’s therapist might determine for your child. Other exercises and therapies also exist that can be used to help a child with autism.\n\nChildren who receive proper intervention early-on in their lives grow up to become more equipped with essential social skills. These social skills help them navigate better through the society and at home too.\n\nAutism treatment can make greatly impact you and your child’s life. As a parent, knowing your child’s condition will give you a chance to adjust to the changes without compromising on the well-being of your child.\n\nEvery child is different and progresses differently. Do not expect these practices to bring drastic changes within a few days. These are lifestyle changes that you will need to adapt in every step of your child’s life."
+            "footer": "یہ بات ذہن میں رکھیں کہ تھراپسٹ ان معاملات کو سب سے بہتر جانتے ہیں۔ یہ ان تمام راستوں میں سے چند ہیں جو آپ کے بچے کا تھراپسٹ اس کے علاج کے لیے اختیار کر سکتا ہے۔ ان کے علاوہ بھی بہت سی مشقیں اور علاج کے طریقے ہیں۔\n\nوہ بچے جن کو زندگی میں بروقت مناسب علاج میسر آجاتا ہےبڑے ہو کر معاشرتی لحاظ سے زیادہ کارآمد ثابت ہوتے ہیں۔ وہ گھر اور معاشرے میں بہتر انداز سے زندگی گزار پاتے ہیں۔\n\nآٹِزم کا علاج آپ کے بچے کی زندگی پر بڑا مثبت اثر ڈال سکتا ہے۔ والدین کے لیے اپنے بچے کی صورتِ حال سے واقفیت انھیں اپنے آپ کو بچے کی بہتری کے لیے ڈھالنے کا موقع دیتی ہے۔\n\nہر بچہ مختلف ہوتا ہے اور مختلف رفتار سے بہتری کی طرف گامزن ہوتا ہے۔ یہ توقع کرنا مناسب نہیں کہ ان باتوں سے چند دنوں کے اندر ہی بہت بڑی تبدیلیاں آ جائیں گی۔ یہ عمر بھر کی تبدیلیاں ہیں جنھیں بچے کی زندگی کے ہر حصے میں شامل کرنے کی ضرورت ہے۔"
           }
         ]
       }
     ],
     [
       {
-        "title": "Benefits of Disclosing",
+        "title": "انکشاف کرنے کے فوائد",
         "description": null,
         "quote": null,
         "sections": [
           {
-            "title": "Why should I disclose?",
-            "description": "Every child deserves to live a full and dignified life, regardless of whether they have a disability or not. There will be some trial and error in understanding who to disclose your child’s condition to because you can never really gauge another person’s reaction. Some reactions will be positive and others will be negative, but it is important to remember that you are not responsible for another person’s reaction to your disclosure. Often negative reactions come from a place of fear and misunderstanding, so once the other person has some more understanding of what autism is, their reaction may very well turn around. Most people are willing to help and accommodate once they understand the circumstances involved.\n\nDisclosure of a disability can provide relief in many ways. People can develop empathy for your situation once they know what it is and reserve from making any judgements they might otherwise make. In social settings, it can help friends and family understand that your child is not being rude or misbehaving when they may say something very bluntly. They can understand that your child is not weird for pacing or engaging in repetitive motions, but simply trying to soothe themselves. Disclosure can smooth the way forward in social situations and remove any awkwardness.\n\nIn addition, carefully disclosing your child’s disability at school can allow your child to receive accommodations to help them learn. They may get extra time for assignments, access to school counseling services, or receive extra breaks so that they don’t have any meltdowns. They may be able to write tests and exams in a separate room so that there is less noise, appropriate lighting, etc. to make their test taking experience as smooth as possible. Informed teachers can facilitate your child’s classroom interactions with their peers and be on the lookout for any signs of bullying or harassment. Many possible benefits can be achieved if the disclosure is made properly.",
+            "title": "مجھے دوسروں کو کیوں بتانا چاہیے؟",
+            "description": "ہر بچےکا حق ہے کہ وہ ایک مکمل اور باوقار زندگی گزارے خواہ وہ معذور ہی کیوں نہ ہو۔ اپنے بچے کے آٹِزم کے بارے میں بتانے کے لیے آپ کو ہمیشہ ایک حد تک اندازے سے کام لینا ہو گا کیوں کہ یہ بات معلوم نہیں کی جا سکتی کہ سننے والے کا کیا ردِ عمل ہوگا۔ کچھ لوگ مثبت ردِ عمل دیں گے جب کہ کچھ لوگوں کا ردِ عمل منفی ہوگا۔ لیکن ہمیشہ یاد رکھیے کہ سننے والے کے ردِ عمل کے ذمہ دار آپ نہیں ہیں۔ سننے والے منفی تاثرات کا اظہار اکثر خوف اور لاعلمی کی وجہ سے کرتے ہیں۔ اگر انھیں سمجھادیا جائے کہ آٹِزم اصل میں ہے کیا تو ممکن ہے ان کا ردِ عمل بالکل بدل جائے۔ اکثر لوگ یہ سمجھ لینے کے بعد مدد کرنے اور موافقت کرنے پر راضی ہوجاتے ہیں۔\n\nکسی بھی معذوری کے بارے میں بتا دینے سے بہت سی آسانیاں پیدا ہوسکتی ہیں۔ لوگوں کے دل میں ہم دردی پیدا ہوجاتی ہے اور وہ ایسے اندازے لگانے سے باز رہتے ہیں جو وہ لاعلمی میں لگالیتے۔ معاشرتی حالات میں اس سے دوستوں اور رشتہ داروں کو معلوم ہوجاتاہے کہ سیدھی سیدھی کہہ دینے سے آپ کا بچہ روکھے پن یا بد تمیزی کا مظاہرہ نہیں کر رہا۔ وہ سمجھ پاتے ہیں کہ آپ کا بچہ ہاتھ پاؤں بار بار ہلا کر عجیب حرکتیں نہیں کر رہا بلکہ اپنے آپ کو پرسکون کرنے کی کوشش کر رہا ہے۔ لہٰذا دوسروں کو بتا دینا مختلف صورتوں میں راستہ آسان کر دیتا ہے اور کسی بھی قسم کی بدمزگی کا امکان ختم کر دیتا ہے۔\n\nاس کے ساتھ ساتھ سکول میں بچے کی معذوری کا بتانے سے اسے مدد کے لیے آسانیاں مہیا کی جاتی ہیں۔ انھیں کام کرنے کے لیے اضافی وقت دیا جاتاہے، خصوصی رہ نمائی کی جاتی ہے اور الگ سے وقفہ دیاجاتا ہے تاکہ آپے سے باہر نہ ہوجائیں۔ انھیں الگ کمروں میں پرچے حل کرنے کی سہولت دی جاسکتی ہے جہاں شور کم ہو اور مناسب روشنی ہو تاکہ ان کے لیے امتحانات کے تجربے کو آسان بنایا جا سکے۔ سمجھ دار اساتذہ بچے کے اپنے ساتھیوں سے تعلقات کو بہتر بنا دیتے ہیں اور اسے پریشان کرنے والے بچوں سے بچاتے ہیں۔ مناسب طریقے سے آٹِزم کے بارے میں بتا دینا بہت فائدہ مند ثابت ہوسکتا ہے۔",
             "innerSection": null,
             "footer": null
           }
@@ -331,51 +325,47 @@
       },
       {
         "title": "Whom to disclose to?",
-        "description": "Disclosing that your child has autism needs to be handled very delicately. It goes beyond simply stating what the disorder is and what its symptoms are. For there to be real understanding at a human level, you need to be able to effectively and diplomatically communicate personal information about how autism affects your child, and what their day to day strengths and weaknesses are as a result of their condition.\n\nAs previously mentioned, it is mostly a case of trial and error since you do not know how people will react. Then who do you decide to disclose to? A good way to gauge this is if your child ever needs any level of accommodation, service, support, or just some patience and sympathy, revealing their condition can likely help ease the situation. It is not necessary to tell everyone that your child has autism, but even in the situations where you do find that you need to tell someone about it, the level of disclosure varies.\n\nIn day to day life, it can be tricky to navigate the waters of how much information is too much or too little to give. What if you need a simple accommodation at the shop? How do you explain your child’s behaviour to strangers at a restaurant? You do not need to always have a detailed explanation of autism in most situations. Most daily encounters will only require you to provide enough information to the parties involved to have a successful interaction and get on with whatever task needs to be done. Remember that you have every right to keep your child’s condition private if you so wish. You do not owe the world an explanation and your comfort comes before anything else.\n\nStill, it can be helpful to classify the types of people you will encounter and how much information each of these groups need. Below are 3 classifications of people based on frequency of meeting and if the autism will affect the relationship:",
+        "description": "اپنے بچے کے آٹِزم کے بارے میں دوسروں کو بتانا بہت نازک معاملہ ہے۔ محض یہ بتانا کہ یہ مسئلہ کیا ہے اور اس کی علامات کیا ہیں کافی نہیں۔ انسانی سطح پر اس کی حقیقی سمجھ بوجھ پیدا کرنے کے لیے آپ کوبہت ہی موثر انداز میں یہ بتانا آنا چاہیے کہ آٹِزم آپ کے بچے پر کس طرح اثر انداز ہوتاہے اور اس کے نتیجے میں روز مرہ کی زندگی میں بچے میں کیا کیا خوبیاں اور کمزوریاں ظاہر ہوتی ہیں۔\n\nجیسا کہ پہلے بیان کیا گیا ہے یہ کام اکثر اندازے سے ہی کرنا پڑتا ہے کیوں کہ آپ لوگوں کےممکنہ ردِ عمل کے بارے میں کچھ نہیں کہہ سکتے۔ لہٰذا آپ کو کسے بتانا چاہیے؟ اس کا آسان جواب یہ ہے کہ اگر کہیں بھی آپ کے بچے کو کسی قسم کی سہولت، مدد یا حتٰی کہ تحمل اور ہم دردی کی ضرورت ہو تو اس کے حالات کے بارے میں بتانا مددگار ہوسکتا ہے۔ ہر کسی کو بتانا ضروری نہیں کہ آپ کے بچے کو آٹِزم ہے۔ کئی باران حالات میں بھی جہاں آپ کو لگے کہ بتانا ضروری ہے، سب کچھ بتانا ضروری نہیں ہوتا۔\n\nروز مرہ کی زندگی میں یہ فیصلہ کرنا کہ کس کو کتنا بتانا چاہیے تھوڑا مشکل ہو سکتا ہے۔ اگر دکان میں تھوڑی مدد چاہیے ہو تو کتنا بتانا چاہیے؟کسی ریستوران میں اجنبیوں کو اپنے بچے کا طرزِ عمل کیسے سمجھایا جائے؟آپ کو ہر صورت حال میں آٹِزم کی تفصیلات میں نہیں جانا چاہیے۔ زیادہ تر صورتوں میں صرف ضروری باتیں بتانا کافی ہوگا تاکہ دوسروں کے ساتھ وقت اچھا گزر جائے اور جو کام کرنا ضروری ہے وہ ہو جائے۔ یاد رکھیے کہ اگر آپ چاہیں تو آپ کو اپنے بچے کی کیفیت کو اپنے تک رکھنے کا بھی پورا حق ہے۔ ضروری نہیں کہ آپ سب کو ہر چیز سمجھائیں۔ آپ کااطمینان سب سے پہلے ہے۔\n\nآپ کو ملنے والے افراد کو تین طرح کے لوگوں میں تقسیم کیا جا سکتا ہے۔",
         "quote": null,
         "sections": [
           {
-            "title": null,
+            "title": "پہلا گروپ: وہ لوگ جنھیں معلوم ہونا چاہیے",
             "description": null,
             "innerSection": [
               {
-                "title": "Group 1: People that need to know",
+                "title": null,
                 "description": [
-                  "Teachers",
-                  "Babysitters and hired help",
-                  "Close friends",
-                  "Immediate and close family members"
+                  "یہ وہ لوگ ہیں جن کے ساتھ آپ کے بچے کا اکثر واسطہ پڑتا ہے اور آپ کے بچے کے آٹِزم سے ان کو فرق پڑتا ہے۔ ان میں اساتذہ، بچوں کی دیکھ بھال کرنے والے ملازم، قریبی دوست احباب، اہلِ خانہ اور قریبی رشتہ دار شامل ہوتے ہیں۔"
                 ]
               }
             ],
             "footer": null
           },
           {
-            "title": null,
+            "title": "دوسرا گروپ: وہ لوگ جن سے اکثر ملاقات ہوتی ہے",
             "description": null,
             "innerSection": [
               {
-                "title": "Group 2: People you come in frequent contact with",
-                "description": ["Extended family", "Friends", "Classmates"]
+                "title": null,
+                "description": [
+                  "یہ وہ لوگ ہوتے ہیں جن سے آپ کا بچہ اکثر ملتاہے لیکن اتنا زیادہ نہیں ملتا کہ آٹِزم کی وجہ سے کوئی مسئلہ ہو۔ ان کو آپ گزارے کے لیے ضروری ضروری کچھ باتیں بھی بتا سکتے ہیں۔ ان میں دور کے رشتہ دار، دوست اور ہم جماعت شامل ہوتے ہیں۔"
+                ]
               }
             ],
             "footer": null
           },
           {
-            "title": null,
+            "title": "تیسرا گروپ: وہ لوگ جنھیں بتانا ضروری نہیں ہوتا",
             "description": null,
             "innerSection": [
               {
-                "title": "Group 3: People who do not need to know",
+                "title": null,
                 "description": [
-                  "Shopkeepers",
-                  "Neighbors",
-                  "Acquaintances",
-                  "Strangers, etc"
+                  "اس گروپ میں وہ لوگ شامل ہیں جن کا آپ سے اور آپ کے بچے سے ذاتی تعلق نہیں ہوتا۔ ان میں دکان دار، ہمسائے، جاننے والے اور اجنبی وغیرہ شامل ہوتے ہیں"
                 ]
               }
             ],
-            "footer": "Disclosing that your child has autism is a personal matter, and you should treat it as such. However, if the people around your child know about autism, it can lead to an immediate increase in the quality of life of your child. Hence, make a calculated decision whenever disclosing. Only disclose if your child will benefit from it directly. "
+            "footer": "کسی کو یہ بتانا کہ آپ کے بچے کو آٹِزم ہے آپ کا ذاتی مسئلہ ہے۔ بہرحال اگر بچے کے ارد گرد کے لوگوں کو اس بارے میں معلوم ہوگا تو بچے کی زندگی خود بخود بہتر اور آسان ہوگی۔ لہٰذا یہ بتانے کا فیصلہ سوچ سمجھ کر کریں۔ صرف تبھی بتائیں جب آپ کے بچے کو اس کا بلا واسطہ فائدہ پہنچے گا۔"
           }
         ]
       }

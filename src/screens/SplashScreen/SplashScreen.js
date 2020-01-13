@@ -1,6 +1,12 @@
 import React from 'react';
 import {View, StatusBar, StyleSheet, Image} from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import {StackActions, NavigationActions} from 'react-navigation';
+
+const resetAction = StackActions.reset({
+  index: 0,
+  actions: [NavigationActions.navigate({routeName: 'HomeScreen'})],
+});
 
 export default class SplashScreen extends React.Component {
   state = {
@@ -10,12 +16,12 @@ export default class SplashScreen extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({firstHalf: true});
-    }, 500);
+    }, 700);
     setTimeout(() => {
       this.setState({secondHalf: true});
     }, 1500);
     setTimeout(() => {
-      this.props.navigation.navigate('HomeScreen');
+      this.props.navigation.dispatch(resetAction);
     }, 2500);
   }
   render() {

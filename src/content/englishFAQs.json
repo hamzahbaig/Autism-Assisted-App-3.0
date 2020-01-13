@@ -1,75 +1,60 @@
 {
-  "title": "Frequently Asked Questions",
+  "title": "Frequently Asked",
   "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
   "faqs": [
     {
-      "question": "What is Autism Spectrum Disorder?",
-      "excerpt": "Autism Spectrum Disorder is a neurological developmental condition that causes a child’s brain to develop differently. Children with the condition have trouble understanding social cues and learning to interact with the world around them, which leads them to be shy and have difficulty getting along with others. They have problems with communication and behaviour.\nEveryone affected by Autism Spectrum Disorder exhibits a variety of symptoms and difficulties in different areas to varying degrees. No two people with the condition may be the same, which is why it is called a spectrum disorder.\n",
+      "question": "Are all autistic people non-verbal?",
+      "excerpt": "People with autism are prone to communication problems. They have trouble interacting in social settings and in expressing their emotions. But since people with the condition are on a spectrum, the symptoms different people exhibit will be varied. Communication problems can range from difficulty in communication to a lack of interpretation of social cues to a complete lack of speech. But not all autistic people are non-verbal.",
+      "videoLink": null
+    },
+    {
+      "question": "Are autistic people anti-social?",
+      "excerpt": "Even though people with autism do struggle with social interactions, they enjoy having their close family and friends around them. They can even learn to form new social relations with correct guidance and encouragement. The process is only slightly difficult in the beginning but a lot of individuals on the spectrum improve over time. Some people with autism do prefer their own company, but that is not unlike people who are not on the spectrum.",
+      "videoLink": null
+    },
+    {
+      "question": "Are children who engage in autistic-type behaviour such as repetitions bound to be autistic?",
+      "excerpt": "Symptoms like these are not the primary symptoms of autism thus cannot be characterised as the condition. They may be signs of some other developmental condition, so it is best to get help from a professional, such as a doctor or a child psychologist.",
+      "videoLink": null
+    },
+    {
+      "question": "Are individuals with Autism Spectrum Disorder intellectually challenged?",
+      "excerpt": "People on the spectrum are not necessarily intellectually challenged. Their IQs range from average to high, and their intellectual level varies from person to person, just like their \nsymptoms. Some people face problems, but others are average while some are intellectually or artistically gifted. ",
       "video_link": null
     },
     {
-      "question": "What is Autistic disorder?",
-      "excerpt": "Autistic disorder, known more commonly as autism, is the most common Autism Spectrum Disorder. People with the condition have difficulty interacting with people and understanding social cues.",
-      "video_link": null
+      "question": "Are people with autism incapable of establishing romantic relationships?",
+      "excerpt": "A lot of people on the spectrum are involved in happy and fulfilling romantic relationships. The key is to find the right person who is willing to help improve their lives and be sensitive towards their needs and way of life.",
+      "videoLink": null
     },
     {
-      "question": "What is Asperger’s Syndrome?",
-      "excerpt": "Asperger’s syndrome is a milder form of autism and is the second most prevalent Autism Spectrum Disorder. People with the condition have trouble in social situations and communication, but they usually show higher language development than those with autism.",
-      "video_link": null
+      "question": "Are People with autism incapable of understanding the emotion of other?",
+      "excerpt": "Autism affects a person’s ability to pick up on social cues and unspoken interpersonal communication, which means they may not detect the sarcasm from your tone or annoyance from your body language. Instead, they require emotions to be communicated more directly. If you help them understand how you feel candidly, they are proven to be very empathetic people.",
+      "videoLink": null
     },
     {
-      "question": "What is “the Spectrum”?",
-      "excerpt": "Being on “the spectrum” means that a person has been diagnosed with a form of autism. Every individual with autism is unique, with their own set of strengths and challenges. The symptoms of autism may range from mild to severe, which is why it is called a spectrum; since there are no set symptoms for a diagnosis.",
-      "video_link": null
+      "question": "Are people with autism intellectually disabled?",
+      "excerpt": "This is a misconception, as most people with autism often have IQs in the normal to high range. Autism might even cause the person to have exceptional abilities. Some may excel at practical subjects like science or math while others might have a knack for the arts, but this is not a given either.",
+      "videoLink": null
     },
     {
-      "question": "What conditions come under Autism Spectrum Disorders (ASD)?",
-      "excerpt": "Autism is the most common ASD, followed by Asperger’s syndrome. Other conditions include Pervasive Developmental Disorder, and two rarer conditions called Childhood Disintegrative Disorder and Rett’s Syndrome. ",
-      "video_link": null
+      "question": "Are people with autism only good for jobs that include repetitive tasks?",
+      "excerpt": "People with autism have varying sets of strengths and limitations. Categorising them based solely on their broad diagnosis is unfair and incorrect. People on the spectrum have many different talents and skills which vary from person to person. Some adults may enjoy jobs involving repetitive tasks while others might be better suited for other kinds of work. Thus, it is not possible to define a specific job type for everyone with autism.",
+      "videoLink": null
     },
     {
-      "question": "What is Pervasive Developmental Disorder?",
-      "excerpt": "Pervasive Developmental Disorder is much like autism but with fewer and milder symptoms.",
-      "video_link": null
+      "question": "Are people with autism prone to violence?",
+      "excerpt": "When children have difficulties getting their message across, it is normal for them to resort to violence. Autistic children are no different. But studies have shown that these children are more likely to hurt themselves in such situations instead of using violence on others.",
+      "videoLink": null
     },
     {
-      "question": "What is Rett’s Syndrome?",
-      "excerpt": "People with Rett’s syndrome show normal development until about six months to one year, after which they start to show symptoms of autism. These include avoiding social interactions, odd motor behaviours and a loss of speech. This condition almost exclusively affects females.",
-      "video_link": null
+      "question": "Are there special dietary needs for people on the Autism Spectrum?",
+      "excerpt": "Although there is no specific diets related to ASD, removing certain proteins from the diet may provide relief to some symptoms. According to research, a gluten-free, casein-free (GFCF) diet is one of the most common dietary interventions. Around 25% of patients find relief and improvement with this diet.",
+      "videoLink": "PAGE 1 Done ------------------------ 10 so far"
     },
     {
-      "question": "What is a social communication disorder?",
-      "excerpt": "A person is diagnosed with a social communication disorder when they have consistent problems with the use of language in social settings but do not have repetitive behaviours. This condition is not an Autism Spectrum Disorder. ",
-      "video_link": null
-    },
-    {
-      "question": "What are the early signs of Autism?",
-      "excerpt": "Symptoms of autism can be detected as early as eight months by a trained eye. These early signs include avoiding social interactions, avoiding eye contact, a lack of gestures, and a general disinterest in playing with other people.",
-      "video_link": null
-    },
-    {
-      "question": "How many people have Autism Spectrum Disorder?",
-      "excerpt": "There is no exact count of the number of people affected by autism, but the amount of people diagnosed has steadily gone up over the past forty years. According to some estimates, 1 in 59 children suffers from the disorder. It is believed that this is due to the increase in awareness regarding the disorder among people and professionals.",
-      "video_link": null
-    },
-    {
-      "question": "Does ASD condition only affect boys?",
-      "excerpt": "Although the condition is more prevalent in boys, with boys being diagnosed four times more often than girls, that does not mean girls are immune. There are many girls with the condition as well. Some researchers have suggested that girls are better at masking their symptoms, which is why they are diagnosed less often and usually much later in life. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zG0flII-EAk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Is autism on the rise?",
-      "excerpt": "Although the number of people diagnosed with autism has increased steadily in previous years, experts do not refer to this as an epidemic for two reasons. Firstly, an epidemic would mean there was a known cause for the “spread of autism” which there is not. Secondly, researchers believe this rise is due to an increase in awareness about the condition in people around the world, leading to more people getting help for their children at an earlier age. ",
-      "video_link": null
-    },
-    {
-      "question": "What if I think my child has autism?",
-      "excerpt": "If you have reason to believe your child has autism, you should consult a professional as soon as possible. Early diagnosis is key. The doctor or psychologist will observe your child and ask you questions about the medical history of the child as well as both parents. The consultation may or may not lead to a diagnosis of autism or other developmental disorder.",
-      "video_link": null
-    },
-    {
-      "question": "How can I find the best treatments for Autism Spectrum Disorders?",
-      "excerpt": "The best way to find a treatment suited to an individual is to understand their strengths and their challenges. Observing a person’s behaviour and making a note of their needs is the first step towards helping them get better. Consultation with a doctor and a psychologist can then help you narrow down the possible therapies and training which might be useful for the person. Trial and error might be a big part of this process, since you may start a treatment and then find out this does not meet your desired requirement. ",
+      "question": "Can a person with autism live a successful independent life?",
+      "excerpt": "If a person with autism is provided with the right tools and assistance during their childhood years, they can grow up to become independent and successful adults. There are millions of such recorded cases. These people can learn to take advantage of their strengths and find jobs suited to them to support themselves.",
       "video_link": null
     },
     {
@@ -78,119 +63,24 @@
       "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aGT1KRqU9_8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
-      "question": "How can I include my other children in the care of their sibling?",
-      "excerpt": "It is important to include siblings of a child with autism in their care. It helps build a better relationship among the children and prevents other children from feeling neglected or angry because of the extra attention the autistic child might receive. Taking siblings along to doctor’s appointments and involving them in the therapies at home or elsewhere can be a good start. This tells the children that they have a say in their sibling’s treatment and helps them feel empowered as well as more attached to the process.",
+      "question": "Can careful changes in diet cure Autism?",
+      "excerpt": "Some people believe that providing a special diet to individuals with autism can help alleviate their symptoms, but this is incorrect. There is no evidence that restricting diet or including special ingredients will help in curing the condition.",
       "video_link": null
     },
     {
-      "question": "Are there special dietary needs for people on the Autism Spectrum?",
-      "excerpt": "Although there is no specific diets related to ASD, removing certain proteins from the diet may provide relief to some symptoms. According to research, a gluten-free, casein-free (GFCF) diet is one of the most common dietary interventions. Around 25% of patients find relief and improvement with this diet.",
-      "video_link": null
+      "question": "Can children with autism learn?",
+      "excerpt": "The children affected by this disorder might have some trouble learning, but they improve drastically once we adopt methods of teaching which are suitable for them. Most children improve after starting therapy specifically suited to them. Things can get better and easier if parents and teachers are persistent in their help. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tV8_Gz1PoaI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
-      "question": "Is autism always genetic?",
-      "excerpt": "Even though researchers have been unable to identify the exact cause of autism, it does have a large genetic component. The condition can also be triggered by environmental stressors, but the genes for the disorder need to be present in the first place for this to happen.",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZX2XQ2S3rsM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Is everyone on the spectrum alike?",
-      "excerpt": "Symptoms of the disorder vary drastically from person to person. No two people on the spectrum are going to be exactly the same, which is why the condition is described as a ‘spectrum’. Their strengths and challenges are diverse; thus, generalisations about autistic individuals cannot be made.",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fPjl8EKnqlo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Can we tell from which side of the family the autism came?",
-      "excerpt": "It may be possible to find out which side of the family carries the gene for autism through genetic testing, but the results might be inconclusive. ",
-      "video_link": null
-    },
-    {
-      "question": "What are the challenges associated with Autism?",
-      "excerpt": "Children and young people on the autism spectrum are reported to have difficulties in two main areas. Firstly, they face continuous difficulties with communication and social interaction in general. It is hard for them to carry on a conversation or understand how far to stand from someone else. Secondly, they have restricted, repetitive patterns of behaviour, interests, or activities. Examples include developing an overwhelming interest in something, following inflexible routines or rituals, making repetitive body movements, repeating words or phrases (echolalia), or being hypersensitive to certain sounds.Apart from this, many of them might have co-occurring conditions and syndromes which complicate the general problems associated with autism. These conditions and syndromes may include cognitive problems, development/neurological conditions, mental health problems, genetic conditions and learning disabilities.",
-      "video_link": null
-    },
-    {
-      "question": "What are the related mental health conditions?",
-      "excerpt": "Some of the mental health problems associated with autism are anxiety, depression, Obsessive-Compulsive Disorder (OCD), bipolar disorder and schizophrenia. Anxiety disorders affect up to 42% of people with autism, while depression affects an estimated 7% of children and 26& of adults with autism.",
-      "video_link": null
-    },
-    {
-      "question": "What are the related medicinal health conditions?",
-      "excerpt": "One of the primary medicinal health conditions involved with autism is gastrointestinal (GI) disorders. They include chronic constipation, gastroesophageal reflux, bowel inflammation and abdominal pain. GI disorders are nearly eight times more common among children with autism than other children.Epilepsy is also an associated medicinal condition. Extreme cases include unexplained and unwarranted staring spells, involuntary movements, unexplained confusion and severe headaches. Less-specific signs include disturbed sleep and unexplained changes in abilities and emotions. Epilepsy (seizure disorder) affects up to a third of people with autism.Furthermore, feeding and eating problems affect around 70% of children with autism. These issues can include extremely restricted food habits and aversions to certain tastes and textures. Many adults with autism also mention food aversions and restricted eating patterns.",
-      "video_link": null
-    },
-    {
-      "question": "Can a person with autism live a successful independent life?",
-      "excerpt": "If a person with autism is provided with the right tools and assistance during their childhood years, they can grow up to become independent and successful adults. There are millions of such recorded cases. These people can learn to take advantage of their strengths and find jobs suited to them to support themselves.",
-      "video_link": null
-    },
-    {
-      "question": "Are individuals with Autism Spectrum Disorder intellectually challenged?",
-      "excerpt": "People on the spectrum are not necessarily intellectually challenged. Their IQs range from average to high, and their intellectual level varies from person to person, just like their \nsymptoms. Some people face problems, but others are average while some are intellectually or artistically gifted. ",
+      "question": "Can individuals with autism ever lead successful independent lives?",
+      "excerpt": "If provided with the proper care, attention and education, children with autism can and have grown up to live independent lives while making important contributions to society. ",
       "video_link": null
     },
     {
       "question": "Can my child with autism attend regular school?",
       "excerpt": "The choice of school for a child with autism depends on the parents. He or she can either attend a special school or go to a regular school, after making sure the staff at the regular school understand and are empathetic toward your child’s condition. Some researchers believe that autistic children can greatly benefit from joining a regular school since they have the opportunity to learn from their peers who have developed typically. ",
       "video_link": null
-    },
-    {
-      "question": "How do I handle bullying?",
-      "excerpt": "Autistic children and young people can be more at risk of being bullied than their peers. This problem is further augmented by the fact that they may not be able to communicate this with you.The first step is to help the child understand what kind of behaviour can qualify as bullying and is inappropriate for their peers to be doing. This can include name-calling, insulting, pushing, and hitting, among others. Recognising the behaviour will allow them to report it to an authority. The next step is to reassure the child being bullied that this is not their fault. Often, children who are victims of bullying start to blame themselves, which can have adverse effects on their mental health. It is important to let them know that you, as an authority figure, stand by their side. You should convince them to come to you the next time someone treats them harshly or bullies them so you may be able to take appropriate action. If you are a parent of an autistic child, you can talk to the school administration to bring the problem to an end. If you are a teacher, you should make use of anti-bullying techniques inside your classroom. Include sessions on bullying after you have been informed about the problems. Include sessions on autism to allow the children in your class to understand the situation instead of being confused by it. More often than not, bullying behaviour emerges when children are scared by a situation they do not fully understand. Providing them helpful information may help solve the problem. Team building exercises are also a good practice to prevent bullying among children. ",
-      "video_link": null
-    },
-    {
-      "question": "How can I avoid nagging my child who doesn’t listen? ",
-      "excerpt": "Research has found that using secret signs, along with verbal directives, can be useful for dealing with children with autism. A child can be taught what a sign means and then a verbal command can be replaced by the signal to prompt them to change their behaviour. This can stop you from nagging your child and sounding rude, as well as prove to be less embarrassing for the child who likely hates attention being drawn to them.",
-      "video_link": null
-    },
-    {
-      "question": "What progress has been made so far in autism research?",
-      "excerpt": "Gene research is ongoing, and scientists in various fields are trying to understand the mechanisms that lead to autism. Over the past decade, scientists have made significant progress in understanding the causes of the condition, but there is still a long way to go. ",
-      "video_link": null
-    },
-    {
-      "question": "Do people with autism not like making friends? ",
-      "excerpt": "Autistic individuals may seem shy or even unamiable at first, but that is only because they tend to struggle with social skills. People with autism have difficulties in social situations so they may not initiate a friendship on their own. Instead, they often communicate or express their affection and desire for friendship in unique ways.",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OklE4vtfuJw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Do People with autism not feel or express any emotion?",
-      "excerpt": "Having autism does not mean the person is immune to feeling any emotions. It only means they express their feelings in unique ways which may be difficult for the untrained eye to interpret and understand.",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Eb7gECnRX4Q\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Are People with autism incapable of understanding the emotion of other?",
-      "excerpt": "Autism affects a person’s ability to pick up on social cues and unspoken interpersonal communication, which means they may not detect the sarcasm from your tone or annoyance from your body language. Instead, they require emotions to be communicated more directly. If you help them understand how you feel candidly, they are proven to be very empathetic people. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/pDTNRf_jr-Q\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Are autistic people anti-social?",
-      "excerpt": "Even though people with autism do struggle with social interactions, they enjoy having their close family and friends around them. They can even learn to form new social relations with correct guidance and encouragement. The process is only slightly difficult in the beginning but a lot of individuals on the spectrum improve over time. Some people with autism do prefer their own company, but that is not unlike people who are not on the spectrum. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MJs82xoWTHA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Do people with autism prefer to be isolated?",
-      "excerpt": "In some cases, individuals with autism might prefer their own company but this is true for people in general also. Research has proven that people with the condition enjoy the company of people they are comfortable around such as members of their family or friends from their peer groups. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Tgxq1gbfVaA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Are people with autism prone to violence?",
-      "excerpt": "When children have difficulties getting their message across, it is normal for them to resort to violence. Autistic children are no different. But studies have shown that these children are more likely to hurt themselves in such situations instead of using violence on others. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_DGB0XmMR00\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Can people with autism not form relationships?",
-      "excerpt": "Studies have shown that people with autism want to form relationships with people around them and in fact enjoy these relationships. Almost all documented cases of autism show that they can and do form very fulfilling relationships with their families and peers. The process of entering into these connections may be slightly challenging but it is definitely possible for them to sustain emotionally fulfilling ties. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m5RZsP4JpOw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Are people with autism incapable of establishing romantic relationships?",
-      "excerpt": "A lot of people on the spectrum are involved in happy and fulfilling romantic relationships. The key is to find the right person who is willing to help improve their lives and be sensitive towards their needs and way of life. ",
-      "video_link": null
-    },
-    {
-      "question": "Are all autistic people non-verbal?",
-      "excerpt": "People with autism are prone to communication problems. They have trouble interacting in social settings and in expressing their emotions. But since people with the condition are on a spectrum, the symptoms different people exhibit will be varied. Communication problems can range from difficulty in communication to a lack of interpretation of social cues to a complete lack of speech. But not all autistic people are non-verbal. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/hgWlblxbOu4\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
       "question": "Can people with autism communicate? ",
@@ -203,14 +93,137 @@
       "video_link": null
     },
     {
-      "question": "Can children with autism learn?",
-      "excerpt": "The children affected by this disorder might have some trouble learning, but they improve drastically once we adopt methods of teaching which are suitable for them. Most children improve after starting therapy specifically suited to them. Things can get better and easier if parents and teachers are persistent in their help. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/tV8_Gz1PoaI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      "question": "Can people with autism not form relationships?",
+      "excerpt": "Studies have shown that people with autism want to form relationships with people around them and in fact enjoy these relationships. Almost all documented cases of autism show that they can and do form very fulfilling relationships with their families and peers. The process of entering into these connections may be slightly challenging but it is definitely possible for them to sustain emotionally fulfilling ties. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m5RZsP4JpOw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "videoLink": "PAGE 2 donneee ----------19 so far"
     },
     {
-      "question": "Are people with autism intellectually disabled?",
-      "excerpt": "This is a misconception, as most people with autism often have IQs in the normal to high range. Autism might even cause the person to have exceptional abilities. Some may excel at practical subjects like science or math while others might have a knack for the arts, but this is not a given either. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ukb9zbGTISk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      "question": "Can we tell from which side of the family the autism came?",
+      "excerpt": "It may be possible to find out which side of the family carries the gene for autism through genetic testing, but the results might be inconclusive. ",
+      "video_link": null
+    },
+    {
+      "question": "Do People with autism not feel or express any emotion?",
+      "excerpt": "Having autism does not mean the person is immune to feeling any emotions. It only means they express their feelings in unique ways which may be difficult for the untrained eye to interpret and understand.",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Eb7gECnRX4Q\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Do people with autism not like making friends? ",
+      "excerpt": "Autistic individuals may seem shy or even unamiable at first, but that is only because they tend to struggle with social skills. People with autism have difficulties in social situations so they may not initiate a friendship on their own. Instead, they often communicate or express their affection and desire for friendship in unique ways.",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OklE4vtfuJw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Do people with autism prefer to be isolated?",
+      "excerpt": "In some cases, individuals with autism might prefer their own company but this is true for people in general also. Research has proven that people with the condition enjoy the company of people they are comfortable around such as members of their family or friends from their peer groups. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Tgxq1gbfVaA\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Does ASD condition only affect boys?",
+      "excerpt": "Although the condition is more prevalent in boys, with boys being diagnosed four times more often than girls, that does not mean girls are immune. There are many girls with the condition as well. Some researchers have suggested that girls are better at masking their symptoms, which is why they are diagnosed less often and usually much later in life. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zG0flII-EAk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Does Autism only affect children?",
+      "excerpt": "The condition becomes apparent and is detectable during childhood, as symptoms are visible in infants 6-months and older. Since these symptoms are behaviours are lifelong for most people, these children grow up to become adults with autism. Early detection may allow them to learn to cope with their situation better, but the condition does persist. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/o-6_K7I0jME\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Does Autism only affect the brain?",
+      "excerpt": "Even though autism is a brain developmental disorder, it may come coupled with a few other physical and neurological problems. The most common ones include gastrointestinal disorders, allergies, food sensitivities, and epilepsy. ",
+      "video_link": null
+    },
+    {
+      "question": "Does Dustin Hoffman’s character in Rain Man correctly portray all autistic people?",
+      "excerpt": "People affected by autism lie on a spectrum, meaning their symptoms and characteristics may vary significantly. Consequently, you cannot predict the behaviour, limitations or capabilities of one autistic person based on these indicators in another autistic individual. Each person with the condition is unique and will present their own qualities and challenges. The media only tends to portray the extreme ends of the spectrum. ",
+      "video_link": null
+    },
+    {
+      "question": "Has the frequency of autism been increasing over the years?",
+      "excerpt": "The number of cases being diagnosed over the past 50 years has increased steadily but that does not necessarily mean that the prevalence of the condition is increasing in the global population. The more likely explanation is that an increase in awareness regarding the disorder has led to more children being correctly diagnosed at an early age. ",
+      "video_link": null,
+      "videoLink": "PAGE 3 doneeee ----- 28 sofar"
+    },
+    {
+      "question": "How are Autism Spectrum Disorders diagnosed?",
+      "excerpt": "Diagnosing autism is slightly complicated since there is no physical test, like an X-ray, to determine whether a child has autism. It can be diagnosed by a doctor or a teacher who has specialised training or prior experience in the area. Only a physician or psychologist can make a formal diagnosis.The doctor will need a detailed history of the child as well as of the parents. They will also observe the child’s behaviour and ask questions regarding it, such as their interaction with strangers, making eye contact and their speaking skills. Then they will make a diagnosis about where the child falls on the spectrum if they do. Sometimes signs that look like autism are symptoms of other developmental problems, and the doctor can help make that distinction.",
+      "video_link": null
+    },
+    {
+      "question": "How can I avoid nagging my child who doesn’t listen? ",
+      "excerpt": "Research has found that using secret signs, along with verbal directives, can be useful for dealing with children with autism. A child can be taught what a sign means and then a verbal command can be replaced by the signal to prompt them to change their behaviour. This can stop you from nagging your child and sounding rude, as well as prove to be less embarrassing for the child who likely hates attention being drawn to them.",
+      "video_link": null
+    },
+    {
+      "question": "How can I find the best treatments for Autism Spectrum Disorders?",
+      "excerpt": "The best way to find a treatment suited to an individual is to understand their strengths and their challenges. Observing a person’s behaviour and making a note of their needs is the first step towards helping them get better. Consultation with a doctor and a psychologist can then help you narrow down the possible therapies and training which might be useful for the person. Trial and error might be a big part of this process, since you may start a treatment and then find out this does not meet your desired requirement. ",
+      "video_link": null
+    },
+    {
+      "question": "How can I help a child with autism?",
+      "excerpt": "Every person with autism is unique, so the kind of help a child needs depends on each specific case. But the best way to help a child is through early diagnosis. An early start can give them more time to learn to cope with their weaknesses and make the best use of their strengths. The goal is to provide them with the right assistance through various therapies and special learning tools which are suited to their needs.",
+      "video_link": null
+    },
+    {
+      "question": "How can I include my other children in the care of their sibling?",
+      "excerpt": "It is important to include siblings of a child with autism in their care. It helps build a better relationship among the children and prevents other children from feeling neglected or angry because of the extra attention the autistic child might receive. Taking siblings along to doctor’s appointments and involving them in the therapies at home or elsewhere can be a good start. This tells the children that they have a say in their sibling’s treatment and helps them feel empowered as well as more attached to the process.",
+      "video_link": null
+    },
+    {
+      "question": "How do I handle bullying?",
+      "excerpt": "Autistic children and young people can be more at risk of being bullied than their peers. This problem is further augmented by the fact that they may not be able to communicate this with you.The first step is to help the child understand what kind of behaviour can qualify as bullying and is inappropriate for their peers to be doing. This can include name-calling, insulting, pushing, and hitting, among others. Recognising the behaviour will allow them to report it to an authority. The next step is to reassure the child being bullied that this is not their fault. Often, children who are victims of bullying start to blame themselves, which can have adverse effects on their mental health. It is important to let them know that you, as an authority figure, stand by their side. You should convince them to come to you the next time someone treats them harshly or bullies them so you may be able to take appropriate action. If you are a parent of an autistic child, you can talk to the school administration to bring the problem to an end. If you are a teacher, you should make use of anti-bullying techniques inside your classroom. Include sessions on bullying after you have been informed about the problems. Include sessions on autism to allow the children in your class to understand the situation instead of being confused by it. More often than not, bullying behaviour emerges when children are scared by a situation they do not fully understand. Providing them helpful information may help solve the problem. Team building exercises are also a good practice to prevent bullying among children. ",
+      "video_link": null
+    },
+    {
+      "question": "How early can Autism Spectrum Disorder be recognized?",
+      "excerpt": "Symptoms of the condition can be detected as early as eight months by a trained eye, but the signs start becoming very visible by the age of 12 to 18 months. A diagnosis is usually possible by the age of two. But there is always a chance that some children might not show signs as early and their condition may only become apparent in more demanding social situations, meaning only once they join a school.",
+      "video_link": null
+    },
+    {
+      "question": "How many people have Autism Spectrum Disorder?",
+      "excerpt": "There is no exact count of the number of people affected by autism, but the amount of people diagnosed has steadily gone up over the past forty years. According to some estimates, 1 in 59 children suffers from the disorder. It is believed that this is due to the increase in awareness regarding the disorder among people and professionals.",
+      "video_link": null
+    },
+    {
+      "question": "Is Autism a mental illness?",
+      "excerpt": "Autism is actually a neurological disorder and not a mental illness. This means that the brains of people with autism are wired differently leading them to process information differently. It is a developmental disorder which is different from an illness and the distinction is important. An illness denotes that a person contracted the problem at some point in their life while a disorder indicates that they were born this way. But autism can very well be accompanied by common mental illnesses such as anxiety or depression.",
+      "video_link": null
+    },
+    {
+      "question": "Is autism always genetic?",
+      "excerpt": "Even though researchers have been unable to identify the exact cause of autism, it does have a large genetic component. The condition can also be triggered by environmental stressors, but the genes for the disorder need to be present in the first place for this to happen.",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZX2XQ2S3rsM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "videoLink": "Page 4 doneee ------ 38 done sofar"
+    },
+    {
+      "question": "Is Autism caused by bad parenting?",
+      "excerpt": "The idea that bad parenting styles and parents who are distant are the cause of autism was a popular belief around the middle of the 20th century, but it has long been disproven. ",
+      "video_link": null
+    },
+    {
+      "question": "Is Autism caused by vaccination?",
+      "excerpt": "Although there is no known single cause for autism, studies have ruled out any link between vaccinations and the disorder. A list of various researches has been compiled by the American Academy of Pediatrics which have found no evidence to support this widely held claim. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/unBCXuLONKc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Is Autism entirely genetic?",
+      "excerpt": "Although the scientific community is still unsure about the causes of the disorder, research indicates that there is no single cause for autism. There is a prominent genetic component of the condition, but there are other factors which impact the onset of autism such as environmental stressors. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZX2XQ2S3rsM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Is autism on the rise?",
+      "excerpt": "Although the number of people diagnosed with autism has increased steadily in previous years, experts do not refer to this as an epidemic for two reasons. Firstly, an epidemic would mean there was a known cause for the “spread of autism” which there is not. Secondly, researchers believe this rise is due to an increase in awareness about the condition in people around the world, leading to more people getting help for their children at an earlier age. ",
+      "video_link": null
+    },
+    {
+      "question": "Is Autism the childhood form of schizophrenia?",
+      "excerpt": "Autism and schizophrenia are two separate conditions. The belief that these conditions overlap was common during the early 20th century when it was labelled ‘infantile psychosis’. But researchers have long since established that both conditions have different causes and different symptoms. It is possible to be affected by both conditions, but that would mean the person has two separate disorders, neither one caused by the other. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Fa4nBf-0BX8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Is everyone on the spectrum alike?",
+      "excerpt": "Symptoms of the disorder vary drastically from person to person. No two people on the spectrum are going to be exactly the same, which is why the condition is described as a ‘spectrum’. Their strengths and challenges are diverse; thus, generalisations about autistic individuals cannot be made.",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fPjl8EKnqlo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
       "question": "Is everyone with autism a savant?",
@@ -223,34 +236,15 @@
       "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/fPjl8EKnqlo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
     },
     {
-      "question": "Does Dustin Hoffman’s character in Rain Man correctly portray all autistic people?",
-      "excerpt": "People affected by autism lie on a spectrum, meaning their symptoms and characteristics may vary significantly. Consequently, you cannot predict the behaviour, limitations or capabilities of one autistic person based on these indicators in another autistic individual. Each person with the condition is unique and will present their own qualities and challenges. The media only tends to portray the extreme ends of the spectrum. ",
-      "video_link": null
-    },
-    {
-      "question": "Will children who display autistic symptoms grow out of their symptoms?",
-      "excerpt": "Autism is a genetic condition which affects the brain and its development. It turns out to be a lifelong condition for most people affected by it so ‘growing out’ of the symptoms is unlikely. If you know someone who is showing signs of being on the spectrum, it is advisable to get a consultation from a professional. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gPhJm6_P7rQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
       "question": "Is it helpful to stop repetitive behavior in autistic people? ",
       "excerpt": "Understanding the purpose of the child behind engaging in repetitive behaviour is key. It is not advisable to stop an autistic child from engaging in their behaviour. Instead, attempts should be made to modify the actions to turn them into a form of play. Attention needs to be paid to the underlying reason behind the behaviour to deal with the problem correctly instead of preventing the child from acting that way. ",
       "video_link": null
     },
     {
-      "question": "Are children who engage in autistic-type behaviour such as repetitions bound to be autistic?",
-      "excerpt": "Symptoms like these are not the primary symptoms of autism thus cannot be characterised as the condition. They may be signs of some other developmental condition, so it is best to get help from a professional, such as a doctor or a child psychologist. ",
-      "video_link": null
-    },
-    {
-      "question": "Does Autism only affect children?",
-      "excerpt": "The condition becomes apparent and is detectable during childhood, as symptoms are visible in infants 6-months and older. Since these symptoms are behaviours are lifelong for most people, these children grow up to become adults with autism. Early detection may allow them to learn to cope with their situation better, but the condition does persist. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/o-6_K7I0jME\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Does Autism only affect boys?",
-      "excerpt": "The disorder is statistically more common in males than in females. But this does not mean that girls cannot be autistic. It has also been seen that girls learn to hide the symptoms of autism much better than boys do, so many of them are diagnosed later in life than boys. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/zG0flII-EAk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+      "question": "Is there an ongoing “Autism epidemic”?",
+      "excerpt": "There has been an increase in the number of people, specifically children, being diagnosed with the disorder, but calling this upsurge an epidemic is incorrect. An epidemic would mean there is a discernible cause for the rise, whereas in reality no proper cause has been identified as yet. The most likely explanation for this increase at the moment is that the increase in awareness among parents and teachers has simply led to more children being correctly diagnosed than ever before. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OHZBWYOQbP0?playlist=WnVbH7osG5U,7iw30sK2UCo,sYV5MTy0v1I\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "videoLink": "Page 5 done so far ---------- 48 so far"
     },
     {
       "question": "Should Autistic Children only be sent to special needs schools?",
@@ -258,78 +252,23 @@
       "video_link": null
     },
     {
-      "question": "Can careful changes in diet cure Autism?",
-      "excerpt": "Some people believe that providing a special diet to individuals with autism can help alleviate their symptoms, but this is incorrect. There is no evidence that restricting diet or including special ingredients will help in curing the condition.",
+      "question": "What are the challenges associated with Autism?",
+      "excerpt": "Children and young people on the autism spectrum are reported to have difficulties in two main areas. Firstly, they face continuous difficulties with communication and social interaction in general. It is hard for them to carry on a conversation or understand how far to stand from someone else. Secondly, they have restricted, repetitive patterns of behaviour, interests, or activities. Examples include developing an overwhelming interest in something, following inflexible routines or rituals, making repetitive body movements, repeating words or phrases (echolalia), or being hypersensitive to certain sounds.Apart from this, many of them might have co-occurring conditions and syndromes which complicate the general problems associated with autism. These conditions and syndromes may include cognitive problems, development/neurological conditions, mental health problems, genetic conditions and learning disabilities.",
       "video_link": null
     },
     {
-      "question": "Will all symptoms of autism last forever?",
-      "excerpt": "Although autistic people cannot be cured completely, their symptoms can become manageable as they age. Some symptoms tend to disappear entirely if provided with the proper care and support during their childhood years, while other symptoms persist into adulthood. But most symptoms either disappear or change over a person’s life. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3Aq5gmwdzL8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Can autism be cured?",
-      "excerpt": "Unfortunately, autism does not have a permanent cure yet, but the symptoms can be made manageable. People with autism can learn to cope with their problems and systematically deal with their problems. This can be achieved through special therapies and working closely with the child to provide them with the assistance they require throughout their childhood. The therapies one engages in need to be customised to the needs of the child specifically.",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/aGT1KRqU9_8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Will people with autism need care for their entire life?",
-      "excerpt": "With proper care, symptoms in people with autism can become very manageable. They can learn to manoeuvre around everyday life on their own by the time their adults. But this depends on the kind of help they receive as children. Even so, autistic adults will require assistance time and again as individuals with this disorder are unlikely to be cured completely. It is impossible to predict the long-term needs of people with the condition. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/s8J58ds_xUI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Can individuals with autism ever lead successful independent lives?",
-      "excerpt": "If provided with the proper care, attention and education, children with autism can and have grown up to live independent lives while making important contributions to society. ",
+      "question": "What are the early signs of Autism?",
+      "excerpt": "Symptoms of autism can be detected as early as eight months by a trained eye. These early signs include avoiding social interactions, avoiding eye contact, a lack of gestures, and a general disinterest in playing with other people.",
       "video_link": null
     },
     {
-      "question": "Is Autism entirely genetic?",
-      "excerpt": "Although the scientific community is still unsure about the causes of the disorder, research indicates that there is no single cause for autism. There is a prominent genetic component of the condition, but there are other factors which impact the onset of autism such as environmental stressors. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ZX2XQ2S3rsM\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Does Autism only affect the brain?",
-      "excerpt": "Even though autism is a brain developmental disorder, it may come coupled with a few other physical and neurological problems. The most common ones include gastrointestinal disorders, allergies, food sensitivities, and epilepsy. ",
+      "question": "What are the related medicinal health conditions?",
+      "excerpt": "One of the primary medicinal health conditions involved with autism is gastrointestinal (GI) disorders. They include chronic constipation, gastroesophageal reflux, bowel inflammation and abdominal pain. GI disorders are nearly eight times more common among children with autism than other children.Epilepsy is also an associated medicinal condition. Extreme cases include unexplained and unwarranted staring spells, involuntary movements, unexplained confusion and severe headaches. Less-specific signs include disturbed sleep and unexplained changes in abilities and emotions. Epilepsy (seizure disorder) affects up to a third of people with autism.Furthermore, feeding and eating problems affect around 70% of children with autism. These issues can include extremely restricted food habits and aversions to certain tastes and textures. Many adults with autism also mention food aversions and restricted eating patterns.",
       "video_link": null
     },
     {
-      "question": "Is Autism a mental illness?",
-      "excerpt": "Autism is actually a neurological disorder and not a mental illness. This means that the brains of people with autism are wired differently leading them to process information differently. It is a developmental disorder which is different from an illness and the distinction is important. An illness denotes that a person contracted the problem at some point in their life while a disorder indicates that they were born this way. But autism can very well be accompanied by common mental illnesses such as anxiety or depression.",
-      "video_link": null
-    },
-    {
-      "question": "Is Autism the childhood form of schizophrenia?",
-      "excerpt": "Autism and schizophrenia are two separate conditions. The belief that these conditions overlap was common during the early 20th century when it was labelled ‘infantile psychosis’. But researchers have long since established that both conditions have different causes and different symptoms. It is possible to be affected by both conditions, but that would mean the person has two separate disorders, neither one caused by the other. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Fa4nBf-0BX8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Is Autism caused by vaccination?",
-      "excerpt": "Although there is no known single cause for autism, studies have ruled out any link between vaccinations and the disorder. A list of various researches has been compiled by the American Academy of Pediatrics which have found no evidence to support this widely held claim. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/unBCXuLONKc\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Is Autism caused by bad parenting?",
-      "excerpt": "The idea that bad parenting styles and parents who are distant are the cause of autism was a popular belief around the middle of the 20th century, but it has long been disproven. ",
-      "video_link": null
-    },
-    {
-      "question": "Has the frequency of autism been increasing over the years?",
-      "excerpt": "The number of cases being diagnosed over the past 50 years has increased steadily but that does not necessarily mean that the prevalence of the condition is increasing in the global population. The more likely explanation is that an increase in awareness regarding the disorder has led to more children being correctly diagnosed at an early age. ",
-      "video_link": null
-    },
-    {
-      "question": "Is there an ongoing “Autism epidemic”?",
-      "excerpt": "There has been an increase in the number of people, specifically children, being diagnosed with the disorder, but calling this upsurge an epidemic is incorrect. An epidemic would mean there is a discernible cause for the rise, whereas in reality no proper cause has been identified as yet. The most likely explanation for this increase at the moment is that the increase in awareness among parents and teachers has simply led to more children being correctly diagnosed than ever before. ",
-      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/OHZBWYOQbP0?playlist=WnVbH7osG5U,7iw30sK2UCo,sYV5MTy0v1I\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
-    },
-    {
-      "question": "Are people with autism only good for jobs that include repetitive tasks?",
-      "excerpt": "People with autism have varying sets of strengths and limitations. Categorising them based solely on their broad diagnosis is unfair and incorrect. People on the spectrum have many different talents and skills which vary from person to person. Some adults may enjoy jobs involving repetitive tasks while others might be better suited for other kinds of work. Thus, it is not possible to define a specific job type for everyone with autism. ",
-      "video_link": null
-    },
-    {
-      "question": "What is Childhood Disintegrative Disorder?",
-      "excerpt": "A person with Childhood Disintegrative Disorder goes through normal development until the age of two or three but then starts to show signs of developmental problems. They begin to lose language, social and motor skills while also having trouble with motor control and may even lose bladder and bowel control. The condition of such a person may worsen over time and seizures can be expected as well.",
+      "question": "What are the related mental health conditions?",
+      "excerpt": "Some of the mental health problems associated with autism are anxiety, depression, Obsessive-Compulsive Disorder (OCD), bipolar disorder and schizophrenia. Anxiety disorders affect up to 42% of people with autism, while depression affects an estimated 7% of children and 26& of adults with autism.",
       "video_link": null
     },
     {
@@ -338,18 +277,34 @@
       "video_link": null
     },
     {
-      "question": "How early can Autism Spectrum Disorder be recognized?",
-      "excerpt": "Symptoms of the condition can be detected as early as eight months by a trained eye, but the signs start becoming very visible by the age of 12 to 18 months. A diagnosis is usually possible by the age of two. But there is always a chance that some children might not show signs as early and their condition may only become apparent in more demanding social situations, meaning only once they join a school.",
+      "question": "What are the treatments of Autism Spectrum Disorders?",
+      "excerpt": "Autism Spectrum Disorder does not have one specific treatment; instead, people suffering from the condition are prescribed treatments according to their specific needs. Treatments range from speech therapies, support groups, educational interventions, behavioural therapies, specialised training, medication to manage repetitive behaviours, among several others. It is best to consult doctors and psychologists to design treatments best suited for each person on the spectrum separately to provide them with the best care.",
       "video_link": null
     },
     {
-      "question": "How are Autism Spectrum Disorders diagnosed?",
-      "excerpt": "Diagnosing autism is slightly complicated since there is no physical test, like an X-ray, to determine whether a child has autism. It can be diagnosed by a doctor or a teacher who has specialised training or prior experience in the area. Only a physician or psychologist can make a formal diagnosis.The doctor will need a detailed history of the child as well as of the parents. They will also observe the child’s behaviour and ask questions regarding it, such as their interaction with strangers, making eye contact and their speaking skills. Then they will make a diagnosis about where the child falls on the spectrum if they do. Sometimes signs that look like autism are symptoms of other developmental problems, and the doctor can help make that distinction.",
+      "question": "What causes Autism Spectrum Disorders?",
+      "excerpt": "Autism Spectrum Disorders are caused by a combination of genetic and environmental factors. The exact gene, brain region or environmental condition, which directly leads to people exhibiting symptoms has not been identified as yet. But the conditions have a very salient genetic component. ",
       "video_link": null
     },
     {
-      "question": "Who can develop Autism Spectrum Disorders?",
-      "excerpt": "Since autism is a genetic disorder, siblings of children with autism are most likely to develop the condition as they might share many of the same genes. Boys have a higher chance of developing the condition than girls.",
+      "question": "What conditions come under Autism Spectrum Disorders (ASD)?",
+      "excerpt": "Autism is the most common ASD, followed by Asperger’s syndrome. Other conditions include Pervasive Developmental Disorder, and two rarer conditions called Childhood Disintegrative Disorder and Rett’s Syndrome. ",
+      "video_link": null
+    },
+    {
+      "question": "What do I do after I am diagnosed with autism?",
+      "excerpt": "The best place to start is to begin asking a lot of questions from professionals and doing research on your own. The process might feel overwhelming, and it will take time for you to accept the condition. If you think you need help, involve your family and friends and even consider getting assistance from a therapist or counsellor. ",
+      "video_link": null,
+      "videoLink": "Page 6 done ------------- 58 so far"
+    },
+    {
+      "question": "What if I have autism?",
+      "excerpt": "If you think you might have autism, you should consult a doctor or a psychologist as soon as possible. It is important to get help as early as possible to increase the time you have to understand your symptoms and learn to cope with them. ",
+      "video_link": null
+    },
+    {
+      "question": "What if I think my child has autism?",
+      "excerpt": "If you have reason to believe your child has autism, you should consult a professional as soon as possible. Early diagnosis is key. The doctor or psychologist will observe your child and ask you questions about the medical history of the child as well as both parents. The consultation may or may not lead to a diagnosis of autism or other developmental disorder.",
       "video_link": null
     },
     {
@@ -358,29 +313,71 @@
       "video_link": null
     },
     {
-      "question": "What if I have autism?",
-      "excerpt": "If you think you might have autism, you should consult a doctor or a psychologist as soon as possible. It is important to get help as early as possible to increase the time you have to understand your symptoms and learn to cope with them. ",
+      "question": "What is “the Spectrum”?",
+      "excerpt": "Being on “the spectrum” means that a person has been diagnosed with a form of autism. Every individual with autism is unique, with their own set of strengths and challenges. The symptoms of autism may range from mild to severe, which is why it is called a spectrum; since there are no set symptoms for a diagnosis.",
       "video_link": null
     },
     {
-      "question": "What do I do after I am diagnosed with autism?",
-      "excerpt": "The best place to start is to begin asking a lot of questions from professionals and doing research on your own. The process might feel overwhelming, and it will take time for you to accept the condition. If you think you need help, involve your family and friends and even consider getting assistance from a therapist or counsellor. ",
+      "question": "What is a social communication disorder?",
+      "excerpt": "A person is diagnosed with a social communication disorder when they have consistent problems with the use of language in social settings but do not have repetitive behaviours. This condition is not an Autism Spectrum Disorder. ",
       "video_link": null
     },
     {
-      "question": "What are the treatments of Autism Spectrum Disorders?",
-      "excerpt": "Autism Spectrum Disorder does not have one specific treatment; instead, people suffering from the condition are prescribed treatments according to their specific needs. Treatments range from speech therapies, support groups, educational interventions, behavioural therapies, specialised training, medication to manage repetitive behaviours, among several others. It is best to consult doctors and psychologists to design treatments best suited for each person on the spectrum separately to provide them with the best care.",
+      "question": "What is Asperger’s Syndrome?",
+      "excerpt": "Asperger’s syndrome is a milder form of autism and is the second most prevalent Autism Spectrum Disorder. People with the condition have trouble in social situations and communication, but they usually show higher language development than those with autism.",
       "video_link": null
     },
     {
-      "question": "How can I help a child with autism?",
-      "excerpt": "Every person with autism is unique, so the kind of help a child needs depends on each specific case. But the best way to help a child is through early diagnosis. An early start can give them more time to learn to cope with their weaknesses and make the best use of their strengths. The goal is to provide them with the right assistance through various therapies and special learning tools which are suited to their needs.",
+      "question": "What is Autism Spectrum Disorder?",
+      "excerpt": "Autism Spectrum Disorder is a neurological developmental condition that causes a child’s brain to develop differently. Children with the condition have trouble understanding social cues and learning to interact with the world around them, which leads them to be shy and have difficulty getting along with others. They have problems with communication and behaviour.\nEveryone affected by Autism Spectrum Disorder exhibits a variety of symptoms and difficulties in different areas to varying degrees. No two people with the condition may be the same, which is why it is called a spectrum disorder.\n",
       "video_link": null
     },
     {
-      "question": "What causes Autism Spectrum Disorders?",
-      "excerpt": "Autism Spectrum Disorders are caused by a combination of genetic and environmental factors. The exact gene, brain region or environmental condition, which directly leads to people exhibiting symptoms has not been identified as yet. But the conditions have a very salient genetic component. ",
+      "question": "What is Autistic disorder?",
+      "excerpt": "Autistic disorder, known more commonly as autism, is the most common Autism Spectrum Disorder. People with the condition have difficulty interacting with people and understanding social cues.",
       "video_link": null
+    },
+    {
+      "question": "What is Childhood Disintegrative Disorder?",
+      "excerpt": "A person with Childhood Disintegrative Disorder goes through normal development until the age of two or three but then starts to show signs of developmental problems. They begin to lose language, social and motor skills while also having trouble with motor control and may even lose bladder and bowel control. The condition of such a person may worsen over time and seizures can be expected as well.",
+      "video_link": null
+    },
+    {
+      "question": "What is Pervasive Developmental Disorder?",
+      "excerpt": "Pervasive Developmental Disorder is much like autism but with fewer and milder symptoms.",
+      "video_link": null,
+      "videoLink": "Page 7 done ---------------------------"
+    },
+    {
+      "question": "What is Rett’s Syndrome?",
+      "excerpt": "People with Rett’s syndrome show normal development until about six months to one year, after which they start to show symptoms of autism. These include avoiding social interactions, odd motor behaviours and a loss of speech. This condition almost exclusively affects females.",
+      "video_link": null
+    },
+    {
+      "question": "What progress has been made so far in autism research?",
+      "excerpt": "Gene research is ongoing, and scientists in various fields are trying to understand the mechanisms that lead to autism. Over the past decade, scientists have made significant progress in understanding the causes of the condition, but there is still a long way to go. ",
+      "video_link": null
+    },
+    {
+      "question": "Who can develop Autism Spectrum Disorders?",
+      "excerpt": "Since autism is a genetic disorder, siblings of children with autism are most likely to develop the condition as they might share many of the same genes. Boys have a higher chance of developing the condition than girls.",
+      "video_link": null
+    },
+    {
+      "question": "Will all symptoms of autism last forever?",
+      "excerpt": "Although autistic people cannot be cured completely, their symptoms can become manageable as they age. Some symptoms tend to disappear entirely if provided with the proper care and support during their childhood years, while other symptoms persist into adulthood. But most symptoms either disappear or change over a person’s life. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/3Aq5gmwdzL8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Will children who display autistic symptoms grow out of their symptoms?",
+      "excerpt": "Autism is a genetic condition which affects the brain and its development. It turns out to be a lifelong condition for most people affected by it so ‘growing out’ of the symptoms is unlikely. If you know someone who is showing signs of being on the spectrum, it is advisable to get a consultation from a professional. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/gPhJm6_P7rQ\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>"
+    },
+    {
+      "question": "Will people with autism need care for their entire life?",
+      "excerpt": "With proper care, symptoms in people with autism can become very manageable. They can learn to manoeuvre around everyday life on their own by the time their adults. But this depends on the kind of help they receive as children. Even so, autistic adults will require assistance time and again as individuals with this disorder are unlikely to be cured completely. It is impossible to predict the long-term needs of people with the condition. ",
+      "video_link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/s8J58ds_xUI\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+      "videoLink": "PAge 8 donneeee -------- 74 total"
     }
   ]
 }
