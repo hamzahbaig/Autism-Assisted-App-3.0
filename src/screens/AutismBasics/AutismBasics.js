@@ -8,6 +8,7 @@ import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
+import {NavigationEvents} from 'react-navigation';
 
 export default class AutismBasics extends React.Component {
   state = {
@@ -93,8 +94,20 @@ export default class AutismBasics extends React.Component {
       this.setState({contrast: null});
     }
   };
-  componentDidMount() {
+
+  intialise = () => {
+    this.contrastChanger(Settings.currentContrast);
     this.fontSizeHandler(Settings.currentFontSettings);
+    this.setState({
+      content:
+        Settings.currentLanguage == 'english'
+          ? eng.autismBasics
+          : urdu.autismBasics,
+    });
+  };
+
+  componentDidMount() {
+    this.intialise();
   }
 
   render() {
@@ -105,6 +118,7 @@ export default class AutismBasics extends React.Component {
           width: '100%',
           height: '100%',
         }}>
+        <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
           <Header

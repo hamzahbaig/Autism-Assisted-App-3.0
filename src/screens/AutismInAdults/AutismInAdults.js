@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Dimensions,
-  StatusBar,
-  ScrollView,
-  BackHandler,
-} from 'react-native';
+import {View, Text, StatusBar, ScrollView} from 'react-native';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import eng from '../../content/eng.json';
 import urdu from '../../content/urdu.json';
@@ -15,8 +8,7 @@ import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import CategoryBox from '../../components/CategoryBox';
 import {styles} from '../../constants/Styles';
-const phoneWidth = Dimensions.get('window').width;
-const phoneHeight = Dimensions.get('window').height;
+import {NavigationEvents} from 'react-navigation';
 
 export default class AutismInAdults extends React.Component {
   state = {
@@ -103,8 +95,19 @@ export default class AutismInAdults extends React.Component {
       this.setState({contrast: null});
     }
   };
-  componentDidMount() {
+  intialise = () => {
+    this.contrastChanger(Settings.currentContrast);
     this.fontSizeHandler(Settings.currentFontSettings);
+    this.setState({
+      content:
+        Settings.currentLanguage == 'english'
+          ? eng.autismInAdults
+          : urdu.autismInAdults,
+    });
+  };
+
+  componentDidMount() {
+    this.intialise();
   }
 
   render() {
@@ -115,6 +118,7 @@ export default class AutismInAdults extends React.Component {
           width: '100%',
           height: '100%',
         }}>
+        <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <Header
             backHandler={() => this.props.navigation.goBack()}
@@ -171,7 +175,7 @@ export default class AutismInAdults extends React.Component {
                       index: i,
                     })
                   }
-                  screenName={"AutismInAdultsCategroies"}
+                  screenName={'AutismInAdultsCategroies'}
                   fontSize={this.state.fontSize}
                   innerSection={section}
                   fontFamilyHeading={this.calculateFontFamily('heavy')}

@@ -2,6 +2,7 @@ import React from 'react';
 import {View, Text, Dimensions, StatusBar, ScrollView} from 'react-native';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import autismBasicsEng from './autismBasicsEng.json';
+import autismBasicsUrdu from './autismBasicsUrdu.json';
 import urdu from '../../content/urdu.json';
 import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
@@ -16,7 +17,9 @@ export default class AutismBasicsCategories extends React.Component {
         ? autismBasicsEng.autismBasicsEng[
             this.props.navigation.getParam('index')
           ]
-        : urdu.autismInAdults,
+        : autismBasicsUrdu.autismBasicsUrdu[
+            [this.props.navigation.getParam('index')]
+          ],
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -82,7 +85,9 @@ export default class AutismBasicsCategories extends React.Component {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
       this.setState({
-        content: urdu.autismInChildren,
+        content: autismBasicsUrdu.autismBasicsUrdu[
+          [this.props.navigation.getParam('index')]
+        ],
         fontSize: urduFontSizes.urdu_M,
       });
     } else if (Settings.currentLanguage == 'urdu') {

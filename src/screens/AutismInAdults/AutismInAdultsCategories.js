@@ -1,23 +1,13 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Dimensions,
-  StatusBar,
-  ScrollView,
-  BackHandler,
-  StyleSheet,
-  TouchableHighlightBase,
-} from 'react-native';
+import {View, Text, StatusBar, ScrollView} from 'react-native';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import autismInAdultsEng from './autismInAdultsEng.json';
+import autismInAdultsUrdu from './autismInAdultsUrdu.json';
 import urdu from '../../content/urdu.json';
 import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
-const phoneWidth = Dimensions.get('window').width;
-const phoneHeight = Dimensions.get('window').height;
 
 export default class AutismInAdultsCategroies extends React.Component {
   state = {
@@ -27,7 +17,9 @@ export default class AutismInAdultsCategroies extends React.Component {
         ? autismInAdultsEng.autismInAdultsEng[
             this.props.navigation.getParam('index')
           ]
-        : urdu.autismInAdults,
+        : autismInAdultsUrdu.autismInAdultsUrdu[
+            this.props.navigation.getParam('index')
+          ],
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -93,7 +85,10 @@ export default class AutismInAdultsCategroies extends React.Component {
       Settings.currentLanguage = 'urdu';
       Settings.currentFontSettings = 'm';
       this.setState({
-        content: urdu.autismInChildren,
+        content:
+          autismInAdultsUrdu.autismInAdultsUrdu[
+            this.props.navigation.getParam('index')
+          ],
         fontSize: urduFontSizes.urdu_M,
       });
     } else if (Settings.currentLanguage == 'urdu') {
