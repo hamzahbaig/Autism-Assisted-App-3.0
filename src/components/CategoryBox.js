@@ -25,10 +25,10 @@ export default class CategoryBox extends React.Component {
                 this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
             },
           ]}>
-          <Image
+          {/* <Image
             style={styles.imageContainer}
             source={require('../assets/images/logo.png')}
-          />
+          /> */}
           <View
             style={[
               styles.categoryContentContainer,
@@ -68,18 +68,17 @@ const styles = StyleSheet.create({
     width: '96%',
     alignItems: 'center',
   },
-  imageContainer: {
-    height: '95%',
-    width: '20%',
-    borderRadius: 8,
-  },
+  // imageContainer: {
+  //   height: '95%',
+  //   width: '20%',
+  //   borderRadius: 8,
+  // },
   categoryContentContainer: {
     height: '90%',
-    width: '75%',
+    width: '100%',
     justifyContent: 'center',
   },
   categoryHeadingStyle: {
     paddingTop: 4,
   },
-
 });

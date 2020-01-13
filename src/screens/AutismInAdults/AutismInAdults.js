@@ -178,7 +178,7 @@ export default class AutismInAdults extends React.Component {
                   screenName={'AutismInAdultsCategroies'}
                   fontSize={this.state.fontSize}
                   innerSection={section}
-                  fontFamilyHeading={this.calculateFontFamily('heavy')}
+                  fontFamilyHeading={this.calculateFontFamily('medium')}
                   fontFamilyDescription={this.calculateFontFamily('light')}
                   reverseFlag={Settings.currentLanguage}
                 />

@@ -171,7 +171,7 @@ export default class FAQs extends React.Component {
                   screenName={'FAQScreen'}
                   fontSize={this.state.fontSize}
                   innerSection={faq.question}
-                  fontFamilyHeading={this.calculateFontFamily('heavy')}
+                  fontFamilyHeading={this.calculateFontFamily('medium')}
                   fontFamilyDescription={this.calculateFontFamily('light')}
                   reverseFlag={Settings.currentLanguage}
                 />
