@@ -1,28 +1,55 @@
 import React from 'react';
 import {View, StatusBar, StyleSheet, Image} from 'react-native';
+import * as Animatable from 'react-native-animatable';
 
 export default class SplashScreen extends React.Component {
+  state = {
+    firstHalf: false,
+    secondHalf: false,
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({firstHalf: true});
+    }, 500);
+    setTimeout(() => {
+      this.setState({secondHalf: true});
+    }, 1500);
+    setTimeout(() => {
+      this.props.navigation.navigate('HomeScreen');
+    }, 2500);
+  }
   render() {
     return (
-      <View style={styles.container}>
+      <React.Fragment>
         <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-        <View style={styles.logoContainer}>
-          <Image
-            style={{width: 150, height: 150}}
-            source={require('../../assets/images/loga_beta_logo.png')}
-          />
-          <View style={styles.textContainer}>
-            <Image
-              style={{width: '100%', height: 40}}
-              source={require('../../assets/images/loga_beta_autism.png')}
-            />
-            <Image
-              style={{width: 90, height: 20}}
-              source={require('../../assets/images/loga_beta_assisted.png')}
-            />
+        <View style={styles.container}>
+          <View style={styles.logoContainer}>
+            <Animatable.View animation="slideInLeft">
+              <Image
+                style={{width: 150, height: 150}}
+                source={require('../../assets/images/loga_beta_logo.png')}
+              />
+            </Animatable.View>
+            <View style={styles.textContainer}>
+              {this.state.firstHalf ? (
+                <Animatable.View style={{width: '100%'}} animation="fadeIn">
+                  <Image
+                    style={{width: '100%', height: 40}}
+                    source={require('../../assets/images/loga_beta_autism.png')}
+                  />
+                  <Image
+                    style={{width: 90, height: 20}}
+                    source={require('../../assets/images/loga_beta_assisted.png')}
+                  />
+                </Animatable.View>
+              ) : null}
+              {/* {this.state.secondHalf ? (
+                <Animatable.View animation="fadeIn"></Animatable.View>
+              ) : null} */}
+            </View>
           </View>
         </View>
-      </View>
+      </React.Fragment>
     );
   }
 }

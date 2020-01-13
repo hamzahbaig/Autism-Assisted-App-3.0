@@ -22,7 +22,7 @@ const AppNavigator = createStackNavigator(
         headerShown: false,
       },
     },
-    Home: {
+    HomeScreen: {
       screen: HomeScreen,
       navigationOptions: {
         title: null,

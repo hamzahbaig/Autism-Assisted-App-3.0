@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* AutismAssistedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* AutismAssistedTests.m */; };
-		0ADE5132729669DB20E88917 /* libPods-AutismAssisted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C7691A9A8D01062B20D5144C /* libPods-AutismAssisted.a */; };
+		08FF6C750F6192C5ECACF1B9 /* libPods-AutismAssisted-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4129CE0FDF7BC658D637236 /* libPods-AutismAssisted-tvOSTests.a */; };
 		10B1B6A2C21B44B58C43AA29 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECEB7EC6AAA34E50AF581135 /* Entypo.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
@@ -25,24 +25,24 @@
 		39E5E5F4C03D4A81B853B53A /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCBF617C964B4095811EFC4F /* Fontisto.ttf */; };
 		3E4A78A7484440DDA47D1D02 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9E4BD67E2E2408693955F18 /* AntDesign.ttf */; };
 		54646D518A114358BA3C2FC7 /* lte50186.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1049BE4CD8D45F3997694E9 /* lte50186.ttf */; };
-		5C9270CB1DE7F56B73B062D7 /* libPods-AutismAssisted-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DDDD6E157B01933A26A9E9E /* libPods-AutismAssisted-tvOSTests.a */; };
 		61163A08BF4C464996294D5D /* avenirltstd-mediumoblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = DF7E167B498A4129A63498D0 /* avenirltstd-mediumoblique.otf */; };
 		6540A29823DE4E70938855F7 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B77A8A3D3DBA48AD952360D4 /* Foundation.ttf */; };
 		6AAEB437117F405FBDFE0E45 /* avenirltstd-blackoblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = F0DBC32EF9E2408FB7B0A482 /* avenirltstd-blackoblique.otf */; };
 		741788A0F7334F6D8189E95F /* avenirltstd-black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55D67042F6904E29A23BADBC /* avenirltstd-black.otf */; };
 		855C3359DC7643E683D96B9D /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC1F730D97DF4B2884432064 /* FontAwesome5_Solid.ttf */; };
-		878EB8A171ED2EA15B879A58 /* libPods-AutismAssisted-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 373363899960700CC2256CB1 /* libPods-AutismAssisted-tvOS.a */; };
+		88F308BD3EC9709F4DEF1A64 /* libPods-AutismAssisted-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDAF39256AD96E36DBEDF4B /* libPods-AutismAssisted-tvOS.a */; };
 		91D1205CE073409F813B8BC9 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CDE05D87CF647B1ACD6D6E0 /* FontAwesome.ttf */; };
 		94AF42E0C269441B808F8962 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 578624E80EE3452D92DD09D1 /* Octicons.ttf */; };
 		9828523136744C438A7575C5 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B8CAF76BC51E4B2A926A3D3C /* MaterialIcons.ttf */; };
 		A2D73C397E8D40199D9ED3F6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F3BC5480C454CB8B3F00170 /* Ionicons.ttf */; };
 		A7D4DE49B5D843A8830AA634 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A90EBE2C4B942AF98FE62AC /* SimpleLineIcons.ttf */; };
+		A94B0968A75040E2E2E3CC31 /* libPods-AutismAssisted.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EE756967438DDC5AEA6A610 /* libPods-AutismAssisted.a */; };
 		AA4A597F39FF4E41BBC6F04F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5CBC8EB1E7B48EBA5787572 /* FontAwesome5_Regular.ttf */; };
 		B0475CC20F654119A11BE418 /* AvenirLTStd-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = A71E349977FF4B77BDE1D48F /* AvenirLTStd-Light.otf */; };
+		B32F678E2106FFA16B0070AB /* libPods-AutismAssistedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E8404176A8BCD30B304C46B /* libPods-AutismAssistedTests.a */; };
 		BD4B534BEF8E46BC95E48B03 /* AvenirLTStd-BookOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = CD8BADC6948648EFB6E87991 /* AvenirLTStd-BookOblique.otf */; };
 		D032B5CD22D54B0893533ABE /* NafeesWebNaskhpakistaniBTK.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 765BDFA889194646A71AC8B6 /* NafeesWebNaskhpakistaniBTK.ttf */; };
 		D40F6F78FA734B7FB87EBBFA /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6263F618428E478DBDBEB37C /* FontAwesome5_Brands.ttf */; };
-		DC041E2717834BE67BB502EB /* libPods-AutismAssistedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7CD10841E6D64AAD70AAF3E /* libPods-AutismAssistedTests.a */; };
 		E538B3B01A0443CE889FC205 /* avenirltstd-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 327F8BA5A51347BD8B11D24B /* avenirltstd-medium.otf */; };
 		E62FD25F88E64BB8B51EA851 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43BCC6B172F04C70B0A9A565 /* Feather.ttf */; };
 		E6622AFEB651426C8D9399EE /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A60C4813BA8C4927A3C8F89E /* Zocial.ttf */; };
@@ -82,47 +82,47 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = AutismAssisted/main.m; sourceTree = "<group>"; };
 		1A90EBE2C4B942AF98FE62AC /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		1CDE05D87CF647B1ACD6D6E0 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		2A0DCBBC7B29C9B12A89AC55 /* Pods-AutismAssisted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted/Pods-AutismAssisted.release.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* AutismAssisted-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AutismAssisted-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* AutismAssisted-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AutismAssisted-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DDDD6E157B01933A26A9E9E /* libPods-AutismAssisted-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		327F8BA5A51347BD8B11D24B /* avenirltstd-medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-medium.otf"; path = "../src/assets/fonts/avenirltstd-medium.otf"; sourceTree = "<group>"; };
-		373363899960700CC2256CB1 /* libPods-AutismAssisted-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		43BCC6B172F04C70B0A9A565 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
-		5058DF0263388DACABAACF0F /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOSTests/Pods-AutismAssisted-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DDAF39256AD96E36DBEDF4B /* libPods-AutismAssisted-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EE756967438DDC5AEA6A610 /* libPods-AutismAssisted.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55D67042F6904E29A23BADBC /* avenirltstd-black.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-black.otf"; path = "../src/assets/fonts/avenirltstd-black.otf"; sourceTree = "<group>"; };
 		578624E80EE3452D92DD09D1 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		57BF985F43ED4F9C5D8B418F /* Pods-AutismAssisted-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOS/Pods-AutismAssisted-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		59B4633DB52F4D3C9E7E02FB /* avenirltstd-heavyoblique.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-heavyoblique.otf"; path = "../src/assets/fonts/avenirltstd-heavyoblique.otf"; sourceTree = "<group>"; };
-		5BDD552595E86976EE4C0CC9 /* Pods-AutismAssisted-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOS/Pods-AutismAssisted-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		6263F618428E478DBDBEB37C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		765BDFA889194646A71AC8B6 /* NafeesWebNaskhpakistaniBTK.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = NafeesWebNaskhpakistaniBTK.ttf; path = ../src/assets/fonts/NafeesWebNaskhpakistaniBTK.ttf; sourceTree = "<group>"; };
-		7808EEF1EBB4956882A47B36 /* Pods-AutismAssistedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssistedTests.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssistedTests/Pods-AutismAssistedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		83C6C94F7AF946599612CCDB /* avenirltstd-lightoblique.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-lightoblique.otf"; path = "../src/assets/fonts/avenirltstd-lightoblique.otf"; sourceTree = "<group>"; };
 		8E6B3958A8DF432EADFAD0A9 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		99D9C911DF057B88EB39ACF6 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOSTests/Pods-AutismAssisted-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E8404176A8BCD30B304C46B /* libPods-AutismAssistedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssistedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		904A30FE3ED19E72814A824C /* Pods-AutismAssistedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssistedTests.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssistedTests/Pods-AutismAssistedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A60C4813BA8C4927A3C8F89E /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		A6881F7EA7966C69A4D249C5 /* Pods-AutismAssistedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssistedTests.release.xcconfig"; path = "Target Support Files/Pods-AutismAssistedTests/Pods-AutismAssistedTests.release.xcconfig"; sourceTree = "<group>"; };
 		A71E349977FF4B77BDE1D48F /* AvenirLTStd-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Light.otf"; path = "../src/assets/fonts/AvenirLTStd-Light.otf"; sourceTree = "<group>"; };
 		A7B3CEA7D0994A8BAD336749 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
 		A833D2CD33F148E8A2C51084 /* AvenirLTStd-Heavy.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Heavy.otf"; path = "../src/assets/fonts/AvenirLTStd-Heavy.otf"; sourceTree = "<group>"; };
+		B4129CE0FDF7BC658D637236 /* libPods-AutismAssisted-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5CBC8EB1E7B48EBA5787572 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
 		B77A8A3D3DBA48AD952360D4 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		B8CAF76BC51E4B2A926A3D3C /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		BC1F730D97DF4B2884432064 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		BCCC9F65B4203993E23FCC2A /* Pods-AutismAssisted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted/Pods-AutismAssisted.debug.xcconfig"; sourceTree = "<group>"; };
+		BEA3D01692BEFC600D49CF27 /* Pods-AutismAssisted-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOS/Pods-AutismAssisted-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C1049BE4CD8D45F3997694E9 /* lte50186.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = lte50186.ttf; path = ../src/assets/fonts/lte50186.ttf; sourceTree = "<group>"; };
-		C1DC7B101B39564002534091 /* Pods-AutismAssisted.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted/Pods-AutismAssisted.release.xcconfig"; sourceTree = "<group>"; };
-		C7691A9A8D01062B20D5144C /* libPods-AutismAssisted.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssisted.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1C094A783233F7C1E72814 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOSTests/Pods-AutismAssisted-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCBF617C964B4095811EFC4F /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		CD3C6D04F245A2638E7A2F6C /* Pods-AutismAssistedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssistedTests.release.xcconfig"; path = "Target Support Files/Pods-AutismAssistedTests/Pods-AutismAssistedTests.release.xcconfig"; sourceTree = "<group>"; };
 		CD8BADC6948648EFB6E87991 /* AvenirLTStd-BookOblique.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-BookOblique.otf"; path = "../src/assets/fonts/AvenirLTStd-BookOblique.otf"; sourceTree = "<group>"; };
 		D9E4BD67E2E2408693955F18 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		DF7E167B498A4129A63498D0 /* avenirltstd-mediumoblique.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-mediumoblique.otf"; path = "../src/assets/fonts/avenirltstd-mediumoblique.otf"; sourceTree = "<group>"; };
 		E2CF15C3666D459CAB6EC7D7 /* AvenirLTStd-Book.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "AvenirLTStd-Book.otf"; path = "../src/assets/fonts/AvenirLTStd-Book.otf"; sourceTree = "<group>"; };
-		EC37F3614B35BCF541D4501E /* Pods-AutismAssisted.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted/Pods-AutismAssisted.debug.xcconfig"; sourceTree = "<group>"; };
 		ECEB7EC6AAA34E50AF581135 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F0DBC32EF9E2408FB7B0A482 /* avenirltstd-blackoblique.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "avenirltstd-blackoblique.otf"; path = "../src/assets/fonts/avenirltstd-blackoblique.otf"; sourceTree = "<group>"; };
-		F7CD10841E6D64AAD70AAF3E /* libPods-AutismAssistedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AutismAssistedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DABA2FCFCA351BF7752DE4 /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOSTests/Pods-AutismAssisted-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FEC7D752CF8C6EDA83D46360 /* Pods-AutismAssisted-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AutismAssisted-tvOS.release.xcconfig"; path = "Target Support Files/Pods-AutismAssisted-tvOS/Pods-AutismAssisted-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC041E2717834BE67BB502EB /* libPods-AutismAssistedTests.a in Frameworks */,
+				B32F678E2106FFA16B0070AB /* libPods-AutismAssistedTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADE5132729669DB20E88917 /* libPods-AutismAssisted.a in Frameworks */,
+				A94B0968A75040E2E2E3CC31 /* libPods-AutismAssisted.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				878EB8A171ED2EA15B879A58 /* libPods-AutismAssisted-tvOS.a in Frameworks */,
+				88F308BD3EC9709F4DEF1A64 /* libPods-AutismAssisted-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5C9270CB1DE7F56B73B062D7 /* libPods-AutismAssisted-tvOSTests.a in Frameworks */,
+				08FF6C750F6192C5ECACF1B9 /* libPods-AutismAssisted-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,10 +197,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				C7691A9A8D01062B20D5144C /* libPods-AutismAssisted.a */,
-				373363899960700CC2256CB1 /* libPods-AutismAssisted-tvOS.a */,
-				2DDDD6E157B01933A26A9E9E /* libPods-AutismAssisted-tvOSTests.a */,
-				F7CD10841E6D64AAD70AAF3E /* libPods-AutismAssistedTests.a */,
+				4EE756967438DDC5AEA6A610 /* libPods-AutismAssisted.a */,
+				4DDAF39256AD96E36DBEDF4B /* libPods-AutismAssisted-tvOS.a */,
+				B4129CE0FDF7BC658D637236 /* libPods-AutismAssisted-tvOSTests.a */,
+				8E8404176A8BCD30B304C46B /* libPods-AutismAssistedTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -277,14 +277,14 @@
 		F8D17DEF86DCD5E17470B0D8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EC37F3614B35BCF541D4501E /* Pods-AutismAssisted.debug.xcconfig */,
-				C1DC7B101B39564002534091 /* Pods-AutismAssisted.release.xcconfig */,
-				57BF985F43ED4F9C5D8B418F /* Pods-AutismAssisted-tvOS.debug.xcconfig */,
-				5BDD552595E86976EE4C0CC9 /* Pods-AutismAssisted-tvOS.release.xcconfig */,
-				5058DF0263388DACABAACF0F /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */,
-				99D9C911DF057B88EB39ACF6 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */,
-				7808EEF1EBB4956882A47B36 /* Pods-AutismAssistedTests.debug.xcconfig */,
-				A6881F7EA7966C69A4D249C5 /* Pods-AutismAssistedTests.release.xcconfig */,
+				BCCC9F65B4203993E23FCC2A /* Pods-AutismAssisted.debug.xcconfig */,
+				2A0DCBBC7B29C9B12A89AC55 /* Pods-AutismAssisted.release.xcconfig */,
+				BEA3D01692BEFC600D49CF27 /* Pods-AutismAssisted-tvOS.debug.xcconfig */,
+				FEC7D752CF8C6EDA83D46360 /* Pods-AutismAssisted-tvOS.release.xcconfig */,
+				F3DABA2FCFCA351BF7752DE4 /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */,
+				CA1C094A783233F7C1E72814 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */,
+				904A30FE3ED19E72814A824C /* Pods-AutismAssistedTests.debug.xcconfig */,
+				CD3C6D04F245A2638E7A2F6C /* Pods-AutismAssistedTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -296,7 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "AutismAssistedTests" */;
 			buildPhases = (
-				28757557FB3F2F041F420B89 /* [CP] Check Pods Manifest.lock */,
+				B07221ABB6E8C14F40F9772C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -315,7 +315,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "AutismAssisted" */;
 			buildPhases = (
-				69220FC2EAC635C62FE6D443 /* [CP] Check Pods Manifest.lock */,
+				E99C809B308FB303B22D28D8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -335,7 +335,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AutismAssisted-tvOS" */;
 			buildPhases = (
-				6CA784D2241293764E2354BB /* [CP] Check Pods Manifest.lock */,
+				0280EC8DB7C84621BDEC17B9 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -355,7 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "AutismAssisted-tvOSTests" */;
 			buildPhases = (
-				667BB8D2EB254270CEA819F7 /* [CP] Check Pods Manifest.lock */,
+				1FE9DE260248D2A0506144DC /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -493,7 +493,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		28757557FB3F2F041F420B89 /* [CP] Check Pods Manifest.lock */ = {
+		0280EC8DB7C84621BDEC17B9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,28 +508,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutismAssistedTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AutismAssisted-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		667BB8D2EB254270CEA819F7 /* [CP] Check Pods Manifest.lock */ = {
+		1FE9DE260248D2A0506144DC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -551,7 +537,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		69220FC2EAC635C62FE6D443 /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native Code And Images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		B07221ABB6E8C14F40F9772C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AutismAssistedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99C809B308FB303B22D28D8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -567,28 +589,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-AutismAssisted-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6CA784D2241293764E2354BB /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AutismAssisted-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -700,7 +700,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7808EEF1EBB4956882A47B36 /* Pods-AutismAssistedTests.debug.xcconfig */;
+			baseConfigurationReference = 904A30FE3ED19E72814A824C /* Pods-AutismAssistedTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -723,7 +723,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6881F7EA7966C69A4D249C5 /* Pods-AutismAssistedTests.release.xcconfig */;
+			baseConfigurationReference = CD3C6D04F245A2638E7A2F6C /* Pods-AutismAssistedTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -743,7 +743,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EC37F3614B35BCF541D4501E /* Pods-AutismAssisted.debug.xcconfig */;
+			baseConfigurationReference = BCCC9F65B4203993E23FCC2A /* Pods-AutismAssisted.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -763,7 +763,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1DC7B101B39564002534091 /* Pods-AutismAssisted.release.xcconfig */;
+			baseConfigurationReference = 2A0DCBBC7B29C9B12A89AC55 /* Pods-AutismAssisted.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -782,7 +782,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 57BF985F43ED4F9C5D8B418F /* Pods-AutismAssisted-tvOS.debug.xcconfig */;
+			baseConfigurationReference = BEA3D01692BEFC600D49CF27 /* Pods-AutismAssisted-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -810,7 +810,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BDD552595E86976EE4C0CC9 /* Pods-AutismAssisted-tvOS.release.xcconfig */;
+			baseConfigurationReference = FEC7D752CF8C6EDA83D46360 /* Pods-AutismAssisted-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -838,7 +838,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5058DF0263388DACABAACF0F /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = F3DABA2FCFCA351BF7752DE4 /* Pods-AutismAssisted-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -865,7 +865,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 99D9C911DF057B88EB39ACF6 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = CA1C094A783233F7C1E72814 /* Pods-AutismAssisted-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
