@@ -40,7 +40,7 @@ export default class SplashScreen extends React.Component {
               {this.state.firstHalf ? (
                 <Animatable.View style={{width: '100%'}} animation="fadeIn">
                   <Image
-                    style={{width: '100%', height: 40}}
+                    style={{width: '110%', height: 40}}
                     source={require('../../assets/images/loga_beta_autism.png')}
                   />
                   <Image
