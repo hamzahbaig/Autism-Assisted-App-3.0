@@ -15,6 +15,11 @@ import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {NavigationEvents} from 'react-navigation';
+import img1 from '../../assets/images/1.png';
+import img2 from '../../assets/images/2.png';
+import img3 from '../../assets/images/3.png';
+import img4 from '../../assets/images/4.png';
+
 const phoneHeight = Dimensions.get('window').height;
 
 export default class HomeScreen extends React.Component {
@@ -156,6 +161,7 @@ export default class HomeScreen extends React.Component {
           </View>
           <View style={styles.rowContainer}>
             <CardBox
+              image={img1}
               currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][0]}
               fontSize={this.state.fontSize}
@@ -167,6 +173,7 @@ export default class HomeScreen extends React.Component {
               }
             />
             <CardBox
+              image={img2}
               currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][1]}
               fontSize={this.state.fontSize}
@@ -180,6 +187,7 @@ export default class HomeScreen extends React.Component {
           </View>
           <View style={styles.rowContainer}>
             <CardBox
+              image={img3}
               currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][2]}
               fontSize={this.state.fontSize}
@@ -191,6 +199,7 @@ export default class HomeScreen extends React.Component {
               }
             />
             <CardBox
+              image={img4}
               currentLanguage={Settings.currentLanguage}
               title={this.state.content['category'][3]}
               fontSize={this.state.fontSize}

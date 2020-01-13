@@ -160,88 +160,99 @@ export default class AutismInAdultsCategroies extends React.Component {
                   </Text>
                 </View>
               ) : null}
-              {this.state.content.sections.map((section, index) => (
-                <View>
-                  <View style={styles.sectionContainer}>
-                    <Text
-                      style={[
-                        styles.sectionStyling,
-                        {
-                          fontSize: this.state.fontSize.heading,
-                          fontFamily: this.calculateFontFamily('black'),
-                          textAlign:
-                            Settings.currentLanguage == 'urdu' ? 'right' : null,
-                        },
-                      ]}>
-                      {section.title}
-                    </Text>
-                  </View>
-                  <View style={styles.contentDescriptionContainer}>
-                    <Text
-                      style={{
-                        fontSize: this.state.fontSize.content,
-                        fontFamily: this.calculateFontFamily('light'),
-                        lineHeight:
-                          Settings.currentLanguage == 'english' ? 20 : 25,
-                        textAlign:
-                          Settings.currentLanguage == 'urdu' ? 'right' : null,
-                      }}>
-                      {section.description}
-                    </Text>
-                  </View>
-                  {section.innerSection &&
-                    section.innerSection.map(innerData => (
-                      <View>
-                        <View style={styles.innerSectionContainerTitle}>
-                          <Text
-                            style={{
-                              fontSize: this.state.fontSize.innerHeading,
-                              fontFamily: this.calculateFontFamily('heavy'),
-                              lineHeight: 20,
+              {this.state.content.sections &&
+                this.state.content.sections.map((section, index) => (
+                  <View>
+                    {section.title ? (
+                      <View style={styles.sectionContainer}>
+                        <Text
+                          style={[
+                            styles.sectionStyling,
+                            {
+                              fontSize: this.state.fontSize.heading,
+                              fontFamily: this.calculateFontFamily('black'),
                               textAlign:
                                 Settings.currentLanguage == 'urdu'
                                   ? 'right'
                                   : null,
-                            }}>
-                            {innerData.title}
-                          </Text>
-                        </View>
-                        <View style={styles.innerSectionContainerDescription}>
-                          {innerData.description.map((data, i) => (
-                            <Text
-                              style={{
-                                fontSize: this.state.fontSize.content,
-                                fontFamily: this.calculateFontFamily('light'),
-                                lineHeight:
-                                  Settings.currentLanguage == 'english'
-                                    ? 20
-                                    : 25,
-                                textAlign:
-                                  Settings.currentLanguage == 'urdu'
-                                    ? 'right'
-                                    : null,
-                              }}>
-                              {`- ${data}`}
-                            </Text>
-                          ))}
-                        </View>
+                            },
+                          ]}>
+                          {section.title}
+                        </Text>
                       </View>
-                    ))}
-                  <View style={styles.footerSectionContainer}>
-                    <Text
-                      style={{
-                        fontSize: this.state.fontSize.content,
-                        fontFamily: this.calculateFontFamily('light'),
-                        lineHeight:
-                          Settings.currentLanguage == 'english' ? 20 : 25,
-                        textAlign:
-                          Settings.currentLanguage == 'urdu' ? 'right' : null,
-                      }}>
-                      {section.footer}
-                    </Text>
+                    ) : null}
+                    {section.description ? (
+                      <View style={styles.contentDescriptionContainer}>
+                        <Text
+                          style={{
+                            fontSize: this.state.fontSize.content,
+                            fontFamily: this.calculateFontFamily('light'),
+                            lineHeight:
+                              Settings.currentLanguage == 'english' ? 20 : 25,
+                            textAlign:
+                              Settings.currentLanguage == 'urdu'
+                                ? 'right'
+                                : null,
+                          }}>
+                          {section.description}
+                        </Text>
+                      </View>
+                    ) : null}
+                    {section.innerSection &&
+                      section.innerSection.map(innerData => (
+                        <View>
+                          {innerData.title ? (
+                            <View style={styles.innerSectionContainerTitle}>
+                              <Text
+                                style={{
+                                  fontSize: this.state.fontSize.innerHeading,
+                                  fontFamily: this.calculateFontFamily('heavy'),
+                                  lineHeight: 20,
+                                  textAlign:
+                                    Settings.currentLanguage == 'urdu'
+                                      ? 'right'
+                                      : null,
+                                }}>
+                                {innerData.title}
+                              </Text>
+                            </View>
+                          ) : null}
+                          <View style={styles.innerSectionContainerDescription}>
+                            {innerData.description.map((data, i) => (
+                              <Text
+                                style={{
+                                  fontSize: this.state.fontSize.content,
+                                  fontFamily: this.calculateFontFamily('light'),
+                                  lineHeight:
+                                    Settings.currentLanguage == 'english'
+                                      ? 20
+                                      : 25,
+                                  textAlign:
+                                    Settings.currentLanguage == 'urdu'
+                                      ? 'right'
+                                      : null,
+                                }}>
+                                {`- ${data}`}
+                              </Text>
+                            ))}
+                          </View>
+                        </View>
+                      ))}
+                    <View style={styles.footerSectionContainer}>
+                      <Text
+                        style={{
+                          fontSize: this.state.fontSize.content,
+                          fontFamily: this.calculateFontFamily('light'),
+                          lineHeight:
+                            Settings.currentLanguage == 'english' ? 20 : 25,
+                          textAlign:
+                            Settings.currentLanguage == 'urdu' ? 'right' : null,
+                        }}>
+                        {section.footer}
+                      </Text>
+                    </View>
                   </View>
-                </View>
-              ))}
+                ))}
             </View>
           </ScrollView>
         </View>

@@ -1,13 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Dimensions,
-  StatusBar,
-  ScrollView,
-  BackHandler,
-} from 'react-native';
+import {View, Text, StatusBar, ScrollView} from 'react-native';
 import CategoryBox from '../../components/CategoryBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import eng from '../../content/eng.json';
@@ -16,6 +8,7 @@ import Settings from '../../settings/Settings.json';
 import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
+import {NavigationEvents} from 'react-navigation';
 
 export default class AutismInChildren extends React.Component {
   state = {
@@ -101,8 +94,19 @@ export default class AutismInChildren extends React.Component {
       });
     }
   };
-  componentDidMount() {
+  intialise = () => {
+    this.contrastChanger(Settings.currentContrast);
     this.fontSizeHandler(Settings.currentFontSettings);
+    this.setState({
+      content:
+        Settings.currentLanguage == 'english'
+          ? eng.autismInChildren
+          : urdu.autismInChildren,
+    });
+  };
+
+  componentDidMount() {
+    this.intialise();
   }
 
   render() {
@@ -113,6 +117,7 @@ export default class AutismInChildren extends React.Component {
           width: '100%',
           height: '100%',
         }}>
+        <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <Header
             backHandler={() => this.props.navigation.goBack()}
@@ -161,7 +166,7 @@ export default class AutismInChildren extends React.Component {
             </Text>
           </View>
           <ScrollView style={styles.scrollViewContainer}>
-            {this.state.content.sections.map(x => (
+            {this.state.content.sections.map((x, i) => (
               <View style={styles.innerScrollViewContainer}>
                 <View style={styles.sectionContainer}>
                   <Text
@@ -177,8 +182,18 @@ export default class AutismInChildren extends React.Component {
                     {x[0]}
                   </Text>
                 </View>
-                {x[1].map(sub => (
+                {x[1].map((sub, j) => (
                   <CategoryBox
+                    screenChangeHandler={() =>
+                      this.props.navigation.navigate(
+                        'AutismInChildrenCategories',
+                        {
+                          index1: i,
+                          index2: j,
+                        },
+                      )
+                    }
+                    screenName={'AutismInChildrenCategories'}
                     fontSize={this.state.fontSize}
                     innerSection={sub}
                     fontFamilyHeading={this.calculateFontFamily('heavy')}

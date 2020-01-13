@@ -1,6 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity, Platform} from 'react-native';
-import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  TouchableOpacity,
+  Platform,
+} from 'react-native';
 
 export default class CardBox extends React.Component {
   render() {
@@ -8,10 +14,7 @@ export default class CardBox extends React.Component {
       <TouchableOpacity
         style={styles.mainContainer}
         onPress={this.props.onClick}>
-        <Image
-          style={styles.imageContainer}
-          source={require('../assets/images/logo.png')}
-        />
+        <Image style={styles.imageContainer} source={this.props.image} />
         <View
           style={[
             styles.titleContainer,
@@ -43,8 +46,8 @@ const styles = StyleSheet.create({
     width: '45%',
     borderRadius: 8,
     elevation: 15,
-    shadowOffset: {width:2,height:2},
-    shadowOpacity:0.5
+    shadowOffset: {width: 2, height: 2},
+    shadowOpacity: 0.5,
   },
   imageContainer: {
     height: '75%',
