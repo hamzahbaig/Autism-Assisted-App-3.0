@@ -24,10 +24,9 @@ export default class CategoryBox extends React.Component {
                 this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
             },
           ]}>
-          <Image
-            style={styles.imageContainer}
-            source={this.props.image}
-          />
+          {this.props.image ? (
+            <Image style={styles.imageContainer} source={this.props.image} />
+          ) : null}
           <View
             style={[
               styles.categoryContentContainer,

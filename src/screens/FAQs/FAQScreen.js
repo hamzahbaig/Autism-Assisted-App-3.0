@@ -147,7 +147,7 @@ export default class FAQScreen extends React.Component {
                   fontSize: this.state.fontSize.heading,
                   fontFamily: this.calculateFontFamily('black'),
                   color: '#04B874',
-                  lineHeight: 20,
+                  lineHeight: 28,
                 },
               ]}>
               {

@@ -7,6 +7,7 @@ import {
   Dimensions,
   Button,
   Platform,
+  Linking,
 } from 'react-native';
 import CardBox from '../../components/CardBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
@@ -20,6 +21,8 @@ import img1 from '../../assets/images/1.png';
 import img2 from '../../assets/images/2.png';
 import img3 from '../../assets/images/3.png';
 import img4 from '../../assets/images/4.png';
+import img5 from '../../assets/images/5.png';
+import img6 from '../../assets/images/6.png';
 
 const phoneHeight = Dimensions.get('window').height;
 
@@ -212,7 +215,28 @@ export default class HomeScreen extends React.Component {
               }
             />
           </View>
-          <Button title={"Youtube"} onPress={()=>alert(1)}/>
+          <View style={styles.rowContainer}>
+            <CardBox
+              image={img5}
+              currentLanguage={Settings.currentLanguage}
+              title={this.state.content['category'][4]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+              onClick={() =>
+                Linking.openURL(
+                  'https://www.youtube.com/channel/UCWc5nVGPzv8_9nyX1U6aQnw/featured',
+                )
+              }
+            />
+            <CardBox
+              image={img6}
+              currentLanguage={Settings.currentLanguage}
+              title={this.state.content['category'][5]}
+              fontSize={this.state.fontSize}
+              fontFamily={this.calculateFontFamily('medium')}
+              onClick={() => Linking.openURL('http://autism.assisted.pk/')}
+            />
+          </View>
         </View>
       </View>
     );

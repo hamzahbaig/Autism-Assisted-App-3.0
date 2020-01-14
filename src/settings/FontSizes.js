@@ -1,18 +1,18 @@
 export const engFontSizes = {
   eng_S: {
-    superHeading: 23,
+    superHeading: 20,
     innerHeading: 11,
     heading: 14,
     content: 12,
   },
   eng_M: {
-    superHeading: 25,
+    superHeading: 22,
     heading: 16,
     innerHeading: 15,
     content: 14,
   },
   eng_L: {
-    superHeading: 27,
+    superHeading: 24,
     heading: 18,
     innerHeading: 17,
     content: 16,

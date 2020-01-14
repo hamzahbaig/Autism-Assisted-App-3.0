@@ -38,7 +38,7 @@ export default class Header extends React.Component {
             styles.container,
             {
               flexDirection:
-                this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
+                this.props.reverseFlag == 'english' ? 'row' : 'row',
               marginTop: Platform.OS == 'ios' ? 35 : 0,
             },
           ]}>

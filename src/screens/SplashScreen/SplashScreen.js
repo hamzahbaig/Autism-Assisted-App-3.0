@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    marginRight: 10,
   },
   textContainer: {
     width: '50%',

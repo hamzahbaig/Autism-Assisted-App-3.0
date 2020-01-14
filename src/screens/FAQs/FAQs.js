@@ -168,6 +168,7 @@ export default class FAQs extends React.Component {
                       index: i,
                     })
                   }
+                  image={null}
                   screenName={'FAQScreen'}
                   fontSize={this.state.fontSize}
                   innerSection={faq.question}

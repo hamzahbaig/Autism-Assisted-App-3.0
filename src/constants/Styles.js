@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
     marginTop: 10,
     borderBottomWidth: 1,
     paddingBottom: 10,
-    borderColor: '#707070',
+    borderColor: "#e4e4e4",
   },
   scrollViewContainer: {
     height: '100%',
