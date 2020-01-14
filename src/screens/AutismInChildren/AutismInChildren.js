@@ -10,6 +10,17 @@ import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
 import {NavigationEvents} from 'react-navigation';
 
+// import images
+import img7 from './images/7.png';
+import img8 from './images/8.png';
+import img9 from './images/9.png';
+import img10 from './images/10.png';
+import img11 from './images/11.png';
+import img12 from './images/12.png';
+import img13 from './images/13.png';
+import img14 from './images/14.png';
+import img15 from './images/15.png';
+
 export default class AutismInChildren extends React.Component {
   state = {
     content:
@@ -22,6 +33,13 @@ export default class AutismInChildren extends React.Component {
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
+    images: [
+      [img7, img8],
+      [img9],
+      [img10, img11],
+      [img12, img13],
+      [img14, img15],
+    ],
   };
 
   fontSizeHandler = key => {
@@ -193,6 +211,7 @@ export default class AutismInChildren extends React.Component {
                         },
                       )
                     }
+                    image={this.state.images[i][j]}
                     screenName={'AutismInChildrenCategories'}
                     fontSize={this.state.fontSize}
                     innerSection={sub}

@@ -5,6 +5,7 @@ import {
   StyleSheet,
   StatusBar,
   Dimensions,
+  Button,
   Platform,
 } from 'react-native';
 import CardBox from '../../components/CardBox';
@@ -211,6 +212,7 @@ export default class HomeScreen extends React.Component {
               }
             />
           </View>
+          <Button title={"Youtube"} onPress={()=>alert(1)}/>
         </View>
       </View>
     );

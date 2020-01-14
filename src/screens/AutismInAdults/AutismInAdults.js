@@ -10,6 +10,11 @@ import CategoryBox from '../../components/CategoryBox';
 import {styles} from '../../constants/Styles';
 import {NavigationEvents} from 'react-navigation';
 
+// import images
+import img16 from './images/16.png';
+import img17 from './images/17.png';
+import img18 from './images/18.png';
+
 export default class AutismInAdults extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
@@ -23,6 +28,7 @@ export default class AutismInAdults extends React.Component {
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
+    images: [img16, img17, img18],
   };
 
   fontSizeHandler = key => {
@@ -175,6 +181,7 @@ export default class AutismInAdults extends React.Component {
                       index: i,
                     })
                   }
+                  image={this.state.images[i]}
                   screenName={'AutismInAdultsCategroies'}
                   fontSize={this.state.fontSize}
                   innerSection={section}

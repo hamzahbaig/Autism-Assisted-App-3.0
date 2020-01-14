@@ -7,7 +7,6 @@ import {
   Dimensions,
   TouchableOpacity,
 } from 'react-native';
-import {englishFonts, urduFonts} from '../assets/fonts/Fonts';
 
 const phoneHeight = Dimensions.get('window').height;
 
@@ -25,10 +24,10 @@ export default class CategoryBox extends React.Component {
                 this.props.reverseFlag == 'english' ? 'row' : 'row-reverse',
             },
           ]}>
-          {/* <Image
+          <Image
             style={styles.imageContainer}
-            source={require('../assets/images/logo.png')}
-          /> */}
+            source={this.props.image}
+          />
           <View
             style={[
               styles.categoryContentContainer,
@@ -68,11 +67,11 @@ const styles = StyleSheet.create({
     width: '96%',
     alignItems: 'center',
   },
-  // imageContainer: {
-  //   height: '95%',
-  //   width: '20%',
-  //   borderRadius: 8,
-  // },
+  imageContainer: {
+    height: '95%',
+    width: '20%',
+    borderRadius: 8,
+  },
   categoryContentContainer: {
     height: '90%',
     width: '100%',

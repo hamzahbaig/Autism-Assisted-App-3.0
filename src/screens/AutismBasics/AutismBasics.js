@@ -10,6 +10,14 @@ import Header from '../../components/Header';
 import {styles} from '../../constants/Styles';
 import {NavigationEvents} from 'react-navigation';
 
+//import images
+import img1 from './images/1.png';
+import img2 from './images/2.png';
+import img3 from './images/3.png';
+import img4 from './images/4.png';
+import img5 from './images/5.png';
+import img6 from './images/6.png';
+
 export default class AutismBasics extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
@@ -23,6 +31,7 @@ export default class AutismBasics extends React.Component {
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
+    images: [img1, img2, img3, img4, img5, img6],
   };
 
   fontSizeHandler = key => {
@@ -175,6 +184,7 @@ export default class AutismBasics extends React.Component {
                       index: i,
                     })
                   }
+                  image={this.state.images[i]}
                   screenName={'AutismBasicsCategories'}
                   fontSize={this.state.fontSize}
                   innerSection={section}
