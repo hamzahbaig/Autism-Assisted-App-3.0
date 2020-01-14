@@ -53,6 +53,7 @@ export default class Header extends React.Component {
               this.props.reverseFlag == 'english' ? null : {marginRight: 5},
             ]}>
             <SearchBox
+            onValueChnage={this.props.onValueChnage}
               languageSettings={this.props.languageSettings}
               fontSize={this.props.fontSize.content}
               searchTitle={

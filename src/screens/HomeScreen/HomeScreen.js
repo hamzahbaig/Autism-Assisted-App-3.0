@@ -5,8 +5,8 @@ import {
   StyleSheet,
   StatusBar,
   Dimensions,
-  Button,
   Platform,
+  FlatList,
   Linking,
 } from 'react-native';
 import CardBox from '../../components/CardBox';
@@ -23,7 +23,7 @@ import img3 from '../../assets/images/3.png';
 import img4 from '../../assets/images/4.png';
 import img5 from '../../assets/images/5.png';
 import img6 from '../../assets/images/6.png';
-
+import CategoryBox from '../../components/CategoryBox';
 const phoneHeight = Dimensions.get('window').height;
 
 export default class HomeScreen extends React.Component {
@@ -36,6 +36,19 @@ export default class HomeScreen extends React.Component {
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
+    searchedValue: null,
+    pages: eng.pages,
+    filtering: [],
+  };
+
+  onValueChnage = value => {
+    this.setState({searchedValue: value});
+
+    let filtering = [];
+    filtering = this.state.pages.filter(item =>
+      item[0].toLowerCase().includes(value.toLowerCase()),
+    );
+    this.setState({filtering: filtering});
   };
 
   fontSizeHandler = key => {
@@ -130,6 +143,7 @@ export default class HomeScreen extends React.Component {
         <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <Header
+            onValueChnage={this.onValueChnage}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
             contrast={Settings.currentContrast}
@@ -143,100 +157,125 @@ export default class HomeScreen extends React.Component {
             contrastChanger={this.contrastChanger}
           />
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
-          <View
-            style={[
-              styles.mainHeadingContainer,
-              Settings.currentLanguage == 'urdu'
-                ? Platform.OS == 'ios'
-                  ? {alignItems: 'flex-end'}
-                  : null
-                : null,
-            ]}>
-            <Text
-              style={[
-                styles.mainHeadingFont,
-                {
-                  fontSize: this.state.fontSize.heading,
-                  fontFamily: this.calculateFontFamily('black'),
-                },
-              ]}>
-              {this.state.content['title']}
-            </Text>
-          </View>
-          <View style={styles.rowContainer}>
-            <CardBox
-              image={img1}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][0]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() =>
-                this.props.navigation.navigate('AutismBasics', {
-                  refresh: this.intialise,
-                })
-              }
+          {!this.state.searchedValue ? (
+            <React.Fragment>
+              <View
+                style={[
+                  styles.mainHeadingContainer,
+                  Settings.currentLanguage == 'urdu'
+                    ? Platform.OS == 'ios'
+                      ? {alignItems: 'flex-end'}
+                      : null
+                    : null,
+                ]}>
+                <Text
+                  style={[
+                    styles.mainHeadingFont,
+                    {
+                      fontSize: this.state.fontSize.heading,
+                      fontFamily: this.calculateFontFamily('black'),
+                    },
+                  ]}>
+                  {this.state.content['title']}
+                </Text>
+              </View>
+              <View style={styles.rowContainer}>
+                <CardBox
+                  image={img1}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][0]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() =>
+                    this.props.navigation.navigate('AutismBasics', {
+                      refresh: this.intialise,
+                    })
+                  }
+                />
+                <CardBox
+                  image={img2}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][1]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() =>
+                    this.props.navigation.navigate('AutismInChildren', {
+                      refresh: this.intialise,
+                    })
+                  }
+                />
+              </View>
+              <View style={styles.rowContainer}>
+                <CardBox
+                  image={img3}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][2]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() =>
+                    this.props.navigation.navigate('AutismInAdults', {
+                      refresh: this.intialise,
+                    })
+                  }
+                />
+                <CardBox
+                  image={img4}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][3]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() =>
+                    this.props.navigation.navigate('FAQs', {
+                      refresh: this.intialise,
+                    })
+                  }
+                />
+              </View>
+              <View style={styles.rowContainer}>
+                <CardBox
+                  image={img5}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][4]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() =>
+                    Linking.openURL(
+                      'https://www.youtube.com/channel/UCWc5nVGPzv8_9nyX1U6aQnw/featured',
+                    )
+                  }
+                />
+                <CardBox
+                  image={img6}
+                  currentLanguage={Settings.currentLanguage}
+                  title={this.state.content['category'][5]}
+                  fontSize={this.state.fontSize}
+                  fontFamily={this.calculateFontFamily('medium')}
+                  onClick={() => Linking.openURL('http://autism.assisted.pk/')}
+                />
+              </View>
+            </React.Fragment>
+          ) : (
+            <FlatList
+              data={this.state.filtering}
+              renderItem={({item}) => (
+                <CategoryBox
+                  screenChangeHandler={() =>
+                    this.props.navigation.navigate(item[1], {
+                      index: item[2],
+                      index1: item[3],
+                    })
+                  }
+                  image={null}
+                  screenName={item[1]}
+                  fontSize={this.state.fontSize}
+                  innerSection={item[0]}
+                  fontFamilyHeading={this.calculateFontFamily('medium')}
+                  fontFamilyDescription={this.calculateFontFamily('light')}
+                  reverseFlag={Settings.currentLanguage}
+                />
+              )}
             />
-            <CardBox
-              image={img2}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][1]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() =>
-                this.props.navigation.navigate('AutismInChildren', {
-                  refresh: this.intialise,
-                })
-              }
-            />
-          </View>
-          <View style={styles.rowContainer}>
-            <CardBox
-              image={img3}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][2]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() =>
-                this.props.navigation.navigate('AutismInAdults', {
-                  refresh: this.intialise,
-                })
-              }
-            />
-            <CardBox
-              image={img4}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][3]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() =>
-                this.props.navigation.navigate('FAQs', {
-                  refresh: this.intialise,
-                })
-              }
-            />
-          </View>
-          <View style={styles.rowContainer}>
-            <CardBox
-              image={img5}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][4]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() =>
-                Linking.openURL(
-                  'https://www.youtube.com/channel/UCWc5nVGPzv8_9nyX1U6aQnw/featured',
-                )
-              }
-            />
-            <CardBox
-              image={img6}
-              currentLanguage={Settings.currentLanguage}
-              title={this.state.content['category'][5]}
-              fontSize={this.state.fontSize}
-              fontFamily={this.calculateFontFamily('medium')}
-              onClick={() => Linking.openURL('http://autism.assisted.pk/')}
-            />
-          </View>
+          )}
         </View>
       </View>
     );

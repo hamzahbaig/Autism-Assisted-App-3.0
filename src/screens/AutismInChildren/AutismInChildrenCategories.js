@@ -13,11 +13,11 @@ export default class AutismBasicsCategories extends React.Component {
     content:
       Settings.currentLanguage == 'english'
         ? autismInChildrenEng.autismInChildrenEng[
-            this.props.navigation.getParam('index1')
-          ][this.props.navigation.getParam('index2')]
+            this.props.navigation.getParam('index')
+          ][this.props.navigation.getParam('index1')]
         : autismInChildrenUrdu.autismInChildrenUrdu[
-            this.props.navigation.getParam('index1')
-          ][this.props.navigation.getParam('index2')],
+            this.props.navigation.getParam('index')
+          ][this.props.navigation.getParam('index1')],
     fontSize:
       Settings.currentLanguage == 'english'
         ? engFontSizes.eng_M
@@ -85,8 +85,8 @@ export default class AutismBasicsCategories extends React.Component {
       this.setState({
         content:
           autismInChildrenUrdu.autismInChildrenUrdu[
-            this.props.navigation.getParam('index1')
-          ][this.props.navigation.getParam('index2')],
+            this.props.navigation.getParam('index')
+          ][this.props.navigation.getParam('index1')],
         fontSize: urduFontSizes.urdu_M,
       });
     } else if (Settings.currentLanguage == 'urdu') {
@@ -95,8 +95,8 @@ export default class AutismBasicsCategories extends React.Component {
       this.setState({
         content:
           autismInChildrenEng.autismInChildrenEng[
-            this.props.navigation.getParam('index1')
-          ][this.props.navigation.getParam('index2')],
+            this.props.navigation.getParam('index')
+          ][this.props.navigation.getParam('index1')],
         fontSize: engFontSizes.eng_M,
       });
     }

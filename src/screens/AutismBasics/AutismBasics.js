@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StatusBar, ScrollView, BackHandler} from 'react-native';
+import {View, Text, StatusBar, ScrollView, FlatList} from 'react-native';
 import CategoryBox from '../../components/CategoryBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import eng from '../../content/eng.json';
@@ -32,6 +32,19 @@ export default class AutismBasics extends React.Component {
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
     images: [img1, img2, img3, img4, img5, img6],
+    searchedValue: null,
+    pages: eng.pages,
+    filtering: [],
+  };
+
+  onValueChnage = value => {
+    this.setState({searchedValue: value});
+
+    let filtering = [];
+    filtering = this.state.pages.filter(item =>
+      item[0].toLowerCase().includes(value.toLowerCase()),
+    );
+    this.setState({filtering: filtering});
   };
 
   fontSizeHandler = key => {
@@ -131,6 +144,7 @@ export default class AutismBasics extends React.Component {
         <View style={styles.container}>
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
           <Header
+            onValueChnage={this.onValueChnage}
             backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
@@ -144,57 +158,86 @@ export default class AutismBasics extends React.Component {
             fontSize={this.state.fontSize}
             contrastChanger={this.contrastChanger}
           />
-          <View
-            style={[
-              styles.mainHeadingContainer,
-              Settings.currentLanguage == 'urdu'
-                ? Platform.OS == 'ios'
-                  ? {alignItems: 'flex-end'}
-                  : null
-                : null,
-            ]}>
-            <Text
-              style={[
-                styles.mainHeadingFont,
-                {
-                  fontSize: this.state.fontSize.heading,
-                  fontFamily: this.calculateFontFamily('black'),
-                },
-              ]}>
-              {this.state.content.title}
-            </Text>
-          </View>
-          <View style={styles.descriptionContainer}>
-            <Text
-              style={{
-                fontSize: this.state.fontSize.content,
-                fontFamily: this.calculateFontFamily('light'),
-                lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
-                textAlign: Settings.currentLanguage == 'urdu' ? 'right' : null,
-              }}>
-              {this.state.content.description}
-            </Text>
-          </View>
-          <ScrollView style={styles.scrollViewContainer}>
-            <View style={styles.innerScrollViewContainer}>
-              {this.state.content.innerSection.map((section, i) => (
+          {!this.state.searchedValue ? (
+            <React.Fragment>
+              <View
+                style={[
+                  styles.mainHeadingContainer,
+                  Settings.currentLanguage == 'urdu'
+                    ? Platform.OS == 'ios'
+                      ? {alignItems: 'flex-end'}
+                      : null
+                    : null,
+                ]}>
+                <Text
+                  style={[
+                    styles.mainHeadingFont,
+                    {
+                      fontSize: this.state.fontSize.heading,
+                      fontFamily: this.calculateFontFamily('black'),
+                    },
+                  ]}>
+                  {this.state.content.title}
+                </Text>
+              </View>
+              <View style={styles.descriptionContainer}>
+                <Text
+                  style={{
+                    fontSize: this.state.fontSize.content,
+                    fontFamily: this.calculateFontFamily('light'),
+                    lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+                    textAlign:
+                      Settings.currentLanguage == 'urdu' ? 'right' : null,
+                  }}>
+                  {this.state.content.description}
+                </Text>
+              </View>
+              <ScrollView style={styles.scrollViewContainer}>
+                <View style={styles.innerScrollViewContainer}>
+                  {this.state.content.innerSection.map((section, i) => (
+                    <CategoryBox
+                      screenChangeHandler={() =>
+                        this.props.navigation.navigate(
+                          'AutismBasicsCategories',
+                          {
+                            index: i,
+                          },
+                        )
+                      }
+                      image={this.state.images[i]}
+                      screenName={'AutismBasicsCategories'}
+                      fontSize={this.state.fontSize}
+                      innerSection={section}
+                      fontFamilyHeading={this.calculateFontFamily('medium')}
+                      fontFamilyDescription={this.calculateFontFamily('light')}
+                      reverseFlag={Settings.currentLanguage}
+                    />
+                  ))}
+                </View>
+              </ScrollView>
+            </React.Fragment>
+          ) : (
+            <FlatList
+              data={this.state.filtering}
+              renderItem={({item}) => (
                 <CategoryBox
                   screenChangeHandler={() =>
-                    this.props.navigation.navigate('AutismBasicsCategories', {
-                      index: i,
+                    this.props.navigation.navigate(item[1], {
+                      index: item[2],
+                      index1: item[3],
                     })
                   }
-                  image={this.state.images[i]}
-                  screenName={'AutismBasicsCategories'}
+                  image={null}
+                  screenName={item[1]}
                   fontSize={this.state.fontSize}
-                  innerSection={section}
+                  innerSection={item[0]}
                   fontFamilyHeading={this.calculateFontFamily('medium')}
                   fontFamilyDescription={this.calculateFontFamily('light')}
                   reverseFlag={Settings.currentLanguage}
                 />
-              ))}
-            </View>
-          </ScrollView>
+              )}
+            />
+          )}
         </View>
       </View>
     );

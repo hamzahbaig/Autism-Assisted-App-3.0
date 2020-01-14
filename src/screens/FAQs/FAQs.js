@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StatusBar, ScrollView, BackHandler} from 'react-native';
+import {View, Text, StatusBar, ScrollView, FlatList} from 'react-native';
 import CategoryBox from '../../components/CategoryBox';
 import {englishFonts, urduFonts} from '../../assets/fonts/Fonts';
 import englishFAQs from '../../content/englishFAQs';
@@ -9,6 +9,7 @@ import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {NavigationEvents} from 'react-navigation';
 import {styles} from '../../constants/Styles';
+import eng from '../../content/eng.json'
 export default class FAQs extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
@@ -19,6 +20,19 @@ export default class FAQs extends React.Component {
         : urduFontSizes.urdu_M,
     fontFamily: Settings.currentLanguage == 'english' ? null : urduFonts,
     contrast: Settings.currentContrast,
+    searchedValue: null,
+    pages: eng.pages,
+    filtering: [],
+  };
+
+  onValueChnage = value => {
+    this.setState({searchedValue: value});
+
+    let filtering = [];
+    filtering = this.state.pages.filter(item =>
+      item[0].toLowerCase().includes(value.toLowerCase()),
+    );
+    this.setState({filtering: filtering});
   };
 
   fontSizeHandler = key => {
@@ -115,6 +129,7 @@ export default class FAQs extends React.Component {
         <View style={styles.container}>
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
           <Header
+            onValueChnage={this.onValueChnage}
             backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
@@ -128,57 +143,84 @@ export default class FAQs extends React.Component {
             fontSize={this.state.fontSize}
             contrastChanger={this.contrastChanger}
           />
-          <View
-            style={[
-              styles.mainHeadingContainer,
-              Settings.currentLanguage == 'urdu'
-                ? Platform.OS == 'ios'
-                  ? {alignItems: 'flex-end'}
-                  : null
-                : null,
-            ]}>
-            <Text
-              style={[
-                styles.mainHeadingFont,
-                {
-                  fontSize: this.state.fontSize.heading,
-                  fontFamily: this.calculateFontFamily('black'),
-                },
-              ]}>
-              {this.state.content.title}
-            </Text>
-          </View>
-          <View style={styles.descriptionContainer}>
-            <Text
-              style={{
-                fontSize: this.state.fontSize.content,
-                fontFamily: this.calculateFontFamily('light'),
-                lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
-                textAlign: Settings.currentLanguage == 'urdu' ? 'right' : null,
-              }}>
-              {this.state.content.description}
-            </Text>
-          </View>
-          <ScrollView style={styles.scrollViewContainer}>
-            <View style={styles.innerScrollViewContainer}>
-              {this.state.content.faqs.map((faq, i) => (
+
+          {!this.state.searchedValue ? (
+            <React.Fragment>
+              <View
+                style={[
+                  styles.mainHeadingContainer,
+                  Settings.currentLanguage == 'urdu'
+                    ? Platform.OS == 'ios'
+                      ? {alignItems: 'flex-end'}
+                      : null
+                    : null,
+                ]}>
+                <Text
+                  style={[
+                    styles.mainHeadingFont,
+                    {
+                      fontSize: this.state.fontSize.heading,
+                      fontFamily: this.calculateFontFamily('black'),
+                    },
+                  ]}>
+                  {this.state.content.title}
+                </Text>
+              </View>
+              <View style={styles.descriptionContainer}>
+                <Text
+                  style={{
+                    fontSize: this.state.fontSize.content,
+                    fontFamily: this.calculateFontFamily('light'),
+                    lineHeight: Settings.currentLanguage == 'english' ? 20 : 25,
+                    textAlign:
+                      Settings.currentLanguage == 'urdu' ? 'right' : null,
+                  }}>
+                  {this.state.content.description}
+                </Text>
+              </View>
+              <ScrollView style={styles.scrollViewContainer}>
+                <View style={styles.innerScrollViewContainer}>
+                  {this.state.content.faqs.map((faq, i) => (
+                    <CategoryBox
+                      screenChangeHandler={() =>
+                        this.props.navigation.navigate('FAQScreen', {
+                          index: i,
+                        })
+                      }
+                      image={null}
+                      screenName={'FAQScreen'}
+                      fontSize={this.state.fontSize}
+                      innerSection={faq.question}
+                      fontFamilyHeading={this.calculateFontFamily('medium')}
+                      fontFamilyDescription={this.calculateFontFamily('light')}
+                      reverseFlag={Settings.currentLanguage}
+                    />
+                  ))}
+                </View>
+              </ScrollView>
+            </React.Fragment>
+          ) : (
+            <FlatList
+              data={this.state.filtering}
+              renderItem={({item}) => (
                 <CategoryBox
                   screenChangeHandler={() =>
-                    this.props.navigation.navigate('FAQScreen', {
-                      index: i,
+                    this.props.navigation.navigate(item[1], {
+                      index: item[2],
+                      index1: item[3],
                     })
                   }
                   image={null}
-                  screenName={'FAQScreen'}
+                  screenName={item[1]}
                   fontSize={this.state.fontSize}
-                  innerSection={faq.question}
+                  innerSection={item[0]}
                   fontFamilyHeading={this.calculateFontFamily('medium')}
                   fontFamilyDescription={this.calculateFontFamily('light')}
                   reverseFlag={Settings.currentLanguage}
                 />
-              ))}
-            </View>
-          </ScrollView>
+              )}
+            />
+          )}
         </View>
       </View>
     );

@@ -3,7 +3,7 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 
 // Import Screens
-import SplashScreen from './screens/SplashScreen/SplashScreen'
+import SplashScreen from './screens/SplashScreen/SplashScreen';
 import HomeScreen from './screens/HomeScreen/HomeScreen';
 import AutismInChildren from './screens/AutismInChildren/AutismInChildren';
 import AutismBasics from './screens/AutismBasics/AutismBasics';
@@ -13,6 +13,7 @@ import FAQs from './screens/FAQs/FAQs';
 import FAQScreen from './screens/FAQs/FAQScreen';
 import AutismBasicsCategories from './screens/AutismBasics/AutismBasicsCategories';
 import AutismInChildrenCategories from './screens/AutismInChildren/AutismInChildrenCategories';
+
 const AppNavigator = createStackNavigator(
   {
     SplashScreen: {

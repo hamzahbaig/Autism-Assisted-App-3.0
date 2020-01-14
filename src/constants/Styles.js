@@ -41,7 +41,7 @@ export const styles = StyleSheet.create({
   },
   bannerContainer: {
     width: phoneWidth,
-    height: '10%',
+    height: phoneHeight*.10,
     backgroundColor: '#04B874',
     justifyContent: 'center',
   },

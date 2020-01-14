@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Platform} from 'react-native';
 import {Input} from 'react-native-elements';
+
 export default class SearchBox extends React.Component {
   render() {
     return (
@@ -10,6 +11,7 @@ export default class SearchBox extends React.Component {
           placeholderTextColor={'#707070'}
           containerStyle={styles.searchBarContainer}
           inputContainerStyle={{borderBottomWidth: 0}}
+          onChangeText={this.props.onValueChnage}
           inputStyle={[
             {
               fontSize: this.props.fontSize,

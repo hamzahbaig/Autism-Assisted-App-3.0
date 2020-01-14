@@ -64,5 +64,36 @@
   "faqs": {
     "title": "Frequently Asked Questions",
     "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require"
-  }
+  },
+  "pages": [
+    ["What is Autism?", "AutismBasicsCategories", 0, 0],
+    ["Signs And Symptoms", "AutismBasicsCategories", 1, 0],
+    ["Testing for Autism", "AutismBasicsCategories", 2, 0],
+    ["Treatments For Autism", "AutismBasicsCategories", 3, 0],
+    ["Related Diseases", "AutismBasicsCategories", 4, 0],
+    ["Causes of Autism", "AutismBasicsCategories", 5, 0],
+    ["Symptons in Adults", "AutismInAdultsCategroies", 0, 0],
+    ["Diagnosis and Treatement", "AutismInAdultsCategroies", 1, 0],
+    ["Could I Have Autism?", "AutismInAdultsCategroies", 2, 0],
+
+    ["Your Child Development", "AutismInChildrenCategories", 0, 0],
+    ["Signs of Autism in Children", "AutismInChildrenCategories", 0, 1],
+    [
+      "Autism Screening and Formal Evaluation",
+      "AutismInChildrenCategories",
+      1,
+      1
+    ],
+    [
+      "What are Early Intervention Therapies",
+      "AutismInChildrenCategories",
+      2,
+      0
+    ],
+    ["Treatment for Autism in children", "AutismInChildrenCategories", 2, 1],
+    ["Benefits of Disclosing", "AutismInChildrenCategories", 3, 0],
+    ["Whom to disclose to", "AutismInChildrenCategories", 3, 1],
+    ["Effects of Diet", "AutismInChildrenCategories", 4, 0],
+    ["Tips for Meal Time", "AutismInChildrenCategories", 4, 1]
+  ]
 }
