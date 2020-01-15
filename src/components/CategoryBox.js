@@ -73,7 +73,7 @@ const styles = StyleSheet.create({
   },
   categoryContentContainer: {
     height: '90%',
-    width: '100%',
+    width: '80%',
     justifyContent: 'center',
   },
   categoryHeadingStyle: {

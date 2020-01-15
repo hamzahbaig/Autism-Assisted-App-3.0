@@ -198,12 +198,14 @@ export default class ControlPanel extends Component {
             </View>
           </View>
         </Modal>
-        <Icon1
-          name="md-settings"
-          size={28}
-          color="white"
-          onPress={() => this.props.setModalVisible(true)}
-        />
+        <View style={ this.props.languageSettings == 'english' ? null : {marginRight:10}}>
+          <Icon1
+            name="md-settings"
+            size={28}
+            color="white"
+            onPress={() => this.props.setModalVisible(true)}
+          />
+        </View>
       </View>
     );
   }

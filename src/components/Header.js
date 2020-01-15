@@ -53,7 +53,7 @@ export default class Header extends React.Component {
               this.props.reverseFlag == 'english' ? null : {marginRight: 5},
             ]}>
             <SearchBox
-            onValueChnage={this.props.onValueChnage}
+              onValueChnage={this.props.onValueChnage}
               languageSettings={this.props.languageSettings}
               fontSize={this.props.fontSize.content}
               searchTitle={
@@ -68,7 +68,7 @@ export default class Header extends React.Component {
           </View>
           <TouchableOpacity
             onPress={() => this.setModalVisible(!this.state.modalVisible)}
-            style={[styles.settingIconContainer]}>
+            style={styles.settingIconContainer}>
             <ControlPanel
               languageSettings={this.props.languageSettings}
               fontSettings={this.props.fontSettings}
