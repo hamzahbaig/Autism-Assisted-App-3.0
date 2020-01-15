@@ -103,6 +103,7 @@ export default class AutismInAdultsCategroies extends React.Component {
       });
     }
   };
+  
   componentDidMount() {
     this.fontSizeHandler(Settings.currentFontSettings);
   }

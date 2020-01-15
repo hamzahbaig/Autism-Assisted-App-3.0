@@ -94,6 +94,205 @@
     ["Benefits of Disclosing", "AutismInChildrenCategories", 3, 0],
     ["Whom to disclose to", "AutismInChildrenCategories", 3, 1],
     ["Effects of Diet", "AutismInChildrenCategories", 4, 0],
-    ["Tips for Meal Time", "AutismInChildrenCategories", 4, 1]
+    ["Tips for Meal Time", "AutismInChildrenCategories", 4, 1],
+    ["Are all autistic people non-verbal?", "FAQScreen", 0, 0],
+    ["Are autistic people anti-social?", "FAQScreen", 1, 0],
+    [
+      "Are children who engage in autistic-type behaviour such as repetitions bound to be autistic?",
+      "FAQScreen",
+      2,
+      0
+    ],
+    [
+      "Are individuals with Autism Spectrum Disorder intellectually challenged?",
+      "FAQScreen",
+      3,
+      0
+    ],
+    [
+      "Are people with autism incapable of establishing romantic relationships?",
+      "FAQScreen",
+      4,
+      0
+    ],
+    [
+      "Are People with autism incapable of understanding the emotion of other?",
+      "FAQScreen",
+      5,
+      0
+    ],
+    ["Are people with autism intellectually disabled?", "FAQScreen", 6, 0],
+    [
+      "Are people with autism only good for jobs that include repetitive tasks?",
+      "FAQScreen",
+      7,
+      0
+    ],
+    ["Are people with autism prone to violence?", "FAQScreen", 8, 0],
+    [
+      "Are there special dietary needs for people on the Autism Spectrum?",
+      "FAQScreen",
+      9,
+      0
+    ],
+    [
+      "Can a person with autism live a successful independent life?",
+      "FAQScreen",
+      10,
+      0
+    ],
+    ["Can autism be cured completely?", "FAQScreen", 11, 0],
+    ["Can careful changes in diet cure Autism?", "FAQScreen", 12, 0],
+    ["Can children with autism learn?", "FAQScreen", 13, 0],
+    [
+      "Can individuals with autism ever lead successful independent lives?",
+      "FAQScreen",
+      14,
+      0
+    ],
+    ["Can my child with autism attend regular school?", "FAQScreen", 15, 0],
+    ["Can people with autism communicate? ", "FAQScreen", 16, 0],
+    [
+      "Can people with autism learn the basics of communication?",
+      "FAQScreen",
+      17,
+      0
+    ],
+    ["Can people with autism not form relationships?", "FAQScreen", 18, 0],
+    [
+      "Can we tell from which side of the family the autism came?",
+      "FAQScreen",
+      19,
+      0
+    ],
+    [
+      "Do People with autism not feel or express any emotion?",
+      "FAQScreen",
+      20,
+      0
+    ],
+    ["Do people with autism not like making friends? ", "FAQScreen", 21, 0],
+    ["Do people with autism prefer to be isolated?", "FAQScreen", 22, 0],
+    ["Does ASD condition only affect boys?", "FAQScreen", 23, 0],
+    ["Does Autism only affect children?", "FAQScreen", 24, 0],
+    ["Does Autism only affect the brain?", "FAQScreen", 25, 0],
+    [
+      "Does Dustin Hoffman’s character in Rain Man correctly portray all autistic people?",
+      "FAQScreen",
+      26,
+      0
+    ],
+    [
+      "Has the frequency of autism been increasing over the years?",
+      "FAQScreen",
+      27,
+      0
+    ],
+    ["How are Autism Spectrum Disorders diagnosed?", "FAQScreen", 28, 0],
+    [
+      "How can I avoid nagging my child who doesn’t listen? ",
+      "FAQScreen",
+      29,
+      0
+    ],
+    [
+      "How can I find the best treatments for Autism Spectrum Disorders?",
+      "FAQScreen",
+      30,
+      0
+    ],
+    ["How can I help a child with autism?", "FAQScreen", 31, 0],
+    [
+      "How can I include my other children in the care of their sibling?",
+      "FAQScreen",
+      32,
+      0
+    ],
+    ["How do I handle bullying?", "FAQScreen", 33, 0],
+    [
+      "How early can Autism Spectrum Disorder be recognized?",
+      "FAQScreen",
+      34,
+      0
+    ],
+    ["How many people have Autism Spectrum Disorder?", "FAQScreen", 35, 0],
+    ["Is Autism a mental illness?", "FAQScreen", 36, 0],
+    ["Is autism always genetic?", "FAQScreen", 37, 0],
+    ["Is Autism caused by bad parenting?", "FAQScreen", 38, 0],
+    ["Is Autism caused by vaccination?", "FAQScreen", 39, 0],
+    ["Is Autism entirely genetic?", "FAQScreen", 40, 0],
+    ["Is autism on the rise?", "FAQScreen", 41, 0],
+    ["Is Autism the childhood form of schizophrenia?", "FAQScreen", 42, 0],
+    ["Is everyone on the spectrum alike?", "FAQScreen", 43, 0],
+    ["Is everyone with autism a savant?", "FAQScreen", 44, 0],
+    ["Is everyone with autism the same?", "FAQScreen", 45, 0],
+    [
+      "Is it helpful to stop repetitive behavior in autistic people? ",
+      "FAQScreen",
+      46,
+      0
+    ],
+    ["Is there an ongoing “Autism epidemic”?", "FAQScreen", 47, 0],
+    [
+      "Should Autistic Children only be sent to special needs schools?",
+      "FAQScreen",
+      48,
+      0
+    ],
+    ["What are the challenges associated with Autism?", "FAQScreen", 49, 0],
+    ["What are the early signs of Autism?", "FAQScreen", 50, 0],
+    ["What are the related medicinal health conditions?", "FAQScreen", 51, 0],
+    ["What are the related mental health conditions?", "FAQScreen", 52, 0],
+    ["What are the symptoms of Autism Spectrum Disorders?", "FAQScreen", 53, 0],
+    [
+      "What are the treatments of Autism Spectrum Disorders?",
+      "FAQScreen",
+      54,
+      0
+    ],
+    ["What causes Autism Spectrum Disorders?", "FAQScreen", 55, 0],
+    [
+      "What conditions come under Autism Spectrum Disorders (ASD)?",
+      "FAQScreen",
+      56,
+      0
+    ],
+    ["What do I do after I am diagnosed with autism?", "FAQScreen", 57, 0],
+    ["What if I have autism?", "FAQScreen", 58, 0],
+    ["What if I think my child has autism?", "FAQScreen", 59, 0],
+    [
+      "What if my child is diagnosed with a developmental disorder?",
+      "FAQScreen",
+      60,
+      0
+    ],
+    ["What is “the Spectrum”?", "FAQScreen", 61, 0],
+    ["What is a social communication disorder?", "FAQScreen", 62, 0],
+    ["What is Asperger’s Syndrome?", "FAQScreen", 63, 0],
+    ["What is Autism Spectrum Disorder?", "FAQScreen", 64, 0],
+    ["What is Autistic disorder?", "FAQScreen", 65, 0],
+    ["What is Childhood Disintegrative Disorder?", "FAQScreen", 66, 0],
+    ["What is Pervasive Developmental Disorder?", "FAQScreen", 67, 0],
+    ["What is Rett’s Syndrome?", "FAQScreen", 68, 0],
+    [
+      "What progress has been made so far in autism research?",
+      "FAQScreen",
+      69,
+      0
+    ],
+    ["Who can develop Autism Spectrum Disorders?", "FAQScreen", 70, 0],
+    ["Will all symptoms of autism last forever?", "FAQScreen", 71, 0],
+    [
+      "Will children who display autistic symptoms grow out of their symptoms?",
+      "FAQScreen",
+      72,
+      0
+    ],
+    [
+      "Will people with autism need care for their entire life?",
+      "FAQScreen",
+      73,
+      0
+    ]
   ]
 }

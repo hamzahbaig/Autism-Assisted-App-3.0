@@ -143,6 +143,7 @@ export default class HomeScreen extends React.Component {
         <NavigationEvents onWillFocus={() => this.intialise()} />
         <View style={styles.container}>
           <Header
+            backHandler={() => this.props.navigation.goBack()}
             onValueChnage={this.onValueChnage}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
