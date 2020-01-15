@@ -132,6 +132,8 @@ export default class AutismInChildren extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.autismInChildren
           : urdu.autismInChildren,
+      searchedValue: null,
+      filtering: [],
     });
   };
 

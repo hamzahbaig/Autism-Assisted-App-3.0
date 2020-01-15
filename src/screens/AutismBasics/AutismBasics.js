@@ -125,6 +125,8 @@ export default class AutismBasics extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.autismBasics
           : urdu.autismBasics,
+      searchedValue: null,
+      filtering: [],
     });
   };
 

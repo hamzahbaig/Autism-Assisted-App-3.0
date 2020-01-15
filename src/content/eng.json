@@ -42,7 +42,7 @@
   },
   "autismBasics": {
     "title": "Autism Basics",
-    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
+    "description": "Learn the basics of autism spectrum disorder including symptoms, testing and treatment.",
     "innerSection": [
       ["What is Autism?"],
       ["Signs And Symptoms"],
@@ -54,7 +54,7 @@
   },
   "autismInAdults": {
     "title": "Autism in Adults",
-    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require",
+    "description": "Adults can have autism if undiagnosed as children. Learn the signs, tests and act now.",
     "innerSection": [
       ["Symptons in Adults"],
       ["Diagnosis and Treatement"],
@@ -63,7 +63,7 @@
   },
   "faqs": {
     "title": "Frequently Asked Questions",
-    "description": "Learn important information about autism spectrum disorder in children and making sure your children get the help and attention they require"
+    "description": "Know the right information by finding answers to frequently asked questions about autism."
   },
   "pages": [
     ["What is Autism?", "AutismBasicsCategories", 0, 0],

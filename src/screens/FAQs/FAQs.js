@@ -9,7 +9,7 @@ import {engFontSizes, urduFontSizes} from '../../settings/FontSizes';
 import Header from '../../components/Header';
 import {NavigationEvents} from 'react-navigation';
 import {styles} from '../../constants/Styles';
-import eng from '../../content/eng.json'
+import eng from '../../content/eng.json';
 export default class FAQs extends React.Component {
   state = {
     fontSize: engFontSizes.eng_M,
@@ -110,6 +110,8 @@ export default class FAQs extends React.Component {
     this.fontSizeHandler(Settings.currentFontSettings);
     this.setState({
       content: Settings.currentLanguage == 'english' ? englishFAQs : urduFAQs,
+      searchedValue: null,
+      filtering: [],
     });
   };
 

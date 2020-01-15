@@ -121,6 +121,8 @@ export default class AutismInAdults extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.autismInAdults
           : urdu.autismInAdults,
+      searchedValue: null,
+      filtering: [],
     });
   };
 

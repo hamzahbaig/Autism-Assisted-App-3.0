@@ -125,6 +125,8 @@ export default class HomeScreen extends React.Component {
         Settings.currentLanguage == 'english'
           ? eng.homeScreen
           : urdu.homeScreen,
+      searchedValue: null,
+      filtering: [],
     });
   };
 
