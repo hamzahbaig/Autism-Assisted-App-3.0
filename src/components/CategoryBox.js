@@ -33,6 +33,7 @@ export default class CategoryBox extends React.Component {
               this.props.reverseFlag == 'english'
                 ? {paddingLeft: 15}
                 : {paddingRight: 15},
+              this.props.image ? {width: '80%'} : {width: '100%'},
             ]}>
             <Text
               style={[
@@ -60,6 +61,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: 'white',
     marginTop: 10,
+    borderRadius: 8,
   },
   innerContainer: {
     height: '90%',
@@ -73,7 +75,6 @@ const styles = StyleSheet.create({
   },
   categoryContentContainer: {
     height: '90%',
-    width: '80%',
     justifyContent: 'center',
   },
   categoryHeadingStyle: {
