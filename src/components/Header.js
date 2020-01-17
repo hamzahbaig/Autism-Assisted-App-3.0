@@ -52,19 +52,21 @@ export default class Header extends React.Component {
               styles.searchBarContainer,
               this.props.reverseFlag == 'english' ? null : {marginRight: 5},
             ]}>
-            <SearchBox
-              onValueChnage={this.props.onValueChnage}
-              languageSettings={this.props.languageSettings}
-              fontSize={this.props.fontSize.content}
-              searchTitle={
-                this.props.reverseFlag == 'english'
-                  ? {text: 'Search', fontFamily: this.props.fontFamilyHeading}
-                  : {
-                      text: 'سرچ',
-                      fontFamily: this.props.fontFamilyUrdu,
-                    }
-              }
-            />
+            {this.props.dontShow ? null : (
+              <SearchBox
+                onValueChnage={this.props.onValueChnage}
+                languageSettings={this.props.languageSettings}
+                fontSize={this.props.fontSize.content}
+                searchTitle={
+                  this.props.reverseFlag == 'english'
+                    ? {text: 'Search', fontFamily: this.props.fontFamilyHeading}
+                    : {
+                        text: 'سرچ',
+                        fontFamily: this.props.fontFamilyUrdu,
+                      }
+                }
+              />
+            )}
           </View>
           <TouchableOpacity
             onPress={() => this.setModalVisible(!this.state.modalVisible)}

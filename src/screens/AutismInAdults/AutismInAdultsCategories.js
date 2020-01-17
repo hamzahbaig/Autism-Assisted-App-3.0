@@ -103,7 +103,7 @@ export default class AutismInAdultsCategroies extends React.Component {
       });
     }
   };
-  
+
   componentDidMount() {
     this.fontSizeHandler(Settings.currentFontSettings);
   }
@@ -118,6 +118,7 @@ export default class AutismInAdultsCategroies extends React.Component {
         }}>
         <View style={styles.container}>
           <Header
+            dontShow={true}
             backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}

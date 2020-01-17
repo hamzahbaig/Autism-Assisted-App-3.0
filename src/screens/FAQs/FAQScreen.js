@@ -106,6 +106,7 @@ export default class FAQScreen extends React.Component {
         <View style={styles.container}>
           <StatusBar backgroundColor="#2C326F" barStyle="light-content" />
           <Header
+            dontShow={true}
             backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}

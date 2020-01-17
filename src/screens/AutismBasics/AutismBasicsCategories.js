@@ -131,6 +131,7 @@ export default class AutismBasicsCategories extends React.Component {
         <View style={styles.container}>
           <Header
             // onValueChnage={this.onValueChnage}
+            dontShow ={true}
             backHandler={() => this.props.navigation.goBack()}
             languageSettings={Settings.currentLanguage}
             fontSettings={Settings.currentFontSettings}
