@@ -21,3 +21,6 @@ Autism Assisted is a source of information, community and resources that need to
 
 # Application Link: 
  https://play.google.com/store/apps/details?id=com.autismassisted&hl=en
+ 
+# Technologies used:
+1) React Native and NodeJS
